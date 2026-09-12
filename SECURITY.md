@@ -39,7 +39,7 @@ Ortam değişkenleri (Vercel → Settings → Environment Variables → Producti
 
 Değişkeni değiştirdikten sonra Deployments → son deploy → **Redeploy** yapın.
 
-**Saldırı anında yapılacak:** `FIGHT_MODE` = `1` → Redeploy. Saldırı bitince `0`.
+**Saldırı modu durumu:** Kullanıcı kararıyla 12 Eylül 2026'dan itibaren üretimde **sürekli açık** (`FIGHT_MODE=1`). Her ziyaretçi ilk girişte ~0,5 sn "Güvenlik kontrolü" ekranı görür, çerez 12 saat geçerlidir; Googlebot/AdsBot/Bing/WhatsApp gibi iyi botlar ve çerez yazamayan tarayıcılar (`__chk=1` işaretiyle) etkilenmez. Kapatmak için `FIGHT_MODE` = `0` → Redeploy. Daha ağır seviye gerekirse Cloudflare Under Attack Mode (bölüm C5) ayrıca açılır.
 
 ### A2. Güvenlik başlıkları (`vercel.json`)
 
