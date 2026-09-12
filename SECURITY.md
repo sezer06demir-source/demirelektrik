@@ -51,16 +51,15 @@ Arama motorlarına açık; Ahrefs, Semrush, MJ12 gibi rakip analiz araçları ve
 
 ---
 
-## B. Vercel Firewall (panelden, 5 dakika)
+## B. Vercel Firewall (uygulandı, 12 Eylül 2026)
 
-Vercel → proje **demirelektrik** → **Firewall** sekmesi.
+API üzerinden yapıldı; Vercel → proje **demirelektrik** → **Firewall** sekmesinden görülebilir.
 
-1. **Attack Challenge Mode** — sağ üstteki düğme. Saldırı sırasında açın; tüm ziyaretçilere tarayıcı doğrulaması uygulanır. Bu, Vercel'in "Fight Mode" karşılığıdır. Saldırı bitince kapatın.
-2. **Custom Rules → Add Rule** (plan sınırına göre 1-3 kural):
-   - **Ülke kuralı:** `Country` `is not any of` `Turkey, Algeria` → **Deny**. (middleware ile aynı işi yapar; Vercel katmanında daha erken keser.)
-   - **Hız sınırı (Pro planda):** `Path` `starts with` `/` → **Rate Limit**: 60 istek / 60 saniye / IP → Deny 10 dk.
-   - **JA4 / bot skoru** kuralları Pro planda mevcuttur; "Bot Filter" ile kötü botları otomatik challenge'a alabilirsiniz.
-3. **Firewall → Overview**: engellenen istekleri ve ülkeleri buradan izleyin. Sürekli aynı IP/ASN'den gelen trafik varsa **BLOCKED_IPS** değişkenine ekleyin ya da IP Blocking bölümünden engelleyin.
+- Firewall açık. İki özel kural aktif: (1) scraper/SEO/saldırı kimlikleri → Deny, (2) WordPress/PHP tarama yolları ve GET/HEAD/OPTIONS dışı metotlar → Deny.
+- Ortam değişkenleri tanımlı: `FIGHT_MODE=0`, `FIGHT_MODE_SECRET` (rastgele, şifreli).
+- **Attack Challenge Mode** — Firewall sekmesinin sağ üstündeki düğme. Saldırı sırasında açın; tüm ziyaretçilere tarayıcı doğrulaması uygulanır. Saldırı bitince kapatın.
+- **Önemli:** Cloudflare proxy'si önde olduğu için Vercel, ziyaretçinin gerçek IP'sini ve ülkesini göremez (Cloudflare sunucusunu görür). Bu yüzden Vercel'de **ülke ya da IP kuralı koymayın**, herkesi engeller. Ülke, IP ve hız sınırı kuralları Cloudflare'de (bölüm C) ve middleware'de tutulur.
+- **Firewall → Overview**: engellenen istekleri buradan izleyin.
 
 ---
 
@@ -132,9 +131,20 @@ Sayfa başına yaklaşık 5-8 istek (HTML + CSS + JS + görseller) olduğundan g
 - **Browser Integrity Check:** On
 - **Under Attack Mode:** Saldırı sırasında **On** — tüm ziyaretçilere 5 sn JS kontrolü. Cloudflare'in "Fight Mode" karşılığı budur; sağ üstteki hızlı geçişten bir tıkla açılır. Saldırı bitince kapatın, aksi halde SEO tarama hızı düşer.
 
-### C6. Cloudflare API ile hızlı uygulama (isteğe bağlı)
+### C6. Tek komutla uygulama: `scripts/cloudflare-security.mjs`
 
-Cloudflare → My Profile → API Tokens → "Edit zone DNS" değil, **Zone → Zone WAF → Edit** yetkili bir token oluşturup verirseniz kurallar API üzerinden tek seferde yüklenebilir. Token'ı sohbete yazmak yerine Vercel/Cloudflare panelinde saklamak daha güvenlidir.
+Bölüm C1–C5'teki her şeyi API üzerinden uygular; mevcut kullanıcı kurallarına dokunmaz, yalnızca "DE-" ile başlayan kendi kurallarını yazar/günceller.
+
+1. Cloudflare → My Profile → **API Tokens** → Create Token → **Create Custom Token**.
+   İzinler: Zone:Read, Zone Settings:Edit, Zone WAF:Edit, Bot Management:Edit, Firewall Services:Edit. Zone Resources: yalnızca demirelektrikankara.com.tr.
+2. Çalıştırın:
+   ```powershell
+   $env:CF_API_TOKEN = "buraya-token"
+   node scripts/cloudflare-security.mjs            # uygula
+   node scripts/cloudflare-security.mjs --status   # durumu göster
+   node scripts/cloudflare-security.mjs --under-attack on   # saldırı modu aç (off ile kapat)
+   ```
+3. İş bitince token'ı API Tokens sayfasından silebilirsiniz.
 
 ---
 
