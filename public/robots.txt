@@ -1,4 +1,37 @@
+# Demir Elektrik — arama motorlarına açık, SEO/scraper araçlarına kapalı.
+# Not: Bu dosya iyi niyetli botlar içindir; asıl engelleme middleware.ts ve Cloudflare WAF tarafında yapılır.
+
 User-agent: *
 Allow: /
+
+# SEO analiz / backlink araçları (rakip analizi için kullanılır)
+User-agent: AhrefsBot
+User-agent: AhrefsSiteAudit
+User-agent: SemrushBot
+User-agent: SiteAuditBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: DataForSeoBot
+User-agent: serpstatbot
+User-agent: SEOkicks
+User-agent: MegaIndex
+User-agent: Linkdexbot
+User-agent: spbot
+User-agent: rogerbot
+User-agent: SISTRIX
+User-agent: Barkrowler
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Yapay zeka veri toplayıcıları
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: PetalBot
+User-agent: omgili
+Disallow: /
 
 Sitemap: https://www.demirelektrikankara.com.tr/sitemap-index.xml
