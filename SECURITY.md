@@ -65,6 +65,18 @@ API üzerinden yapıldı; Vercel → proje **demirelektrik** → **Firewall** se
 
 ## C. Cloudflare (Fight Mode ve WAF)
 
+**Durum (12 Eylül 2026, uygulandı):** Proxy her iki kayıtta açık, SSL Full (strict), TLS 1.2+, Security Level high, Browser Integrity Check on, Challenge TTL 30 dk, Bot Fight Mode on. Özel WAF kuralları (ücretsiz planda 5 slot, hepsi dolu):
+
+| # | Kural | Aksiyon | Kaynak |
+| --- | --- | --- | --- |
+| 1 | DE-IP engel listesi 1/2 | Block | middleware.ts'deki liste + kullanıcının önceki IP kuralları (472 IP) |
+| 2 | DE-IP engel listesi 2/2 | Block | aynı |
+| 3 | DE-Tarama yolları, yazma metotları ve scraper kimlikleri | Block | wp-/xmlrpc/.env/.git/php/asp, GET-HEAD-OPTIONS dışı, boş UA, Ahrefs/Semrush/MJ12/GPTBot/sqlmap… |
+| 4 | Türkiye | Block | Kullanıcının kuralı: TR/DZ dışı **ve** doğrulanmış bot değilse. Googlebot/Bingbot geçer |
+| 5 | şüpheli ıp listesi | Block | Kullanıcının Cloudflare IP listesi (`$supheli_ip_listesi`) |
+
+Rate limit: IP başına **10 sn / 40 istek** → block (engel süresi ücretsiz planda 10 sn'ye sabit). Aşağıdaki C1–C5 bölümleri referans olarak duruyor; yeniden uygulamak için C6'daki betik yeterli. Not: "Kural 3 / managed challenge" slot kalmadığı için eklenmedi; Bot Fight Mode ve Security Level high aynı işlevi büyük ölçüde karşılar.
+
 Alan adının DNS'i Cloudflare'de. Cloudflare'in güvenlik özellikleri yalnızca **proxy açıkken** (turuncu bulut) çalışır.
 
 ### C1. Proxy'yi açma

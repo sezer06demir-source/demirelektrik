@@ -495,6 +495,15 @@ const BLOCKED_IPS_STATIC: readonly string[] = [
   '142.132.169.165',
   '185.50.70.36',
   '2.57.91.183',
+  // Kullanıcının Cloudflare kurallarından alınan ek adresler (12 Eylül 2026)
+  '145.223.39.54',
+  '172.64.52.95',
+  '172.64.53.161',
+  '172.67.205.170',
+  '31.145.153.6',
+  '78.135.105.15',
+  '78.135.105.6',
+  '85.111.6.221',
 ];
 
 type Env = Record<string, string | undefined>;
