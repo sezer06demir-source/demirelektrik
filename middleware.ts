@@ -13,7 +13,8 @@
  *   ALLOWED_COUNTRIES = "TR,DZ" (varsayılan)       → ISO 3166-1 alpha-2 kodları, virgülle
  *   FIGHT_MODE        = "0" (varsayılan) | "1"     → JS doğrulaması (bot saldırısı sırasında aç)
  *   FIGHT_MODE_SECRET = rastgele uzun metin        → doğrulama çerezi imzası (FIGHT_MODE için önerilir)
- *   BEHIND_CLOUDFLARE = "0" (varsayılan) | "1"     → Cloudflare proxy (turuncu bulut) açıksa 1 yap
+ *   BEHIND_CLOUDFLARE = "0" (varsayılan) | "1"     → İsteğe bağlı. Cloudflare proxy'si bağlanan IP'den
+ *                                                    otomatik tespit edilir; 1 yapmak yalnızca zorlar.
  *   BLOCKED_IPS       = "1.2.3.4,5.6.7.8"          → elle engellenecek ek IP'ler (isteğe bağlı)
  *   Kalıcı IP engel listesi: bu dosyadaki BLOCKED_IPS_STATIC dizisi (dış import edge paketleyicide çalışmadı)
  *
@@ -510,7 +511,68 @@ function envList(name: string, fallback: string[]): string[] {
 
 const SECURITY_ON = (env.SECURITY_MODE ?? 'on').toLowerCase() !== 'off';
 const FIGHT_MODE = env.FIGHT_MODE === '1';
-const BEHIND_CLOUDFLARE = env.BEHIND_CLOUDFLARE === '1';
+/** Elle zorlama; normalde gerek yok, Cloudflare proxy'si bağlanan IP'den otomatik tespit edilir. */
+const BEHIND_CLOUDFLARE_ENV = env.BEHIND_CLOUDFLARE === '1';
+
+/** Cloudflare'in yayınladığı çıkış aralıkları (https://www.cloudflare.com/ips). Yalnızca bu IP'lerden gelen
+ *  isteklerde cf-ipcountry / cf-connecting-ip başlıklarına güvenilir; böylece başlık sahteciliği engellenir. */
+const CLOUDFLARE_IPV4: Array<[number, number]> = [
+  '173.245.48.0/20',
+  '103.21.244.0/22',
+  '103.22.200.0/22',
+  '103.31.4.0/22',
+  '141.101.64.0/18',
+  '108.162.192.0/18',
+  '190.93.240.0/20',
+  '188.114.96.0/20',
+  '197.234.240.0/22',
+  '198.41.128.0/17',
+  '162.158.0.0/15',
+  '104.16.0.0/13',
+  '104.24.0.0/14',
+  '172.64.0.0/13',
+  '131.0.72.0/22',
+].map((cidr) => {
+  const [ip, bits] = cidr.split('/');
+  const mask = bits === '0' ? 0 : (~0 << (32 - Number(bits))) >>> 0;
+  return [(ipv4ToInt(ip) & mask) >>> 0, mask] as [number, number];
+});
+/** IPv6 önekleri: [ilk hextet, ikinci hextet alt sınır, ikinci hextet üst sınır] */
+const CLOUDFLARE_IPV6: Array<[string, number, number]> = [
+  ['2400', 0xcb00, 0xcb00],
+  ['2606', 0x4700, 0x4700],
+  ['2803', 0xf800, 0xf800],
+  ['2405', 0xb500, 0xb500],
+  ['2405', 0x8100, 0x8100],
+  ['2a06', 0x98c0, 0x98c7],
+  ['2c0f', 0xf248, 0xf248],
+];
+
+function ipv4ToInt(ip: string): number {
+  const p = ip.split('.').map(Number);
+  if (p.length !== 4 || p.some((n) => Number.isNaN(n) || n < 0 || n > 255)) return -1;
+  return ((p[0] << 24) | (p[1] << 16) | (p[2] << 8) | p[3]) >>> 0;
+}
+
+function isCloudflareIp(ip: string): boolean {
+  if (!ip) return false;
+  if (ip.includes(':')) {
+    const [h1 = '', h2 = ''] = ip.toLowerCase().split(':');
+    const n2 = parseInt(h2 || '0', 16);
+    return CLOUDFLARE_IPV6.some(([a, lo, hi]) => h1 === a && n2 >= lo && n2 <= hi);
+  }
+  const n = ipv4ToInt(ip);
+  if (n < 0) return false;
+  return CLOUDFLARE_IPV4.some(([net, mask]) => (n & mask) >>> 0 === net);
+}
+
+/** İstek Cloudflare proxy'sinden mi geliyor? Bağlanan IP Cloudflare aralığındaysa evet. */
+function viaCloudflare(req: Request): boolean {
+  if (BEHIND_CLOUDFLARE_ENV) return true;
+  if (!req.headers.get('cf-ray')) return false;
+  const peer = req.headers.get('x-real-ip') ?? req.headers.get('x-forwarded-for')?.split(',').pop()?.trim() ?? '';
+  return isCloudflareIp(peer);
+}
 const ALLOWED_COUNTRIES = new Set(envList('ALLOWED_COUNTRIES', ['TR', 'DZ']));
 /** Kalıcı liste (security/blocked-ips.ts) + ortam değişkeniyle eklenenler. */
 const BLOCKED_IPS = new Set([...BLOCKED_IPS_STATIC, ...envList('BLOCKED_IPS', [])].map((s) => s.toLowerCase()));
@@ -651,18 +713,18 @@ function deny(status: number, text: string): Response {
   });
 }
 
-function getCountry(req: Request): string | undefined {
-  if (BEHIND_CLOUDFLARE) {
-    const cf = req.headers.get('cf-ipcountry');
-    if (cf && cf !== 'XX' && cf !== 'T1') return cf.toUpperCase();
+function getCountry(req: Request, cf: boolean): string | undefined {
+  if (cf) {
+    const c = req.headers.get('cf-ipcountry');
+    if (c && c !== 'XX' && c !== 'T1') return c.toUpperCase();
   }
   const v = req.headers.get('x-vercel-ip-country');
   return v ? v.toUpperCase() : undefined;
 }
 
-function getIp(req: Request): string {
+function getIp(req: Request, cf: boolean): string {
   return (
-    (BEHIND_CLOUDFLARE ? req.headers.get('cf-connecting-ip') : null) ??
+    (cf ? req.headers.get('cf-connecting-ip') : null) ??
     req.headers.get('x-real-ip') ??
     req.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
     ''
@@ -721,7 +783,8 @@ export default async function middleware(req: Request): Promise<Response | undef
   const url = new URL(req.url);
   const path = url.pathname.toLowerCase();
   const ua = (req.headers.get('user-agent') ?? '').toLowerCase();
-  const ip = getIp(req);
+  const cf = viaCloudflare(req);
+  const ip = getIp(req, cf);
 
   // 1) Yalnızca okuma metotları; site statik, POST/PUT vb. beklenmiyor.
   if (req.method !== 'GET' && req.method !== 'HEAD' && req.method !== 'OPTIONS') {
@@ -748,7 +811,7 @@ export default async function middleware(req: Request): Promise<Response | undef
   }
 
   // 6) Ülke filtresi. Ülke bilgisi yoksa (yerel geliştirme) geçir.
-  const country = getCountry(req);
+  const country = getCountry(req, cf);
   if (country && !ALLOWED_COUNTRIES.has(country)) {
     return deny(403, 'Bu site yalnızca hizmet verdiğimiz bölgelerden erişime açıktır.');
   }

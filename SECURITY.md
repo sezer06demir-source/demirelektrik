@@ -34,7 +34,7 @@ Ortam değişkenleri (Vercel → Settings → Environment Variables → Producti
 | `ALLOWED_COUNTRIES` | `TR,DZ` | Ülke kodları, virgülle. Örn. `TR,DZ,DE` |
 | `FIGHT_MODE` | `0` | `1` = saldırı modu. Botlar JS kontrolünü geçemez, gerçek ziyaretçi 1 sn gecikme görür |
 | `FIGHT_MODE_SECRET` | dahili | Rastgele uzun bir metin girin; çerez imzası buna göre üretilir |
-| `BEHIND_CLOUDFLARE` | `0` | Cloudflare proxy (turuncu bulut) açıksa `1` yapın; ülke bilgisi Cloudflare'den okunur |
+| `BEHIND_CLOUDFLARE` | `0` | İsteğe bağlı. Middleware, isteğin Cloudflare'in resmi IP aralığından geldiğini görünce ülke ve ziyaretçi IP'sini Cloudflare başlıklarından otomatik okur. `1` yalnızca bunu zorlar |
 | `BLOCKED_IPS` | boş | Elle engellenecek ek IP'ler, virgülle. Kalıcı liste `middleware.ts` içindeki `BLOCKED_IPS_STATIC` dizisindedir (464 IP, 12 Eylül 2026); yeni IP'yi oraya ekleyip push etmek yeterlidir |
 
 Değişkeni değiştirdikten sonra Deployments → son deploy → **Redeploy** yapın.
@@ -73,7 +73,7 @@ Alan adının DNS'i Cloudflare'de. Cloudflare'in güvenlik özellikleri yalnızc
 1. Cloudflare → alan adı → **DNS → Records**. `demirelektrikankara.com.tr` (A) ve `www` (CNAME) kayıtlarında bulut simgesini **turuncu** yapın (Proxied).
 2. **SSL/TLS → Overview** → **Full (strict)** seçin. Aksi halde yönlendirme döngüsü olur.
 3. **SSL/TLS → Edge Certificates** → "Always Use HTTPS" açık, "Minimum TLS Version" 1.2.
-4. Vercel → Settings → Environment Variables → `BEHIND_CLOUDFLARE` = `1` → Redeploy.
+4. Vercel tarafında ayar gerekmez; middleware Cloudflare proxy'sini otomatik tanır.
 
 ### C2. Bot Fight Mode
 
