@@ -35,7 +35,7 @@ Ortam değişkenleri (Vercel → Settings → Environment Variables → Producti
 | `FIGHT_MODE` | `0` | `1` = saldırı modu. Botlar JS kontrolünü geçemez, gerçek ziyaretçi 1 sn gecikme görür |
 | `FIGHT_MODE_SECRET` | dahili | Rastgele uzun bir metin girin; çerez imzası buna göre üretilir |
 | `BEHIND_CLOUDFLARE` | `0` | Cloudflare proxy (turuncu bulut) açıksa `1` yapın; ülke bilgisi Cloudflare'den okunur |
-| `BLOCKED_IPS` | boş | Elle engellenecek ek IP'ler, virgülle. Kalıcı liste `security/blocked-ips.ts` dosyasındadır (464 IP, 12 Eylül 2026); yeni IP'yi oraya ekleyip push etmek yeterlidir |
+| `BLOCKED_IPS` | boş | Elle engellenecek ek IP'ler, virgülle. Kalıcı liste `middleware.ts` içindeki `BLOCKED_IPS_STATIC` dizisindedir (464 IP, 12 Eylül 2026); yeni IP'yi oraya ekleyip push etmek yeterlidir |
 
 Değişkeni değiştirdikten sonra Deployments → son deploy → **Redeploy** yapın.
 
