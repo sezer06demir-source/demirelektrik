@@ -6,11 +6,11 @@ Site statik HTML üretir. İki seçenek var: **Vercel** (önerilen, GitHub'a her
 
 # A. Vercel ile Yayınlama
 
-Depo: `https://github.com/hurdler2/www.demirelektrikankara.com.tr`
+Depo: `https://github.com/sezer06demir-source/demirelektrik`
 
 ## 1. Projeyi Vercel'e bağla (bir kez)
 
-1. https://vercel.com → **Add New → Project** → GitHub hesabını bağla → `www.demirelektrikankara.com.tr` deposunu **Import** et.
+1. https://vercel.com → **Add New → Project** → GitHub hesabını bağla → `demirelektrik` deposunu **Import** et.
 2. Ayarlar otomatik gelir (`vercel.json` içinde tanımlı): Framework **Astro**, Build `npm run build`, Output `dist`. Hiçbir şeyi değiştirmeden **Deploy**'a bas.
 3. 1–2 dakika içinde `*.vercel.app` adresinde site yayında olur.
 
