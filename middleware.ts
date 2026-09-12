@@ -11,7 +11,8 @@
  * Ayarlar Vercel ortam değişkenleriyle yapılır (Project → Settings → Environment Variables):
  *   SECURITY_MODE     = "on" (varsayılan) | "off"  → filtreyi tamamen kapatır (acil durum)
  *   ALLOWED_COUNTRIES = "TR,DZ" (varsayılan)       → ISO 3166-1 alpha-2 kodları, virgülle
- *   FIGHT_MODE        = "0" (varsayılan) | "1"     → JS doğrulaması (bot saldırısı sırasında aç)
+ *   FIGHT_MODE        = "0" (varsayılan) | "1"     → JS doğrulaması. Kullanıcı kararıyla 12 Eylül 2026'dan
+ *                                                    itibaren üretimde SÜREKLİ AÇIK (Vercel env FIGHT_MODE=1).
  *   FIGHT_MODE_SECRET = rastgele uzun metin        → doğrulama çerezi imzası (FIGHT_MODE için önerilir)
  *   BEHIND_CLOUDFLARE = "0" (varsayılan) | "1"     → İsteğe bağlı. Cloudflare proxy'si bağlanan IP'den
  *                                                    otomatik tespit edilir; 1 yapmak yalnızca zorlar.
@@ -772,7 +773,12 @@ noscript p{color:#fca5a5}</style></head>
 <noscript><p>Bu kontrol için tarayıcınızda JavaScript açık olmalıdır.</p></noscript></div>
 <script>(function(){var d=new Date();d.setTime(d.getTime()+12*60*60*1000);
 document.cookie="de_chk=${token}; expires="+d.toUTCString()+"; path=/; SameSite=Lax; Secure";
-setTimeout(function(){location.reload()},350);})();</script></body></html>`;
+var ok=document.cookie.indexOf("de_chk=")!==-1;
+setTimeout(function(){
+  if(ok){location.reload();return;}
+  // Çerez yazılamadı (tarayıcı engelliyor): döngüye girmemek için tek seferlik geçiş işaretiyle devam et.
+  var u=new URL(location.href);u.searchParams.set("__chk","1");location.replace(u.toString());
+},350);})();</script></body></html>`;
   return new Response(html, {
     status: 503,
     headers: {
@@ -826,9 +832,10 @@ export default async function middleware(req: Request): Promise<Response | undef
   }
 
   // 7) Saldırı modu: JS doğrulama çerezi olmayan istemciye meydan okuma sayfası.
-  if (FIGHT_MODE) {
+  //    Çerezi yazamayan tarayıcılar (çerez kapalı) JS'in eklediği __chk=1 işaretiyle döngüye girmeden geçer.
+  if (FIGHT_MODE && req.method === 'GET') {
     const token = await challengeToken();
-    if (!hasCookie(req, 'de_chk', token)) {
+    if (!hasCookie(req, 'de_chk', token) && url.searchParams.get('__chk') !== '1') {
       return challengePage(token);
     }
   }
