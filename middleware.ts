@@ -831,6 +831,16 @@ export default async function middleware(req: Request): Promise<Response | undef
     return deny(403, 'Bu site yalnızca hizmet verdiğimiz bölgelerden erişime açıktır.');
   }
 
+  // 6b) /api/ip — sayfanın üstündeki ziyaretçi bilgi çubuğu için IP ve ülke (yalnızca isteği yapan kişiye).
+  if (path === '/api/ip') {
+    const names: Record<string, string> = { TR: 'Türkiye', DZ: 'Cezayir' };
+    const body = JSON.stringify({ ip: ip || null, country: country ?? null, countryName: country ? (names[country] ?? country) : null });
+    return new Response(body, {
+      status: 200,
+      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
+    });
+  }
+
   // 7) Saldırı modu: JS doğrulama çerezi olmayan istemciye meydan okuma sayfası.
   //    Çerezi yazamayan tarayıcılar (çerez kapalı) JS'in eklediği __chk=1 işaretiyle döngüye girmeden geçer.
   if (FIGHT_MODE && req.method === 'GET') {

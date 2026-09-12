@@ -1,0 +1,94 @@
+---
+/**
+ * Sayfanın en üstünde ziyaretçinin kendi IP adresini ve ülkesini gösteren ince çubuk.
+ * Veri, middleware.ts içindeki /api/ip uç noktasından tarayıcıda çekilir; yalnızca
+ * isteği yapan ziyaretçi kendi bilgisini görür, hiçbir yere kaydedilmez.
+ */
+---
+
+<div class="ipbar" id="ipbar" role="note" aria-live="polite">
+  <div class="container ipbar__inner">
+    <svg class="ipbar__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+    </svg>
+    <span class="ipbar__text">
+      <span class="ipbar__label">Ziyaretçi IP adresiniz:</span>
+      <strong class="ipbar__ip" data-ip>yükleniyor…</strong>
+      <span class="ipbar__geo" data-geo hidden></span>
+      <span class="ipbar__note">· Tüm ziyaretler güvenlik amacıyla kayıt altındadır.</span>
+    </span>
+  </div>
+</div>
+
+<style>
+  .ipbar {
+    background: #070b14;
+    color: #cbd5e1;
+    font-size: 0.72rem;
+    line-height: 1.3;
+    min-height: 26px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .ipbar__inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 0.3rem;
+    min-width: 0;
+  }
+  .ipbar__icon {
+    color: var(--yellow, #ffc107);
+    flex: none;
+  }
+  .ipbar__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+  .ipbar__ip {
+    color: var(--white, #fff);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+  .ipbar__geo {
+    color: #94a3b8;
+  }
+  .ipbar__note {
+    color: #94a3b8;
+  }
+  @media (max-width: 560px) {
+    .ipbar__note {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  (async () => {
+    const ipEl = document.querySelector<HTMLElement>('[data-ip]');
+    const geoEl = document.querySelector<HTMLElement>('[data-geo]');
+    if (!ipEl) return;
+    try {
+      let data: { ip?: string | null; countryName?: string | null } | null = null;
+      const cached = sessionStorage.getItem('de_ip');
+      if (cached) data = JSON.parse(cached);
+      if (!data) {
+        const res = await fetch('/api/ip', { cache: 'no-store', credentials: 'same-origin' });
+        if (!res.ok) throw new Error(String(res.status));
+        data = await res.json();
+        sessionStorage.setItem('de_ip', JSON.stringify(data));
+      }
+      ipEl.textContent = data?.ip || 'bilinmiyor';
+      if (geoEl && data?.countryName) {
+        geoEl.textContent = `· ${data.countryName}`;
+        geoEl.hidden = false;
+      }
+    } catch {
+      ipEl.textContent = 'kayıt altında';
+    }
+  })();
+</script>
