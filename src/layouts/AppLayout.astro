@@ -1,0 +1,65 @@
+---
+/**
+ * Uygulama (PWA / Android TWA) için sade düzen: site header/footer ve IP çubuğu yok,
+ * tam ekran mobil deneyim. Service worker yalnızca burada kaydedilir.
+ */
+import '@fontsource-variable/inter';
+import '@styles/global.css';
+import { site } from '@data/site';
+import { canonicalUrl } from '@utils/seo';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonical = canonicalUrl(Astro.url.pathname);
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b1220" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Demir Elektrik" />
+    <meta name="format-detection" content="telephone=yes" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={canonicalUrl('/og-image.png')} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={site.name} />
+  </head>
+  <body class="app-body">
+    <slot />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  .app-body {
+    margin: 0;
+    background: #f5f6f8;
+    color: #0f172a;
+    font-family: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 100dvh;
+  }
+</style>

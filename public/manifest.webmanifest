@@ -1,15 +1,25 @@
 {
+  "id": "/uygulama",
   "name": "Demir Elektrik – Ankara Elektrikçi",
   "short_name": "Demir Elektrik",
-  "description": "Ankara genelinde elektrik arıza, tesisat, pano, otomasyon ve aydınlatma hizmetleri.",
-  "start_url": "/",
+  "description": "Ankara genelinde elektrik arızası bildirin, randevu isteyin ya da tek dokunuşla arayın.",
+  "start_url": "/uygulama?source=pwa",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
   "background_color": "#0B1220",
   "theme_color": "#0B1220",
   "lang": "tr",
+  "dir": "ltr",
+  "categories": ["business", "utilities"],
   "icons": [
     { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
     { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Hemen ara", "short_name": "Ara", "url": "tel:+905062547678", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Arıza bildir", "short_name": "Arıza", "url": "/uygulama?source=shortcut", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
   ]
 }
