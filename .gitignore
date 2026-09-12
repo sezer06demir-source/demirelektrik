@@ -26,3 +26,6 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 .idea/
+
+# Claude Code yerel ayarlar (izinler) — paylaşılmaz
+.claude/settings.local.json
