@@ -14,11 +14,14 @@
  *   FIGHT_MODE        = "0" (varsayılan) | "1"     → JS doğrulaması (bot saldırısı sırasında aç)
  *   FIGHT_MODE_SECRET = rastgele uzun metin        → doğrulama çerezi imzası (FIGHT_MODE için önerilir)
  *   BEHIND_CLOUDFLARE = "0" (varsayılan) | "1"     → Cloudflare proxy (turuncu bulut) açıksa 1 yap
- *   BLOCKED_IPS       = "1.2.3.4,5.6.7.8"          → elle engellenecek IP'ler (isteğe bağlı)
+ *   BLOCKED_IPS       = "1.2.3.4,5.6.7.8"          → elle engellenecek ek IP'ler (isteğe bağlı)
+ *   Kalıcı IP engel listesi: security/blocked-ips.ts (her deploy'da otomatik yüklenir)
  *
  * Değişken değiştirince yeniden deploy gerekmez; Vercel bir sonraki istekte yeni değeri okur
  * (bazı durumlarda "Redeploy" gerekebilir).
  */
+
+import { BLOCKED_IPS_STATIC } from './security/blocked-ips';
 
 export const config = {
   // Statik varlıklar, sitemap, robots ve manifest için çalışmaz; yalnızca sayfa isteklerinde devreye girer.
@@ -43,7 +46,8 @@ const SECURITY_ON = (env.SECURITY_MODE ?? 'on').toLowerCase() !== 'off';
 const FIGHT_MODE = env.FIGHT_MODE === '1';
 const BEHIND_CLOUDFLARE = env.BEHIND_CLOUDFLARE === '1';
 const ALLOWED_COUNTRIES = new Set(envList('ALLOWED_COUNTRIES', ['TR', 'DZ']));
-const BLOCKED_IPS = new Set(envList('BLOCKED_IPS', []).map((s) => s.toLowerCase()));
+/** Kalıcı liste (security/blocked-ips.ts) + ortam değişkeniyle eklenenler. */
+const BLOCKED_IPS = new Set([...BLOCKED_IPS_STATIC, ...envList('BLOCKED_IPS', [])].map((s) => s.toLowerCase()));
 const FIGHT_SECRET = env.FIGHT_MODE_SECRET ?? 'demir-elektrik-varsayilan-anahtar';
 
 /** Ülkeden bağımsız geçmesine izin verilen "iyi" botlar (User-Agent parçaları, küçük harf). */
