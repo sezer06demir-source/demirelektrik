@@ -7,7 +7,7 @@
  *  - public/icons/icon-512.png
  *  - public/icons/icon-512-maskable.png
  *  - public/icons/apple-touch-icon.png (180x180)
- *  - public/favicon.ico (32x32 PNG içerikli, tarayıcılar kabul eder)
+ *  - public/favicon.ico (32x32, gerçek ICO kabı içinde PNG)
  *  - public/images/projects/placeholder-*.svg → galeri örnek görselleri
  *
  * Gerçek fotoğraflar / logo geldiğinde bu script yerine kendi dosyalarını koyabilirsin.
@@ -118,12 +118,30 @@ async function main() {
 
   // İkonlar
   const icon = Buffer.from(iconSvg());
+  /** PNG'yi geçerli bir ICO dosyasına sarar: 6 bayt başlık + 16 bayt dizin girdisi + PNG verisi. */
+  const icoFromPng = (pngBuf, size) => {
+    const header = Buffer.alloc(6);
+    header.writeUInt16LE(0, 0);
+    header.writeUInt16LE(1, 2);
+    header.writeUInt16LE(1, 4);
+    const entry = Buffer.alloc(16);
+    entry.writeUInt8(size >= 256 ? 0 : size, 0);
+    entry.writeUInt8(size >= 256 ? 0 : size, 1);
+    entry.writeUInt8(0, 2);
+    entry.writeUInt8(0, 3);
+    entry.writeUInt16LE(1, 4);
+    entry.writeUInt16LE(32, 6);
+    entry.writeUInt32LE(pngBuf.length, 8);
+    entry.writeUInt32LE(22, 12);
+    return Buffer.concat([header, entry, pngBuf]);
+  };
   await write(resolve(pub, 'icons/icon-192.png'), await sharp(icon).resize(192, 192).png().toBuffer());
   await write(resolve(pub, 'icons/icon-512.png'), await sharp(icon).resize(512, 512).png().toBuffer());
   await write(resolve(pub, 'icons/apple-touch-icon.png'), await sharp(icon).resize(180, 180).png().toBuffer());
   await write(resolve(pub, 'icons/icon-512-maskable.png'), await sharp(Buffer.from(iconSvg(10))).resize(512, 512).png().toBuffer());
-  // favicon.ico: çoğu tarayıcı ICO yerine PNG içeriğini kabul eder; SVG favicon zaten birincil.
-  await write(resolve(pub, 'favicon.ico'), await sharp(icon).resize(32, 32).png().toBuffer());
+  // favicon.ico gerçek ICO olmalı: sunucu dosyayı image/vnd.microsoft.icon tipiyle ve
+  // nosniff başlığıyla servis ettiği için ham PNG'yi .ico adıyla koymak yetmez.
+  await write(resolve(pub, 'favicon.ico'), icoFromPng(await sharp(icon).resize(32, 32).png().toBuffer(), 32));
 
   // Galeri placeholder'ları (gerçek fotoğraf konmuşsa üzerine yazma)
   for (const p of placeholders) {
