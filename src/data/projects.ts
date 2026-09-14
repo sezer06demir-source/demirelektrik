@@ -100,6 +100,15 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
+    id: 'p-led-2',
+    title: 'Merdiven Basamak LED Aydınlatma',
+    category: 'led',
+    image: '/images/projects/basamak-led-1.webp',
+    alt: 'Ahşap merdiven basamaklarına ve duvar kenarına uygulanmış gizli LED basamak aydınlatması',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
     id: 'p-aydinlatma-1',
     title: 'Mutfak Tezgah Altı LED Aydınlatma',
     category: 'aydinlatma',
