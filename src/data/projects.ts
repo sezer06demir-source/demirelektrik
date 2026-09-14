@@ -75,6 +75,22 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
+    id: 'p-pano-ornek-1',
+    title: 'Sigorta ve Dağıtım Panosu',
+    category: 'pano',
+    image: '/images/projects/pano-ornek-1.webp',
+    alt: 'Renk kodlu kablolarla düzenlenmiş sigorta ve dağıtım panosu örnek görseli',
+    placeholder: true,
+  },
+  {
+    id: 'p-pano-ornek-2',
+    title: 'Pano Bakımı ve Kontrolü',
+    category: 'pano',
+    image: '/images/projects/pano-ornek-2.webp',
+    alt: 'Sigorta panosunda ölçüm ve bakım yapılan örnek görsel',
+    placeholder: true,
+  },
+  {
     id: 'p-led-1',
     title: 'Lineer LED Tavan Aydınlatma',
     category: 'led',
