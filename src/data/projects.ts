@@ -1,20 +1,17 @@
 /**
- * Projeler / uygulamalar galerisi.
+ * Projeler / uygulamalar galerisi — tümü gerçek iş fotoğrafları.
  *
- * Gerçek iş fotoğrafları geldiğinde:
- *  1. Fotoğrafı `public/images/projects/` altına WebP olarak koy (önerilen: 1200x900).
- *  2. Aşağıya yeni bir kayıt ekle (ya da mevcut placeholder kaydı düzenle).
- *  3. `placeholder: false` yap.
- *
- * `placeholder: true` olan kayıtlar galeride "Örnek görsel" etiketiyle gösterilir;
- * böylece ziyaretçiye gerçek proje fotoğrafı izlenimi verilmez.
+ * Yeni fotoğraf eklemek için:
+ *  1. Fotoğrafı `public/images/projects/` altına WebP olarak koy (önerilen: 1400px, q80).
+ *  2. Aşağıya yeni bir kayıt ekle, uygun `category` seç, `placeholder: false` bırak.
  *
  * Video eklemek için:
  *  1. Videoyu `public/videos/projects/` altına MP4 (H.264) olarak koy; önerilen en fazla 20 MB.
  *  2. İstersen kapak görselini `public/images/projects/` altına koy ve `image` alanına yaz.
- *     Kapak verilmezse tarayıcı videonun ilk karesini gösterir.
  *  3. Kayda `video: '/videos/projects/dosya.mp4'` ekle. Kart üzerinde oynat simgesi çıkar,
  *     lightbox'ta video kontrollerle oynatılır.
+ *
+ * `placeholder: true` kayıtlar "Örnek görsel" etiketiyle gösterilir; şu an kullanılmıyor.
  */
 
 export const projectCategories = [
@@ -75,22 +72,6 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
-    id: 'p-pano-ornek-1',
-    title: 'Sigorta ve Dağıtım Panosu',
-    category: 'pano',
-    image: '/images/projects/pano-ornek-1.webp',
-    alt: 'Renk kodlu kablolarla düzenlenmiş sigorta ve dağıtım panosu örnek görseli',
-    placeholder: true,
-  },
-  {
-    id: 'p-pano-ornek-2',
-    title: 'Pano Bakımı ve Kontrolü',
-    category: 'pano',
-    image: '/images/projects/pano-ornek-2.webp',
-    alt: 'Sigorta panosunda ölçüm ve bakım yapılan örnek görsel',
-    placeholder: true,
-  },
-  {
     id: 'p-led-1',
     title: 'Lineer LED Tavan Aydınlatma',
     category: 'led',
@@ -100,11 +81,11 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
-    id: 'p-led-2',
-    title: 'Merdiven Basamak LED Aydınlatma',
-    category: 'led',
-    image: '/images/projects/basamak-led-1.webp',
-    alt: 'Ahşap merdiven basamaklarına ve duvar kenarına uygulanmış gizli LED basamak aydınlatması',
+    id: 'p-fabrika-1',
+    title: 'Kontaktörlü Kumanda Panosu',
+    category: 'fabrika',
+    image: '/images/projects/fabrika-kumanda-1.webp',
+    alt: 'Kontaktör, röle ve kablolamayla bench üzerinde hazırlanan motor kumanda panosu',
     location: 'Ankara',
     placeholder: false,
   },
@@ -119,11 +100,65 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
+    id: 'p-magaza-2',
+    title: 'Market Aydınlatma ve Tavan Uygulaması',
+    category: 'magaza',
+    image: '/images/projects/magaza-market-1.webp',
+    alt: 'Market içinde ahşap petek tavan ve aydınlatma uygulaması',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-pano-2',
+    title: 'Röle ve Kumanda Kutusu',
+    category: 'pano',
+    image: '/images/projects/pano-kumanda-kutusu-1.webp',
+    alt: 'Kontaktör ve rölelerle kablolanan kumanda kutusu',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-is-makinesi-1',
+    title: 'İş Makinesi Joystick Kumanda Paneli',
+    category: 'is-makinesi',
+    image: '/images/projects/is-makinesi-joystick-1.webp',
+    alt: 'İş makinesi için joystick kollu ve butonlu kumanda paneli',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-led-2',
+    title: 'Merdiven Basamak LED Aydınlatma',
+    category: 'led',
+    image: '/images/projects/basamak-led-1.webp',
+    alt: 'Ahşap merdiven basamaklarına ve duvar kenarına uygulanmış gizli LED basamak aydınlatması',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
     id: 'p-aydinlatma-2',
     title: 'Kafe Dekoratif Aydınlatma',
     category: 'aydinlatma',
     image: '/images/projects/kafe-aydinlatma-1.webp',
     alt: 'Kafe tavanına dekoratif sarkıt ve lastik gövdeli aydınlatma armatürlerinin montajı',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-fabrika-2',
+    title: 'Otomasyon ve Röle Panosu',
+    category: 'fabrika',
+    image: '/images/projects/fabrika-otomasyon-1.webp',
+    alt: 'Çok sayıda röle, terminal ve güç kaynağı bulunan otomasyon kumanda panosu',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-tesisat-1',
+    title: 'Tavan Armatür ve Tesisat Montajı',
+    category: 'tesisat',
+    image: '/images/projects/tesisat-tavan-1.webp',
+    alt: 'Geniş bir mekânın tavanına lineer armatür ve elektrik tesisatı montajı',
     location: 'Ankara',
     placeholder: false,
   },
@@ -137,28 +172,49 @@ export const projects: Project[] = [
     placeholder: false,
   },
   {
-    id: 'p-tesisat-1',
-    title: 'Elektrik Tesisatı Uygulaması',
-    category: 'tesisat',
-    image: '/images/projects/placeholder-tesisat.svg',
-    alt: 'Elektrik tesisatı uygulaması için örnek görsel',
-    placeholder: true,
-  },
-  {
-    id: 'p-fabrika-1',
-    title: 'Fabrika Elektrik Altyapısı',
+    id: 'p-fabrika-3',
+    title: 'Kumanda Panosu İç Bağlantısı',
     category: 'fabrika',
-    image: '/images/projects/placeholder-fabrika.svg',
-    alt: 'Fabrika elektrik altyapısı için örnek görsel',
-    placeholder: true,
+    image: '/images/projects/fabrika-pano-ic-1.webp',
+    alt: 'Sigortalar, röleler ve kontrol kartıyla kablolanan kumanda panosu iç bağlantısı',
+    location: 'Ankara',
+    placeholder: false,
   },
   {
-    id: 'p-is-makinesi-1',
-    title: 'İş Makinesi Elektrik Sistemi',
-    category: 'is-makinesi',
-    image: '/images/projects/placeholder-is-makinesi.svg',
-    alt: 'İş makinesi elektrik sistemi için örnek görsel',
-    placeholder: true,
+    id: 'p-pano-3',
+    title: 'Ev Tipi Sigorta Panosu',
+    category: 'pano',
+    image: '/images/projects/pano-ev-1.webp',
+    alt: 'Kaçak akım röleleri ve sigortalarla düzenli kurulmuş ev tipi dağıtım panosu',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-fabrika-4',
+    title: 'Kumanda Panosu Kablolama İşçiliği',
+    category: 'fabrika',
+    image: '/images/projects/fabrika-kablolama-1.webp',
+    alt: 'Saha tipi kumanda panosunun röle ve kablolama işçiliği',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-pano-4',
+    title: 'Voltaj Korumalı Sigorta Panosu',
+    category: 'pano',
+    image: '/images/projects/pano-schneider-1.webp',
+    alt: 'Voltaj koruma rölesi ve sigortalarla kurulmuş dağıtım panosu',
+    location: 'Ankara',
+    placeholder: false,
+  },
+  {
+    id: 'p-pano-5',
+    title: 'Sigorta ve Dağıtım Panosu',
+    category: 'pano',
+    image: '/images/projects/pano-2.webp',
+    alt: 'Sigortalar ve düzenli kablolamayla hazırlanmış dağıtım panosu',
+    location: 'Ankara',
+    placeholder: false,
   },
 ];
 
