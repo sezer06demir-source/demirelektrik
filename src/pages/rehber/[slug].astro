@@ -58,7 +58,7 @@ const articleSchema = {
   description={post.description}
   schema={[breadcrumbSchema(crumbs), articleSchema, faqSchema(post.faq)]}
 >
-  <PageHero eyebrow="Rehber" title={post.title} breadcrumbs={crumbs} showCta={false} />
+  <PageHero eyebrow="Rehber" title={post.title} text={post.excerpt} breadcrumbs={crumbs} showCta={false} />
 
   <section class="section">
     <div class="container article">
@@ -156,8 +156,7 @@ const articleSchema = {
   .article__cover {
     width: 100%;
     height: auto;
-    aspect-ratio: 1200 / 630;
-    object-fit: cover;
+    display: block;
     border-radius: 14px;
     border: 1px solid var(--gray-200);
     margin-bottom: 2rem;
