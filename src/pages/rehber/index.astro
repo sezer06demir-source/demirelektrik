@@ -1,0 +1,129 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import CTASection from '@components/CTASection.astro';
+import Icon from '@components/Icon.astro';
+import { posts } from '@data/blog';
+import { breadcrumbSchema } from '@utils/seo';
+
+const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+
+const crumbs = [
+  { name: 'Ana Sayfa', href: '/' },
+  { name: 'Rehber', href: '/rehber' },
+];
+
+const title = 'Elektrik Rehberi';
+const description =
+  'Priz ısınması, sigorta atması, kaçak akım ve daha fazlası. Demir Elektrik’ten Ankara ve Sincan için sahadan, sade ve doğru elektrik rehberi yazıları.';
+
+const fmtDate = (d: string) => {
+  const [y, m, day] = d.split('-');
+  const aylar = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+  return `${Number(day)} ${aylar[Number(m) - 1]} ${y}`;
+};
+---
+
+<BaseLayout title={title} description={description} schema={[breadcrumbSchema(crumbs)]}>
+  <PageHero
+    eyebrow="Rehber"
+    title="Elektrik Rehberi"
+    text="Sık yaşanan elektrik sorunlarını sahadan, sade bir dille anlatıyoruz. Amacımız satmak değil; ne olduğunu anlamanıza ve doğru adımı atmanıza yardımcı olmak."
+    breadcrumbs={crumbs}
+    showCta={false}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="rehber-grid">
+        {
+          sorted.map((p) => (
+            <article class="post reveal">
+              <a href={`/rehber/${p.slug}`} class="post__link">
+                <div class="post__meta">
+                  <span class="post__tag">{p.keyword}</span>
+                  <span class="post__date">
+                    {fmtDate(p.date)} · {p.readingMin} dk
+                  </span>
+                </div>
+                <h2 class="post__title">{p.title}</h2>
+                <p class="post__excerpt">{p.excerpt}</p>
+                <span class="post__go">
+                  Yazıyı oku <Icon name="arrow-right" size={16} />
+                </span>
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .rehber-grid {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: 1fr;
+  }
+  .post {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    transition:
+      transform var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .post:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: transparent;
+  }
+  .post__link {
+    display: block;
+    padding: 1.6rem;
+  }
+  .post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+  }
+  .post__tag {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    color: var(--orange);
+    background: color-mix(in srgb, var(--orange) 10%, white);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+  }
+  .post__date {
+    font-size: var(--fs-xs);
+    color: var(--text-light);
+  }
+  .post__title {
+    font-size: var(--fs-lg);
+  }
+  .post__excerpt {
+    margin-top: 0.6rem;
+    color: var(--text-gray);
+  }
+  .post__go {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1.1rem;
+    font-weight: 700;
+    font-size: var(--fs-sm);
+    color: var(--orange);
+  }
+  @media (min-width: 720px) {
+    .rehber-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

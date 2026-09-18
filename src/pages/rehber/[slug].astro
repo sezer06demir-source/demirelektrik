@@ -1,0 +1,274 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import Icon from '@components/Icon.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import CTASection from '@components/CTASection.astro';
+import PhoneButton from '@components/PhoneButton.astro';
+import WhatsAppLink from '@components/WhatsAppLink.astro';
+import { site } from '@data/site';
+import { posts, getPost } from '@data/blog';
+import { absoluteUrl, breadcrumbSchema, faqSchema } from '@utils/seo';
+
+export function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const post = getPost(slug!)!;
+const others = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
+
+const fmtDate = (d: string) => {
+  const [y, m, day] = d.split('-');
+  const aylar = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+  return `${Number(day)} ${aylar[Number(m) - 1]} ${y}`;
+};
+
+const path = `/rehber/${post.slug}`;
+const crumbs = [
+  { name: 'Ana Sayfa', href: '/' },
+  { name: 'Rehber', href: '/rehber' },
+  { name: post.title, href: path },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.title,
+  description: post.description,
+  inLanguage: 'tr-TR',
+  datePublished: post.date,
+  dateModified: post.updated ?? post.date,
+  image: absoluteUrl('/og-image.png'),
+  mainEntityOfPage: absoluteUrl(path),
+  author: { '@type': 'Organization', name: site.name, url: absoluteUrl('/') },
+  publisher: {
+    '@type': 'Organization',
+    name: site.name,
+    logo: { '@type': 'ImageObject', url: absoluteUrl('/icons/icon-512.png') },
+  },
+};
+---
+
+<BaseLayout
+  title={post.title}
+  rawTitle
+  description={post.description}
+  schema={[breadcrumbSchema(crumbs), articleSchema, faqSchema(post.faq)]}
+>
+  <PageHero eyebrow="Rehber" title={post.title} breadcrumbs={crumbs} showCta={false} />
+
+  <section class="section">
+    <div class="container article">
+      <div class="article__main">
+        <p class="article__meta">
+          <Icon name="clock" size={15} /> {fmtDate(post.date)} · {post.readingMin} dakika okuma
+        </p>
+        <p class="article__intro">{post.intro}</p>
+
+        {
+          post.sections.map((s) => (
+            <div class="article__section reveal">
+              <h2>{s.h}</h2>
+              {s.p.map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+          ))
+        }
+
+        <div class="article__faq reveal">
+          <h2>Sık sorulanlar</h2>
+          <FAQAccordion items={post.faq} />
+        </div>
+      </div>
+
+      <aside class="article__aside">
+        <div class="callbox reveal">
+          <span class="callbox__eyebrow">
+            <Icon name="zap" size={16} /> Yardım gerekirse
+          </span>
+          <p class="callbox__text">Sincan ve Ankara genelinde elektrik arızanız mı var? Durumu telefonda anlatın; çoğu şeyi konuşarak netleştirir, gerekiyorsa aynı gün geliriz.</p>
+          <PhoneButton block />
+          <WhatsAppLink block />
+        </div>
+        {
+          post.related.length > 0 && (
+            <div class="related reveal">
+              <h3>İlgili sayfalar</h3>
+              <ul>
+                {post.related.map((r) => (
+                  <li>
+                    <a href={r.href}>
+                      <Icon name="chevron-right" size={16} /> {r.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+      </aside>
+    </div>
+  </section>
+
+  {
+    others.length > 0 && (
+      <section class="section section--gray">
+        <div class="container">
+          <div class="section-title reveal">
+            <span class="section-title__eyebrow">Rehber</span>
+            <h2 class="section-title__text">Başka yazılar</h2>
+          </div>
+          <div class="more">
+            {others.map((p) => (
+              <a href={`/rehber/${p.slug}`} class="more__card reveal">
+                <span class="more__tag">{p.keyword}</span>
+                <strong>{p.title}</strong>
+                <span class="more__excerpt">{p.excerpt}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .article {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .article__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--fs-sm);
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+  .article__intro {
+    font-weight: 600;
+    font-size: var(--fs-lg);
+    line-height: 1.45;
+    color: var(--text);
+    margin-bottom: 2rem;
+  }
+  .article__section {
+    margin-bottom: 2rem;
+  }
+  .article__section h2,
+  .article__faq h2 {
+    font-size: var(--fs-lg);
+    margin-bottom: 0.9rem;
+  }
+  .article__section p {
+    margin-bottom: 1.1rem;
+    color: var(--text-gray);
+    max-width: 68ch;
+  }
+  .article__faq {
+    margin-top: 2.5rem;
+  }
+  .callbox {
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+    background: var(--primary-dark);
+    color: var(--on-dark);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow);
+  }
+  .callbox__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--yellow);
+    font-size: var(--fs-sm);
+  }
+  .callbox__text {
+    margin: 0.8rem 0 1.3rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+  .callbox :global(.btn) {
+    margin-bottom: 0.6rem;
+  }
+  .related {
+    margin-top: 1.5rem;
+    padding: 1.4rem 1.5rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+  }
+  .related h3 {
+    font-size: var(--fs-md);
+    margin-bottom: 0.8rem;
+  }
+  .related ul {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .related a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+  }
+  .related a:hover {
+    color: var(--orange);
+  }
+  .related svg {
+    color: var(--orange);
+  }
+  .more {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  .more__card {
+    display: grid;
+    gap: 0.4rem;
+    padding: 1.4rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    transition:
+      border-color var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
+  }
+  .more__card:hover {
+    border-color: var(--orange);
+    transform: translateY(-2px);
+  }
+  .more__tag {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    color: var(--orange);
+  }
+  .more__card strong {
+    font-size: var(--fs-md);
+  }
+  .more__excerpt {
+    color: var(--text-gray);
+    font-size: var(--fs-sm);
+  }
+  @media (min-width: 720px) {
+    .more {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 960px) {
+    .article {
+      grid-template-columns: 1fr 320px;
+      align-items: start;
+    }
+  }
+</style>

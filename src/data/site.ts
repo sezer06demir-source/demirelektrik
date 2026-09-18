@@ -69,6 +69,7 @@ export const nav = [
   { label: 'Kurumsal', href: '/hakkimizda' },
   { label: 'Hizmet Bölgeleri', href: '/hizmet-bolgeleri' },
   { label: 'Projelerimiz', href: '/projeler' },
+  { label: 'Rehber', href: '/rehber' },
   { label: 'Sık Sorulan Sorular', href: '/sss' },
   { label: 'İletişim', href: '/iletisim' },
 ] as const;
