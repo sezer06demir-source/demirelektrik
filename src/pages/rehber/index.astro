@@ -40,17 +40,20 @@ const fmtDate = (d: string) => {
           sorted.map((p) => (
             <article class="post reveal">
               <a href={`/rehber/${p.slug}`} class="post__link">
-                <div class="post__meta">
-                  <span class="post__tag">{p.keyword}</span>
-                  <span class="post__date">
-                    {fmtDate(p.date)} · {p.readingMin} dk
+                <img class="post__cover" src={p.image ?? `/rehber/kapak/${p.slug}.png`} alt={p.imageAlt ?? p.title} width="1200" height="630" loading="lazy" decoding="async" />
+                <div class="post__body">
+                  <div class="post__meta">
+                    <span class="post__tag">{p.keyword}</span>
+                    <span class="post__date">
+                      {fmtDate(p.date)} · {p.readingMin} dk
+                    </span>
+                  </div>
+                  <h2 class="post__title">{p.title}</h2>
+                  <p class="post__excerpt">{p.excerpt}</p>
+                  <span class="post__go">
+                    Yazıyı oku <Icon name="arrow-right" size={16} />
                   </span>
                 </div>
-                <h2 class="post__title">{p.title}</h2>
-                <p class="post__excerpt">{p.excerpt}</p>
-                <span class="post__go">
-                  Yazıyı oku <Icon name="arrow-right" size={16} />
-                </span>
               </a>
             </article>
           ))
@@ -77,6 +80,9 @@ const fmtDate = (d: string) => {
       box-shadow var(--dur) var(--ease),
       border-color var(--dur) var(--ease);
   }
+  .post {
+    overflow: hidden;
+  }
   .post:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow);
@@ -84,6 +90,15 @@ const fmtDate = (d: string) => {
   }
   .post__link {
     display: block;
+  }
+  .post__cover {
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .post__body {
     padding: 1.6rem;
   }
   .post__meta {
