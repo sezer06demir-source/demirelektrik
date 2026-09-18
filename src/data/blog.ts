@@ -15,6 +15,9 @@ export interface BlogPost {
   date: string; // YYYY-MM-DD
   updated?: string;
   readingMin: number;
+  /** Gerçek iş fotoğrafı yolu (public/ altında). Boşsa markalı kapak otomatik üretilir. */
+  image?: string;
+  imageAlt?: string;
   excerpt: string;
   intro: string;
   sections: BlogSection[];

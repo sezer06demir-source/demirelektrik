@@ -31,6 +31,8 @@ const crumbs = [
   { name: post.title, href: path },
 ];
 
+const cover = post.image ?? `/rehber/kapak/${post.slug}.png`;
+const coverAlt = post.imageAlt ?? post.title;
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -39,7 +41,7 @@ const articleSchema = {
   inLanguage: 'tr-TR',
   datePublished: post.date,
   dateModified: post.updated ?? post.date,
-  image: absoluteUrl('/og-image.png'),
+  image: absoluteUrl(cover),
   mainEntityOfPage: absoluteUrl(path),
   author: { '@type': 'Organization', name: site.name, url: absoluteUrl('/') },
   publisher: {
@@ -64,6 +66,7 @@ const articleSchema = {
         <p class="article__meta">
           <Icon name="clock" size={15} /> {fmtDate(post.date)} · {post.readingMin} dakika okuma
         </p>
+        <img class="article__cover" src={cover} alt={coverAlt} width="1200" height="630" loading="eager" decoding="async" />
         <p class="article__intro">{post.intro}</p>
 
         {
@@ -149,6 +152,16 @@ const articleSchema = {
     font-size: var(--fs-sm);
     color: var(--text-light);
     margin-bottom: 1rem;
+  }
+  .article__cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--gray-200);
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 30px -18px rgba(15, 23, 42, 0.35);
   }
   .article__intro {
     font-weight: 600;
