@@ -46,6 +46,7 @@ const siblings = getNeighborhoodsOf(district.slug).filter((n) => n.slug !== neig
 <BaseLayout
   title={c.seoTitle}
   rawTitle
+  seoArea={neighborhood.name}
   description={c.seoDescription}
   schema={[
     breadcrumbSchema(crumbs),

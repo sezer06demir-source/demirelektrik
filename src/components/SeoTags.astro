@@ -1,0 +1,115 @@
+---
+/**
+ * Sayfa altındaki "sık aranan ifadeler" bloğu.
+ * Bölge sayfalarında o bölgenin adıyla, diğer sayfalarda Ankara ile üretilir.
+ * Görünür ve okunabilir tutulur; gizli metin ya da bağlantı yığını değildir.
+ */
+interface Props {
+  /** "Sincan", "Eryaman" gibi bölge adı; verilmezse "Ankara" */
+  area?: string;
+  /** Sayfaya özgü ek ifadeler */
+  extra?: string[];
+  /** Blok başlığı */
+  heading?: string;
+}
+const { area = 'Ankara', extra = [], heading } = Astro.props;
+
+const isAnkara = area === 'Ankara';
+
+const genel = [
+  `${area} Elektrikçi`,
+  `${area} Elektrik Ustası`,
+  `${area} Elektrik Tamircisi`,
+  `${area} Elektrikçi Açık`,
+  `${area} 7/24 Elektrikçi`,
+  `${area} Acil Elektrikçi`,
+  `${area} Nöbetçi Elektrikçi`,
+  `${area} Gece Açık Elektrikçi`,
+  `${area} Pazar Günü Açık Elektrikçi`,
+  `${area} Hafta Sonu Açık Elektrikçi`,
+  `${area} Elektrikçi Numarası`,
+  `${area} Elektrikçi Telefon`,
+  `${area} En Yakın Elektrikçi`,
+  `${area} Elektrik Arıza Servisi`,
+];
+
+const isler = [
+  `${area} Sigorta Değişimi`,
+  `${area} Elektrik Panosu Yenileme`,
+  `${area} Kaçak Akım Rölesi`,
+  `${area} Elektrik Kaçağı Tespiti`,
+  `${area} Elektrik Arıza Tespiti`,
+  `${area} Elektrik Tesisatı`,
+  `${area} Ev Elektrik Tesisatı`,
+  `${area} Villa Elektrik Tesisatı`,
+  `${area} Bina Elektrik Tesisatı`,
+  `${area} Priz Anahtar Montajı`,
+  `${area} Avize Montajı`,
+  `${area} Spot Montajı`,
+  `${area} LED Aydınlatma`,
+  `${area} Elektrik Pano Montajı`,
+  `${area} Fabrika Elektrikçisi`,
+  `${area} Mağaza Elektrikçisi`,
+  `${area} İş Makinesi Elektrik Otomasyon`,
+];
+
+const ankaraKombin = isAnkara
+  ? ['Ankara Elektrikçi Firmaları', 'Ankara Elektrik Ustası Numarası', 'Ankara Elektrik Arıza', 'Ankara Geneli Elektrikçi']
+  : [
+      `Ankara ${area} Elektrikçi`,
+      `${area} Elektrikçi Ankara`,
+      `Ankara ${area} Elektrik Ustası`,
+      `Ankara ${area} Acil Elektrikçi`,
+    ];
+
+const terms = [...genel, ...isler, ...ankaraKombin, ...extra];
+---
+
+<section class="seotags" aria-labelledby="seotags-h">
+  <div class="container">
+    <h2 class="seotags__h" id="seotags-h">{heading ?? `${area} elektrikçi için sık aranan ifadeler`}</h2>
+    <ul class="seotags__list">
+      {terms.map((t) => <li>{t}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .seotags {
+    background: var(--gray-light);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    padding-block: 1.75rem 2rem;
+  }
+  .seotags__h {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin: 0 0 0.9rem;
+    line-height: 1.5;
+  }
+  .seotags__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+  }
+  .seotags__list li {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--text-gray);
+    background: var(--white);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  }
+  .seotags__list li:hover {
+    color: var(--text);
+    border-color: var(--yellow);
+    background: #fffdf5;
+  }
+</style>
