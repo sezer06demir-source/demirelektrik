@@ -80,9 +80,9 @@ export const districts: District[] = [
           a: 'Evet. Sincan OSB ve 1. OSB\'deki tesislere pano montajı, revizyon, makine bağlantısı ve arıza tespiti için düzenli olarak hizmet veriyoruz.',
         },
       ],
-      seoTitle: 'Sincan Elektrikçi | Elektrik Arıza ve Tesisat | Demir Elektrik',
+      seoTitle: 'Sincan Elektrikçi – Aynı Gün Arıza Servisi, 30+ Yıl | Demir Elektrik',
       seoDescription:
-        'Sincan elektrikçi: Menderes Mahallesi merkezli Demir Elektrik; Sincan\'da elektrik arıza, tesisat, pano montajı, OSB fabrika elektrik ve aydınlatma hizmeti. 0506 254 76 78.',
+        'Sincan\'da elektrik mi gitti, sigorta mı atıyor? Menderes Mahallesi\'ndeki dükkanımızdan aynı gün geliyoruz. Arıza, pano, tesisat, avize. 08:00–23:00 ☎ 0506 254 76 78',
     },
   },
   {
@@ -128,9 +128,9 @@ export const districts: District[] = [
           a: 'Evet. Yenikent\'teki bahçeli evlerde dış mekan aydınlatması, bahçe prizleri ve sensörlü armatür montajı yapıyoruz.',
         },
       ],
-      seoTitle: 'Yenikent Elektrikçi | Sincan Yenikent Elektrik Arıza ve Tesisat | Demir Elektrik',
+      seoTitle: 'Yenikent Elektrikçi – Aynı Gün Servis, 08:00–23:00 | Demir Elektrik',
       seoDescription:
-        'Yenikent elektrikçi: Sincan Yenikent\'te elektrik arıza, daire ve müstakil ev tesisatı, bahçe aydınlatması, spot ve avize montajı. Sincan merkezli hızlı servis. Demir Elektrik: 0506 254 76 78.',
+        'Yenikent\'te elektrik arızası mı var? Sincan\'dan aynı gün geliyoruz: sigorta atması, kaçak akım, daire ve müstakil ev tesisatı, avize-spot. Keşif sonrası net fiyat ☎ 0506 254 76 78',
     },
   },
   {
@@ -171,7 +171,7 @@ export const districts: District[] = [
           a: 'Her gün 08:00 – 23:00 saatleri arasında hizmet veriyoruz. Etimesgut merkezimize yakın olduğu için akşam arızalarına da ulaşabiliyoruz.',
         },
       ],
-      seoTitle: 'Etimesgut Elektrikçi | Elektrik Arıza, Tesisat, Spot | Demir Elektrik',
+      seoTitle: 'Etimesgut Elektrikçi – Elvankent, Bağlıca, Eryaman | Demir Elektrik',
       seoDescription:
         'Etimesgut elektrikçi: Elvankent, Bağlıca, Göksu ve Etimesgut merkezde elektrik arıza, ev tesisatı, spot, avize ve LED montajı. Sincan merkezli Demir Elektrik: 0506 254 76 78.',
     },
@@ -215,7 +215,7 @@ export const districts: District[] = [
           a: 'Evet. Eryaman\'daki site yönetimleriyle merdiven, otopark, hidrofor ve asansör elektriği konularında çalışıyoruz.',
         },
       ],
-      seoTitle: 'Eryaman Elektrikçi | Daire Tesisatı ve Elektrik Arıza | Demir Elektrik',
+      seoTitle: 'Eryaman Elektrikçi – Aynı Gün Arıza ve Montaj | Demir Elektrik',
       seoDescription:
         'Eryaman elektrikçi: Eryaman etaplarında elektrik arıza, sigorta kutusu yenileme, daire tesisatı, site ortak alan elektriği ve LED montajı. Demir Elektrik: 0506 254 76 78.',
     },
