@@ -97,6 +97,91 @@ export const posts: BlogPost[] = [
       { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
     ],
   },
+  {
+    slug: 'sigorta-panosu-yenileme-sincan',
+    title: 'Sigorta Panosu Ne Zaman Yenilenir? Sincan’da Eski Panolardan Öğrendiklerimiz',
+    description:
+      'Buşonlu eski sigorta panosu hâlâ mı çalışıyor sizde? Sincan’da elektrikçi gözünden pano yenilemenin ne zaman gerektiği, süreç ve riskler. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'sigorta panosu yenileme',
+    date: '2026-09-25',
+    readingMin: 7,
+    excerpt:
+      'Eski buşonlu panolar bugünün cihaz yüküne göre tasarlanmamıştı. Sincan’da kiracılı ve eski yapılı binalarda pano yenileme çağrılarından çıkardığımız gerçek gözlemler burada.',
+    intro:
+      'Sincan’da özellikle 30-40 yıllık apartmanlarda hâlâ eski tip buşon sigortalı panolara rastlıyoruz. Ev sahibi değişmiş, kiracı değişmiş ama pano hiç dokunulmadan kalmış oluyor çoğu zaman. Oysa pano, evin elektrik sisteminin trafik polisi gibidir; orada bir sorun varsa, evin geri kalanı ne kadar sağlam olursa olsun risk devam eder. Bu yazıda panonun ne zaman gerçekten yenilenmesi gerektiğini, sürecin nasıl işlediğini ve buşondan otomat sigortaya geçişin neden sadece bir “modernlik” meselesi olmadığını anlatıyorum.',
+    sections: [
+      {
+        h: 'Buşon sigorta ile otomat sigorta arasındaki fark nedir?',
+        p: [
+          'Buşon (eski tip vida sigorta), içindeki ince bir telin aşırı akımda erimesiyle çalışır. Attığında telin değişmesi ya da sigortanın tamamen değiştirilmesi gerekir; bazı evlerde bu tel yerine tornavida ucuyla köprüleme yapıldığını bile görüyoruz, ki bu son derece tehlikelidir çünkü sigortayı devre dışı bırakır.',
+          'Otomat sigorta ise mekanik bir anahtar gibi çalışır; aşırı akımda ya da kısa devrede atar, kolu aşağı düşer, siz de sorunu giderdikten sonra kolu yukarı kaldırırsınız. Hem daha hızlı tepki verir hem de yeniden kullanılabilir olduğu için kimse “geçici çözüm” diye tel köprüleme yapmaya kalkışmaz.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi neden bu kadar önemli?',
+        p: [
+          'Buşonlu eski panolarda çoğunlukla kaçak akım rölesi (KAR) hiç yok. Bu röle, evdeki bir cihazdan ya da hattan toprağa doğru beklenmedik bir akım kaçağı olduğunda, milisaniyeler içinde devreyi keser. Basitçe söylemek gerekirse, biri ıslak elle arızalı bir cihaza dokunduğunda ya da çamaşır makinesinin gövdesinde kaçak oluştuğunda hayat kurtaran parça budur.',
+          'Sincan’da baktığımız birçok eski panoda bu röle yok, ya da varsa bile test butonuna basıldığında düzgün açmıyor. Röle olsa bile yıllar içinde iç mekanizması yorulabiliyor; bu yüzden yenileme sırasında sadece “röle var mı” değil, “düzgün çalışıyor mu” diye de kontrol ediyoruz.',
+        ],
+      },
+      {
+        h: 'Panoyu ne zaman yenilemek gerekir?',
+        p: [
+          'En net işaret, sigortanın sık sık atmasıdır; özellikle aynı hat tekrar tekrar atıyorsa, ya o hat aşırı yüklü ya da sigorta kendisi eskimiş ve artık hassasiyetini kaybetmiştir. İkinci işaret panonun görünümüdür: gövdede kararma, plastik kapakta erime izi ya da kablo girişlerinde is lekesi varsa, o pano geçmişte ısınma yaşamış demektir ve bir dahaki sefere daha kötü sonuçlanabilir.',
+          'Üçüncü durum, evde ek yük olduğunda ortaya çıkıyor. Klima, kombi elektrikli destek, elektrikli fırın gibi cihazlar eklendiğinde, 30-40 yıl önce tasarlanmış bir pano bu yükü taşımak için yeterli sigorta sayısına ya da amper kapasitesine sahip olmayabilir. Dördüncüsü ise kaçak akım rölesinin hiç bulunmamasıdır; bu tek başına bile yenileme için yeterli bir sebep.',
+        ],
+      },
+      {
+        h: 'Eski, kiracılı binalarda pano yenileme neden farklı bir mesele?',
+        p: [
+          'Kiracılı dairelerde pano genelde ihmal edilen bir kalem oluyor; ev sahibi görmüyor, kiracı da “benim malım değil” diye üstüne gitmiyor. Sincan’da bir kiracının bizi aradığı bir vakada, mutfaktaki priz hattı sık sık atıyordu; pano açıldığında üç sigortanın buşon yerine iki farklı kalınlıkta tel ile köprülenmiş olduğunu gördük. Muhtemelen yıllar önce biri “geçici” diye yapmış, sonra kimse geri dönüp düzeltmemiş.',
+          'Bu tip binalarda pano yenilemeden önce ev sahibinin onayını almak gerekiyor elbette, ama biz kiracıya da durumu somut şekilde anlatıyoruz: köprülenmiş bir sigorta, kısa devre anında telin erimesini beklemeden kabloyu aşırı ısıtabilir. Bu, “biraz eski görünüyor” meselesinden çok daha ciddi bir risktir ve çoğu zaman ev sahibi, durumu görünce yenilemeyi kabul ediyor.',
+        ],
+      },
+      {
+        h: 'Yenileme süreci nasıl işliyor?',
+        p: [
+          'Önce mevcut panoyu açıp her hattı tek tek kontrol ediyoruz: hangi hat hangi odaya gidiyor, kaç amperlik sigorta kullanılmış, kablo kesiti yeterli mi. Bu aşama önemli çünkü bazen sorun panoda değil, panoya giden ana kablodadır; sadece panoyu değiştirip kabloyu atlarsanız sorun devam eder.',
+          'Ardından yeni pano için hat sayısını ve kaçak akım rölesi kapasitesini belirliyoruz; genelde evin büyüklüğüne göre ayrı hatlar açıyoruz (aydınlatma, priz, beyaz eşya gibi) ki bir hatta atan sigorta bütün evi karanlıkta bırakmasın. Montaj sırasında elektrik kesintisi birkaç saat sürüyor; işlem bitince her hattı tek tek test ediyor, kaçak akım rölesinin test butonuyla düzgün çalıştığını gösteriyoruz.',
+        ],
+      },
+      {
+        h: 'Panoyu yenilemeden önce kendi başınıza kontrol edebileceğiniz şeyler',
+        p: [
+          'Pano kapağını açıp (elektrikle uğraşmadan, sadece bakarak) buşon mu otomat sigorta mı olduğuna bakabilirsiniz; hâlâ vidalı, yuvarlak sigortalar görüyorsanız pano büyük ihtimalle eskidir. Kaçak akım rölesi varsa üzerindeki “test” butonuna basın; röle anında atıp devreyi kesmiyorsa, röle ya yok ya da çalışmıyor demektir.',
+          'Panonun içinde ya da çevresinde yanık kokusu, kararma veya erimiş plastik görürseniz, bu kontrolü kendi başınıza yapmayı bırakıp bir elektrikçiyi çağırmanızı öneririm; çünkü o noktada panoya dokunmak, zaten zayıflamış bir bağlantıyı daha da bozabilir.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Buşon sigorta hâlâ atıp çalışıyorsa yine de değiştirmem gerekir mi?',
+        a: 'Çalışıyor olması güvenli olduğu anlamına gelmez. Buşon sigortalar zamanla hassasiyetini kaybedebilir ve gerçek bir kısa devrede yeterince hızlı atmayabilir. Ayrıca kaçak akım rölesi olmadığı için, sigorta düzgün çalışsa bile evde elektrik çarpması riskine karşı bir koruma yok demektir.',
+      },
+      {
+        q: 'Pano yenileme ne kadar sürer?',
+        a: 'Standart bir daire için genelde birkaç saat içinde tamamlanıyor; panonun büyüklüğüne, hat sayısına ve mevcut tesisatın durumuna göre süre değişebilir. İşlem sırasında evde bir süre elektrik kesintisi olur.',
+      },
+      {
+        q: 'Kaçak akım rölesi olan bir pano yine de yenilenmeli mi?',
+        a: 'Röle varsa ve test butonuyla düzgün çalışıyorsa, panonun geri kalanı da sağlamsa yenilemeye gerek olmayabilir. Ama panoda köprüleme, kararma ya da yetersiz hat sayısı gibi başka sorunlar varsa, sadece röle var diye pano güvenli sayılmaz.',
+      },
+      {
+        q: 'Kiracıyım, panoyu ben mi değiştirtmeliyim?',
+        a: 'Pano bina/dairenin sabit tesisatının parçası olduğu için normalde ev sahibinin sorumluluğundadır. Durumu somut şekilde (fotoğraf, sigortanın sık atması gibi) ev sahibine iletmenizi öneririm; gerekirse yerinde inceleyip durumu ikinize de açıkça anlatabiliriz.',
+      },
+      {
+        q: 'Yeni pano taktırınca sigorta atma sorunu tamamen biter mi?',
+        a: 'Sigortanın atma sebebi panonun kendisiyse evet, büyük ölçüde çözülür. Ama sorun evdeki aşırı yüklü bir hattan ya da arızalı bir cihazdan kaynaklanıyorsa, o hat veya cihaz düzeltilmeden yeni panoda da aynı sigorta atmaya devam edebilir.',
+      },
+    ],
+    related: [
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Elektrik Arıza Tespiti ve Onarımı', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
