@@ -55,10 +55,27 @@ export function localBusinessSchema() {
       addressRegion: site.address.city,
       addressCountry: site.address.countryCode,
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Ankara',
-    },
+    // Önce ağırlık verilen bölgeler, sonra Ankara geneli (yapay zeka ve yerel arama için hizmet alanı).
+    areaServed: [
+      ...['Sincan', 'Yenikent', 'Etimesgut', 'Eryaman', 'Elvankent', 'Bağlıca', 'Törekent'].map((name) => ({
+        '@type': 'Place',
+        name: `${name}, Ankara`,
+      })),
+      ...['Yenimahalle', 'Batıkent', 'Çankaya', 'Keçiören', 'Mamak', 'Altındağ', 'Gölbaşı', 'Pursaklar', 'Kahramankazan', 'Polatlı'].map(
+        (name) => ({ '@type': 'AdministrativeArea', name: `${name}, Ankara` }),
+      ),
+      { '@type': 'City', name: 'Ankara' },
+    ],
+    knowsAbout: [
+      'Elektrik arıza tespiti ve onarımı',
+      'Kaçak akım rölesi',
+      'Sigorta panosu montajı ve yenileme',
+      'Ev, villa, bina ve mağaza elektrik tesisatı',
+      'Fabrika elektriği ve kumanda panoları',
+      'İş makinesi elektrik otomasyonu',
+      'Avize, spot ve LED aydınlatma montajı',
+      'Topraklama',
+    ],
     openingHoursSpecification: [openingHours],
     sameAs: [`https://wa.me/${site.whatsapp.number}`],
     contactPoint: {
