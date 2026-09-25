@@ -77,7 +77,7 @@ export function localBusinessSchema() {
       'Topraklama',
     ],
     openingHoursSpecification: [openingHours],
-    sameAs: [`https://wa.me/${site.whatsapp.number}`],
+    sameAs: [site.maps.placeHref, `https://wa.me/${site.whatsapp.number}`],
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: site.phone.e164,

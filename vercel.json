@@ -7,6 +7,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/yorum",
+      "destination": "https://g.page/r/Cbwpl4e7j6dbEBM/review",
+      "permanent": false
+    },
+    {
       "source": "/(.*)",
       "has": [
         {

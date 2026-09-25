@@ -50,6 +50,10 @@ export const site = {
   districtCount: 25,
 
   maps: {
+    /** Google İşletme Profili — müşteriye gönderilen yorum bağlantısı (kısa adres: /yorum) */
+    reviewHref: 'https://g.page/r/Cbwpl4e7j6dbEBM/review',
+    /** Google Haritalar işletme kaydı (CID) */
+    placeHref: 'https://maps.google.com/?cid=6604405414158608828',
     get directionsHref() {
       return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
         'Menderes Mahallesi, Alparslan Caddesi No:24, Sincan, Ankara',
