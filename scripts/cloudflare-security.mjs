@@ -73,8 +73,14 @@ function readBlockedIps() {
 
 const BAD_UA = [
   'ahrefsbot', 'semrushbot', 'siteauditbot', 'mj12bot', 'dotbot', 'blexbot', 'dataforseobot', 'serpstatbot',
-  'petalbot', 'bytespider', 'gptbot', 'ccbot', 'claudebot', 'python-requests', 'python-urllib', 'go-http-client',
+  'petalbot', 'bytespider', 'ccbot', 'python-requests', 'python-urllib', 'go-http-client',
   'scrapy', 'httrack', 'nikto', 'sqlmap', 'masscan', 'wpscan', 'libwww-perl', 'megaindex', 'seokicks', 'barkrowler',
+];
+
+/** Yapay zeka arama botları: gerçekleri (cf.client.bot) geçer, bu adı taşıyan sahteleri engellenir. */
+const AI_UA = [
+  'gptbot', 'oai-searchbot', 'chatgpt-user', 'claudebot', 'claude-searchbot', 'claude-user',
+  'anthropic-ai', 'perplexitybot', 'perplexity-user',
 ];
 
 function buildRules() {
@@ -86,10 +92,11 @@ function buildRules() {
     'or (http.request.uri.path contains "phpmyadmin") or (ends_with(http.request.uri.path, ".php")) or (ends_with(http.request.uri.path, ".asp")) or (ends_with(http.request.uri.path, ".aspx")) ' +
     'or (not http.request.method in {"GET" "HEAD" "OPTIONS"}) or (http.user_agent eq "")';
   const ua = BAD_UA.map((u) => `(lower(http.user_agent) contains "${u}")`).join(' or ');
+  const spoof = `(not cf.client.bot and (${AI_UA.map((u) => `lower(http.user_agent) contains "${u}"`).join(' or ')}))`;
   const rules = [
     { description: 'DE-IP engel listesi 1/2 (rakip/şüpheli adresler)', expression: ipExpr(ips.slice(0, half)), action: 'block', enabled: true },
     { description: 'DE-IP engel listesi 2/2 (rakip/şüpheli adresler)', expression: ipExpr(ips.slice(half)), action: 'block', enabled: true },
-    { description: 'DE-Tarama yolları, yazma metotları ve scraper kimlikleri', expression: `${scan} or ${ua}`, action: 'block', enabled: true },
+    { description: 'DE-Tarama yolları, yazma metotları ve scraper kimlikleri', expression: `${scan} or ${ua} or ${spoof}`, action: 'block', enabled: true },
   ];
   for (const r of rules) {
     if (r.expression.length > MAX_EXPR) throw new Error(`Kural ifadesi ${MAX_EXPR} karakteri aşıyor: ${r.description} (${r.expression.length}). IP listesini bölmek gerekir.`);
@@ -151,7 +158,7 @@ if (STATUS_ONLY) {
   }
   try {
     const bm = await cf('GET', `/zones/${zoneId}/bot_management`);
-    console.log(`  bot fight mode: ${bm.fight_mode}`);
+    console.log(`  bot fight mode: ${bm.fight_mode} | ai_bots_protection: ${bm.ai_bots_protection} | managed robots.txt: ${bm.is_robots_txt_managed}`);
   } catch (e) {
     warn(`bot_management okunamadi: ${e.message}`);
   }
@@ -178,8 +185,9 @@ for (const [key, value, label] of ZONE_SETTINGS) {
 
 console.log('\nBot Fight Mode:');
 try {
-  await cf('PUT', `/zones/${zoneId}/bot_management`, { fight_mode: true });
-  ok('acik');
+  // AI botlarını engelleme ve robots.txt'ye Cloudflare'in yasak satırı eklemesi kapalı (AI önerilerinde görünmek için)
+  await cf('PUT', `/zones/${zoneId}/bot_management`, { fight_mode: true, ai_bots_protection: 'disabled', is_robots_txt_managed: false });
+  ok('acik (AI botlari serbest, managed robots.txt kapali)');
 } catch (e) {
   warn(`ayarlanamadi: ${e.message}`);
 }

@@ -71,7 +71,7 @@ API üzerinden yapıldı; Vercel → proje **demirelektrik** → **Firewall** se
 | --- | --- | --- | --- |
 | 1 | DE-IP engel listesi 1/2 | Block | middleware.ts'deki liste + kullanıcının önceki IP kuralları (472 IP) |
 | 2 | DE-IP engel listesi 2/2 | Block | aynı |
-| 3 | DE-Tarama yolları, yazma metotları ve scraper kimlikleri | Block | wp-/xmlrpc/.env/.git/php/asp, GET-HEAD-OPTIONS dışı, boş UA, Ahrefs/Semrush/MJ12/GPTBot/sqlmap… |
+| 3 | DE-Tarama yolları, yazma metotları ve scraper kimlikleri | Block | wp-/xmlrpc/.env/.git/php/asp, GET-HEAD-OPTIONS dışı, boş UA, Ahrefs/Semrush/MJ12/sqlmap…; sahte AI botu (GPTBot/ClaudeBot adını taşıyıp cf.client.bot olmayan) |
 | 4 | Türkiye | Block | Kullanıcının kuralı: TR/DZ dışı **ve** doğrulanmış bot değilse. Googlebot/Bingbot geçer |
 | 5 | şüpheli ıp listesi | Block | Kullanıcının Cloudflare IP listesi (`$supheli_ip_listesi`) |
 
