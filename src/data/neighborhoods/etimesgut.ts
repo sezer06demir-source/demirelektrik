@@ -441,4 +441,111 @@ export const etimesgutNeighborhoods: Neighborhood[] = [
         'Piyade elektrikçi: Etimesgut Piyade\'de lojman ve dairelerde 23:00\'e kadar acil arıza, avize montajı, priz-anahtar ve pano. Demir Elektrik: 0506 254 76 78.',
     },
   },
+  {
+    name: 'Şeker Mahallesi',
+    slug: 'seker-mahallesi-elektrikci',
+    districtSlug: 'etimesgut-elektrikci',
+    locative: 'Şeker Mahallesi\'nde',
+    content: {
+      h1: 'Şeker Mahallesi Elektrikçi',
+      subtitle: 'Etimesgut Şeker Mahallesi\'nde daire, site ve Ayaş Yolu üzerindeki iş yerleri için arıza, pano ve aydınlatma işleri.',
+      intro: [
+        'Şeker Mahallesi, Etimesgut\'un Eryaman tarafında, Ayaş Yolu\'na yaslanan bir mahalle. Bir yanda yıllar önce yapılmış kooperatif blokları, diğer yanda daha yeni siteler var; yol boyunca da dükkanlar ve iş yerleri sıralanıyor. Bu karışık yapı, Şeker Mahallesi elektrikçi çağrılarının da her gün farklı olması demek.',
+        'Eski bloklarda en sık karşılaştığımız iş pano yenileme: kaçak akım rölesi olmayan ya da test düğmesine basıldığında açmayan panoları otomat sigortalı, röleli yeni kutuyla değiştiriyor ve hatları etiketleyerek teslim ediyoruz. Yeni sitelerde ise iş daha çok avize, spot ve LED montajı, klima prizi ve ek hat talebi oluyor.',
+        'Demir Elektrik Sincan\'dan çıkıyor; Ayaş Yolu üzerinden Şeker Mahallesi\'ne kısa sürede ulaşıyoruz. 08:00–23:00 arası arıza çağrısı alıyor, keşif sonrası net fiyat veriyoruz.',
+      ],
+      highlightedServices: ['elektrik-pano-montaji', 'elektrik-ariza', 'spot-montaji', 'magaza-elektrik-tesisati'],
+      localNotes: [
+        {
+          title: 'Kooperatif bloklarında pano ve kablo',
+          text: 'Yıllar içinde klima, ankastre ve elektrikli ısıtıcı eklenen dairelerde ilk günkü hatlar yetmiyor. Hattı ölçüp gerçekten yetersizse kesitine uygun yeni hat çekiyor, panoyu röleli hale getiriyoruz. Her şeyi baştan sökmek gerekmiyor; bütçeye göre kademeli yenileme öneriyoruz.',
+        },
+        {
+          title: 'Ayaş Yolu üzerindeki iş yerleri',
+          text: 'Cadde üstündeki dükkan ve ofislerde tabela ve vitrin aydınlatması, üç fazlı cihaz beslemesi, ek priz grubu ve pano düzenleme işlerini iş yerini kapattırmadan, mesai dışında yapabiliyoruz.',
+        },
+        {
+          title: 'Yeni sitelerde montaj işleri',
+          text: 'Taşınma dönemlerinde avize, sarkıt ve spot montajı, asma tavan LED şerit ve trafo yerleşimi talebi artıyor. Trafoları havalanacak şekilde yerleştiriyor, bağlantıları klemensle yapıyoruz.',
+        },
+      ],
+      landmarks: [
+        'Ayaş Yolu (Ankara–Ayaş Yolu Bulvarı)',
+        'Eryaman bölgesi',
+        'Şeker Mahallesi kooperatif blokları',
+        'Şeker Mahallesi yeni siteleri',
+        'Cadde üstü dükkan ve ofisler',
+      ],
+      faq: [
+        {
+          q: 'Şeker Mahallesi\'nde eski panomuzu değiştirmek ne kadar sürer?',
+          a: 'Standart bir daire panosu için genellikle birkaç saat yeterli. İşlem sırasında elektrik bir süre kesiliyor; bitince her hattı ve kaçak akım rölesini test ederek teslim ediyoruz.',
+        },
+        {
+          q: 'Dükkanımızın elektriğini mesai saatleri dışında yapabilir misiniz?',
+          a: 'Evet. Ayaş Yolu üzerindeki iş yerlerinde işi çoğunlukla sabah erken ya da akşam saatlerinde yapıyoruz, 23:00\'e kadar çalışıyoruz.',
+        },
+        {
+          q: 'Kaçak akım rölesi test düğmesine basınca atmıyor, ne yapmalıyım?',
+          a: 'Röle arızalı ya da yanlış bağlanmış olabilir; bu durumda asıl koruma görevini yapmıyor demektir. Beklemeden kontrol ettirip gerekiyorsa değiştirmenizi öneririz.',
+        },
+      ],
+      seoTitle: 'Şeker Mahallesi Elektrikçi | Etimesgut | Demir Elektrik',
+      seoDescription:
+        'Etimesgut Şeker Mahallesi elektrikçi: pano yenileme, kaçak akım rölesi, avize-spot montajı, Ayaş Yolu iş yeri elektriği. Demir Elektrik: 0506 254 76 78.',
+    },
+  },
+  {
+    name: 'Devlet Mahallesi',
+    slug: 'devlet-mahallesi-elektrikci',
+    districtSlug: 'etimesgut-elektrikci',
+    locative: 'Devlet Mahallesi\'nde',
+    content: {
+      h1: 'Devlet Mahallesi Elektrikçi',
+      subtitle: 'Eryaman\'daki Devlet Mahallesi\'nde site daireleri için avize-spot montajı, ek hat, arıza ve ortak alan elektriği.',
+      intro: [
+        'Devlet Mahallesi, 2021\'de Eryaman Mahallesi\'nden ayrılarak kurulan, Etimesgut\'un genç mahallelerinden biri. Konutların büyük kısmı çok katlı siteler; metro durağı da mahalleye adını veriyor. Yeni binalarda tesisat genelde düzgün olsa da, taşınma sonrası yapılan eklemeler ve site ortak alanları ayrı bir iş yükü getiriyor.',
+        'Devlet Mahallesi elektrikçi çağrılarının çoğu montaj ve düzenleme üzerine: tavandaki bekleyen kablolara avize takmak, salonda asma tavan spotlarını çalıştırmak, klima için ayrı hat çekmek, mutfakta ankastre setin ihtiyacına göre priz düzenlemek. Bir kısmı da gerçek arıza: sigortası atan hat, yanmayan bir oda, ısınan bir priz.',
+        'Demir Elektrik Sincan\'dan Eryaman tarafına her gün çalışıyor. 08:00–23:00 arası çağrı alıyor, yerinde gördükten sonra net fiyatı söylüyoruz; onayınız olmadan işe başlamıyoruz.',
+      ],
+      highlightedServices: ['avize-montaji', 'spot-montaji', 'elektrik-ariza', 'led-aydinlatma'],
+      localNotes: [
+        {
+          title: 'Taşınma sonrası avize ve spot montajı',
+          text: 'Yeni teslim dairelerde tavanda sadece kablo uçları bekliyor. Avize ağırlığına uygun askı noktası kuruyor, bağlantıyı klemensle yapıyor, asma tavan spotlarında sürücüleri havalanacak yere yerleştiriyoruz.',
+        },
+        {
+          title: 'Klima ve ankastre için ayrı hat',
+          text: 'Sonradan eklenen klimalar ve ankastre setler mevcut priz hattını zorlayınca sigorta atıyor. Kesitine uygun ayrı hat çekip panoda kendi sigortasına bağlıyoruz; mümkün olduğunca kanal içinde, temiz bir işçilikle.',
+        },
+        {
+          title: 'Site ortak alanları',
+          text: 'Site yönetimleri için otopark ve çevre aydınlatması, merdiven sensörleri, giriş kapısı ve bariyer beslemesi ile blok ana panosu bakımı yapıyoruz.',
+        },
+      ],
+      landmarks: [
+        'Devlet Mahallesi metro durağı çevresi',
+        'Eryaman bölgesi',
+        'Devlet Mahallesi çok katlı siteleri',
+        'Site ortak alanları ve otoparklar',
+      ],
+      faq: [
+        {
+          q: 'Yeni taşındığımız daireye avize ve spotları aynı gün takabilir misiniz?',
+          a: 'Çoğu zaman evet. Kaç parça olduğunu ve tavanın asma tavan olup olmadığını telefonda söylerseniz süreyi ona göre planlıyor, aynı ziyarette bitiriyoruz.',
+        },
+        {
+          q: 'Klima için ayrı hat çekmek şart mı?',
+          a: 'Her klimada şart değil ama mevcut priz hattı zaten yüklüyse ya da klima çalışırken sigorta atıyorsa ayrı hat en sağlıklı çözüm. Önce hattı ölçüyor, gerekiyorsa öneriyoruz.',
+        },
+        {
+          q: 'Site yönetimiyle düzenli bakım anlaşması yapıyor musunuz?',
+          a: 'Evet. Devlet Mahallesi ve Eryaman\'daki siteler için ortak alan aydınlatması ve ana pano bakımını düzenli aralıklarla yapıyoruz.',
+        },
+      ],
+      seoTitle: 'Devlet Mahallesi Elektrikçi | Eryaman | Demir Elektrik',
+      seoDescription:
+        'Etimesgut Eryaman Devlet Mahallesi elektrikçi: avize-spot montajı, klima hattı, sigorta arızası ve site ortak alan elektriği. Demir Elektrik: 0506 254 76 78.',
+    },
+  },
 ];

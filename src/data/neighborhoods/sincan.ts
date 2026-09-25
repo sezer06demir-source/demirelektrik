@@ -439,4 +439,57 @@ export const sincanNeighborhoods: Neighborhood[] = [
         'Ahi Evran elektrikçi: Sincan OSB yanı Ahi Evran\'da atölye ve depo pano montajı, üç faz hat, makine otomasyonu, konut arıza. Demir Elektrik: 0506 254 76 78.',
     },
   },
+  {
+    name: 'Mevlana',
+    slug: 'mevlana-elektrikci',
+    districtSlug: 'sincan-elektrikci',
+    content: {
+      h1: 'Mevlana Mahallesi Elektrikçi',
+      subtitle: 'Sincan Mevlana\'da apartman dairesi, bina panosu ve cadde üstü dükkan arızalarına aynı gün bakan, mahalleyi bilen ekip.',
+      intro: [
+        'Mevlana Mahallesi, Sincan\'ın konut yoğunluğu yüksek mahallelerinden biri. Farklı yıllarda yapılmış apartmanlar yan yana duruyor; birinde tesisat birkaç yıl önce baştan yenilenmişken hemen yanındaki binada hâlâ ilk günkü pano ve kablolar çalışıyor. Bu yüzden Mevlana\'dan gelen elektrikçi çağrılarının içeriği de çok çeşitli: sigortası sürekli atan bir mutfak hattından, yeni alınan avizenin montajına kadar.',
+        'Demir Elektrik olarak Sincan\'da otuz yılı aşan tecrübeyle çalışıyoruz ve Mevlana bizim için uzak bir semt değil; Menderes\'teki dükkanımızdan kısa bir yol. Arızayı telefonda birkaç soruyla daraltıyor, gerekli malzemeyle geliyoruz. Yerinde gördükten sonra ne yapılacağını ve net fiyatı söylüyor, onayınızla başlıyoruz.',
+        'Mevlana Mahallesi elektrik ustası arayanların en çok sorduğu şey, akşam saatlerinde gelip gelmediğimiz. Geliyoruz: 08:00–23:00 arasında çağrı alıyor, günün son saatlerinde gelen arızalara da aynı gün bakmaya çalışıyoruz.',
+      ],
+      highlightedServices: ['elektrik-ariza', 'elektrik-pano-montaji', 'avize-montaji', 'bina-elektrik-tesisati'],
+      localNotes: [
+        {
+          title: 'Kışa girerken artan sigorta atmaları',
+          text: 'Mevlana\'daki dairelerde havalar soğuyunca elektrikli ısıtıcı, su ısıtıcısı ve fırın aynı hatta binmeye başlıyor. Sigorta atıyorsa önce hangi hattın yüklendiğini ölçüyor, gerekiyorsa mutfak ve ısıtıcı prizlerini ayrı hatta alıyoruz. Sigortayı büyütmek çözüm değil; kablonun taşıyabileceği akıma göre çalışıyoruz.',
+        },
+        {
+          title: 'Apartman ortak alanı ve kolon hattı',
+          text: 'Yöneticilerden merdiven otomatiği, sensörlü armatür, sığınak ve otopark aydınlatması ile bina ana panosu için çağrı alıyoruz. Birden fazla dairede aynı anda voltaj dalgalanması varsa kolon hattındaki nötr bağlantılarını da kontrol ediyoruz.',
+        },
+        {
+          title: 'Cadde üstü dükkanlar',
+          text: 'Mahalledeki market, fırın ve küçük iş yerlerinde vitrin LED\'i, tabela hattı ve ek priz grubu işlerini dükkanın çalışma düzenini bozmadan, uygun saatte yapıyoruz.',
+        },
+      ],
+      landmarks: [
+        'Ahmet Kabaklı Caddesi',
+        'Semazen Parkı çevresi',
+        'Mevlana Mahallesi apartmanları',
+        'Mahalle içi cadde üstü dükkanlar',
+        'Sincan merkeze yakın bloklar',
+      ],
+      faq: [
+        {
+          q: 'Mevlana Mahallesi\'ne aynı gün elektrikçi gelir mi?',
+          a: 'Çoğu zaman evet. Menderes\'teki dükkanımız Mevlana\'ya yakın; 08:00–23:00 arasında gelen arızalara aynı gün bakmaya çalışıyoruz. Yoğun günlerde size net bir saat veriyoruz.',
+        },
+        {
+          q: 'Dairemizde avize takılacak ama tavandaki kablolar kararmış, sorun olur mu?',
+          a: 'Kararmış kablo ucu, orada uzun süre gevşek bir bağlantı olduğunu gösterir. Avizeyi takmadan önce uçları kesip temiz uçla yeniden bağlıyoruz; kablo sertleşmişse o noktadaki hattı kısmen yeniliyoruz.',
+        },
+        {
+          q: 'Bütün apartmanın ışıkları titriyor, kimi aramalıyız?',
+          a: 'Birden fazla dairede aynı anda oluyorsa sorun büyük ihtimalle bina ana panosu ya da kolon hattındadır. Yöneticinin bizi araması en doğrusu; ortak pano ve nötr bağlantılarını ölçerek kaynağı buluyoruz.',
+        },
+      ],
+      seoTitle: 'Mevlana Mahallesi Elektrikçi | Sincan | Demir Elektrik',
+      seoDescription:
+        'Sincan Mevlana Mahallesi elektrikçi: sigorta atması, pano yenileme, avize montajı, apartman ortak alan ve dükkan elektriği. Demir Elektrik: 0506 254 76 78.',
+    },
+  },
 ];
