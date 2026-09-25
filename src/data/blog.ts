@@ -182,6 +182,80 @@ export const posts: BlogPost[] = [
       { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
     ],
   },
+  {
+    slug: 'yenikent-yagmurda-kacak-akim-rolesi-atiyor',
+    title: 'Yenikent’te Yağmur Yağınca Kaçak Akım Rölesi Neden Atıyor?',
+    description:
+      'Yenikent’te bahçeli evlerde yağmurdan sonra atan kaçak akım rölesinin en sık sebepleri: bahçe lambası, dış priz, su motoru hattı. Yenikent elektrik ustası gözüyle anlattık.',
+    keyword: 'Yenikent elektrik ustası',
+    date: '2026-09-25',
+    readingMin: 6,
+    excerpt:
+      'Hava kuruyken hiçbir sorun yok, ilk sağanakla birlikte evin elektriği gidiyor. Yenikent’te bahçeli evlerde bu şikâyeti çok duyuyoruz. Sebep neredeyse her zaman evin dışında bir yerde.',
+    intro:
+      'Yenikent’ten gelen telefonların bir kısmı hep aynı cümleyle başlıyor: “Usta, yağmur yağdı, elektrik gitti. Kaldırıyorum, tutmuyor.” Sonra hava açıyor, ertesi gün şalter kalkıyor ve her şey normale dönüyor. Ev sahibi de haklı olarak “demek ki geçti” diye düşünüyor. Geçmiyor. Bir sonraki yağmurda aynı şey tekrar ediyor, üstelik her seferinde biraz daha zor toparlanıyor. Yenikent’te bahçeli, müstakil ya da az katlı evlerin çok olması bu tabloyu sık görmemizin ana nedeni. Bu yazıda bu tür arızaya nasıl yaklaştığımızı, sizin evde neye bakabileceğinizi ve nerede durmanız gerektiğini anlatıyorum.',
+    sections: [
+      {
+        h: 'Atan şey sigorta değil, kaçak akım rölesi',
+        p: [
+          'Önce panoya bakalım. Yağmurla gelen kesintilerde inen eleman çoğu zaman normal otomat sigorta değil, üzerinde “T” ya da “TEST” yazan düğmesi olan kaçak akım rölesidir. Bu röle, hattan giden akımla geri dönen akım arasında fark gördüğünde açar. Konutlarda kullandığımız 30 mA’lik röle, o farkın 30 miliamper civarına çıkmasına izin vermez. Yani bir yerde akım, gitmesi gereken yol yerine toprağa, ıslak bir duvara ya da suya doğru kaçıyor demektir.',
+          'Bu ayrım önemli çünkü sigortayı büyütmek, yerine başka bir şey takmak gibi “çözümler” kaçak akımda hiçbir işe yaramaz. Röle görevini yapıyor. Bizim işimiz kaçağın nereden olduğunu bulmak.',
+        ],
+      },
+      {
+        h: 'Yenikent’te en çok nereden çıkıyor?',
+        p: [
+          'Sahada karşılaştığımız sebepleri sıklığına göre sayarsam, ilk sırada bahçe aydınlatması var. Duvara ya da çim kenarına sonradan eklenmiş aplikler, kazığa takılmış bahçe lambaları… Çoğunun buatı ya düz tavana bakacak şekilde ters takılmış ya da contası zamanla sertleşmiş. Su önce buata giriyor, sonra klemensin etrafında ince bir nem tabakası oluşuyor ve röle atıyor.',
+          'İkinci sırada dış priz geliyor. Balkon ya da bahçe duvarına takılmış, kapaksız veya kapağı kırık bir priz yağmurda doğrudan suya maruz kalıyor. Dış mekânda en az IP44, açıkta kalan yerlerde tercihen IP65 korumalı, kapaklı priz kullanılmalı. Üçüncüsü de bahçedeki su motoru ya da hidrofor hattı. Toprağın altından geçirilmiş, boruya alınmamış ya da iç mekân kablosuyla çekilmiş hatlar birkaç yıl sonra kaçak vermeye başlıyor.',
+        ],
+      },
+      {
+        h: 'Evde güvenle yapabileceğiniz kontrol',
+        p: [
+          'Panoda kaçak akım rölesinin altındaki otomat sigortaları sırayla indirin. Hepsi aşağıdayken röleyi kaldırın. Sonra sigortaları tek tek kaldırın; hangisini kaldırdığınızda röle tekrar atıyorsa kaçak o hattadır. Çoğu zaman bu “bahçe”, “dış aydınlatma” ya da “salon priz” diye etiketlenmiş hat çıkıyor. Etiket yoksa, hangi odanın elektriği gidiyorsa ona bakarak anlayabilirsiniz.',
+          'Kaçaklı hattı bulduktan sonra onu kapalı bırakıp evin geri kalanını kullanabilirsiniz. Islak buatı açmak, kablo ek yerlerini kurutmaya çalışmak ya da bantla sarmak ise işin bizim tarafımızda kalsın. Özellikle hat henüz ıslakken yapılan müdahale, sorunu saklar ama çözmez.',
+        ],
+      },
+      {
+        h: 'Kalıcı çözüm nasıl oluyor?',
+        p: [
+          'Yerinde önce izolasyon ölçümü yapıyoruz; hat üzerinde kaçağın hangi noktada yoğunlaştığını görmek için megerle bakıyoruz. Buat kaynaklıysa ek yerini yenileyip su almayan, contalı bir buatla değiştiriyoruz ve kablo girişini aşağıdan veriyoruz ki su yolunu bulamasın. Dış aplik ya da bahçe lambası bozulmuşsa, dış mekâna uygun koruma sınıfında olanla değiştiriyoruz.',
+          'Toprak altındaki hatlarda ise çoğu zaman tamir yerine yenileme daha mantıklı oluyor. Toprak altına giden kablo ya yeraltına uygun tipte olmalı ya da koruge boru içinde gitmeli. Bir de şunu öneriyoruz: bahçe ve dış mekân hattını mümkünse kendi kaçak akım rölesine bağlamak. Böylece yağmurda bahçe hattı atsa bile buzdolabınız, kombiniz, salonunuz çalışmaya devam ediyor.',
+        ],
+      },
+      {
+        h: 'Kış gelmeden bakmakta fayda var',
+        p: [
+          'Yenikent’te sonbahar yağmurlarını kar ve don izliyor. Don, buatın içindeki az miktardaki suyu genişletip çatlakları büyütüyor; bahar geldiğinde arıza daha da inatçı hâle geliyor. Bahçe aydınlatmanız, dış prizleriniz ya da su motorunuz varsa ve bu yıl bir iki kez yağmurla birlikte röle attıysa, kışa girmeden bir kontrol yaptırmak hem daha kolay hem daha ucuz.',
+          'Sık sorulan bir soru da “röleyi iptal etsek?” oluyor. Etmiyoruz, ettirmiyoruz. Islak bir bahçede arızalı bir lambaya dokunan birini koruyan tek şey o röle.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Hava kuruyunca röle kalkıyor, yine de usta çağırmam gerekir mi?',
+        a: 'Evet. Kuruyunca düzelmesi kaçağın ortadan kalktığını değil, nemin geçici olarak azaldığını gösterir. Ek yerindeki oksitlenme her yağmurda artar ve bir süre sonra kuru havada da atmaya başlar.',
+      },
+      {
+        q: 'Kaçak akım rölesini daha yüksek mA’lik bir röleyle değiştirebilir miyiz?',
+        a: 'Konut içi hatlarda bunu önermiyoruz. 30 mA, insanı elektrik çarpmasına karşı korumak için seçilen değerdir. Daha duyarsız bir röle, kaçağı gizler ve asıl işini yapamaz.',
+      },
+      {
+        q: 'Sadece bahçe hattını ayırmak mümkün mü?',
+        a: 'Çoğu panoda mümkün. Bahçe ve dış mekân hattını ayrı bir kaçak akım rölesine almak, yağmurlu havalarda evin geri kalanının etkilenmemesini sağlar. Panoda yer yoksa küçük bir ek kutu ile çözülebiliyor.',
+      },
+      {
+        q: 'Yenikent dışında da geliyor musunuz?',
+        a: 'Sincan merkezliyiz; Yenikent, Törekent, Pınarbaşı ve çevresi en sık gittiğimiz bölgeler. Ankara’nın diğer ilçelerine de 08:00–23:00 arasında çıkıyoruz. 0506 254 76 78’den ulaşabilirsiniz.',
+      },
+    ],
+    related: [
+      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+      { label: 'Elektrik Arıza Tespiti ve Onarımı', href: '/hizmetler/elektrik-ariza' },
+      { label: 'LED ve Dış Mekân Aydınlatma', href: '/hizmetler/led-aydinlatma' },
+      { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
