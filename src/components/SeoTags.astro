@@ -20,6 +20,8 @@ const genel = [
   `${area} Elektrikçi`,
   `${area} Elektrik Ustası`,
   `${area} Elektrik Tamircisi`,
+  `${area} Yetkili Elektrikçi`,
+  `${area} Belgeli Elektrikçi`,
   `${area} Elektrikçi Açık`,
   `${area} 7/24 Elektrikçi`,
   `${area} Acil Elektrikçi`,
@@ -62,7 +64,7 @@ const ankaraKombin = isAnkara
       `Ankara ${area} Acil Elektrikçi`,
     ];
 
-const terms = [...genel, ...isler, ...ankaraKombin, ...extra];
+const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...extra])];
 ---
 
 <section class="seotags" aria-labelledby="seotags-h">

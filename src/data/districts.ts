@@ -99,7 +99,7 @@ export const districts: District[] = [
       intro: [
         'Yenikent\'te elektrikçi arıyorsanız uzağa bakmanıza gerek yok: dükkanımız Menderes Mahallesi\'nde, Alparslan Caddesi No:24\'te. Otuz yılı aşkın süredir bu işi yapıyoruz; Yenikent\'in TOKİ dairelerini de, yeni sitelerini de, bahçeli müstakil evlerini de içeriden biliyoruz. Hangi blokta kolon hattının zayıf olduğunu, hangi evde bahçe hattının yağmurda sorun çıkardığını çoğu zaman siz telefonda anlatırken tahmin ediyoruz.',
         'Sigorta attı, kaldırıyorsunuz tutmuyor mu? Evin yarısında elektrik yok mu? Önce telefonda birkaç soru soruyoruz; bazen sorun tek bir cihazdan çıkıyor, fişten çektirip orada çözüyoruz, boşuna usta çağırmış olmuyorsunuz. Gelmek gerekiyorsa aynı gün kalkıp geliyoruz; mahalle içi olduğu için çoğu zaman uzun beklemiyorsunuz.',
-        'Yenikent elektrik ustası arayanın ne istediğini biliyoruz: telefonu açan işi bilsin, gelen usta arızayı ilk seferde bulsun, iş bitince fiyat değişmesin. Bizde telefonu açan da kapınıza gelen de usta. Ölçü aletiyle arızayı buluyor, ne yapacağımızı ve fiyatı işe başlamadan söylüyoruz; siz "tamam" demeden kabloya el sürmüyoruz.',
+        'Yenikent elektrik ustası arayanın ne istediğini biliyoruz: telefonu açan işi bilsin, gelen usta arızayı ilk seferde bulsun, iş bitince fiyat değişmesin. Bizde telefonu açan da kapınıza gelen de usta: Recep Usta ya da Sezer Usta. İkimizin de Ustalık ve Usta Öğreticilik belgesi var; Yenikent\'te de Ankara\'nın her yerinde yetkili elektrikçi olarak çalışıyoruz. Ölçü aletiyle arızayı buluyor, ne yapacağımızı ve fiyatı işe başlamadan söylüyoruz; siz "tamam" demeden kabloya el sürmüyoruz.',
       ],
       highlightedServices: ['elektrik-ariza', 'ev-elektrik-tesisati', 'villa-elektrik-tesisati', 'spot-montaji'],
       localNotes: [
@@ -133,6 +133,10 @@ export const districts: District[] = [
         {
           q: 'Yenikent\'te elektrik ustası hangi saatlerde çağrılabilir?',
           a: 'Her gün sabah 08:00\'den gece 23:00\'e kadar telefonumuz açık: 0506 254 76 78. WhatsApp\'tan arızanın fotoğrafını da atabilirsiniz. Akşam eve geldiniz, elektrik yok; sabahı beklemeyin, arayın.',
+        },
+        {
+          q: 'Yetkili ve belgeli elektrikçi misiniz?',
+          a: 'Evet. Ankara genelinde yetkili elektrikçiyiz. İşlere Recep Usta ve Sezer Usta bizzat çıkıyor; ikimizin de Ustalık ve Usta Öğreticilik belgesi var. Gelen ustaya belgesini sormaktan çekinmeyin.',
         },
         {
           q: 'Fiyatı gelmeden söyleyebilir misiniz?',

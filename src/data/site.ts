@@ -10,7 +10,7 @@ export const site = {
   url: SITE_URL,
   tagline: 'Ankara Elektrikçi ve Elektrik Servisi',
   description:
-    'Demir Elektrik; Ankara genelinde elektrik arıza, ev, villa, bina, mağaza ve fabrika elektrik tesisatı, pano, otomasyon, LED, spot ve avize montajı hizmetleri sunmaktadır. Tel: 0506 254 76 78.',
+    'Demir Elektrik; Ankara genelinde yetkili, ustalık ve usta öğreticilik belgeli elektrikçi. Elektrik arıza, ev, villa, bina, mağaza ve fabrika elektrik tesisatı, pano, otomasyon, LED, spot ve avize montajı hizmetleri sunmaktadır. Tel: 0506 254 76 78.',
 
   phone: {
     display: '0506 254 76 78',
@@ -83,7 +83,7 @@ export const trustBadges = [
   { icon: 'award', title: '30+ Yıllık Tecrübe', text: 'Konut ve endüstriyel elektrik işlerinde' },
   { icon: 'map-pin', title: 'Ankara Geneli Hizmet', text: 'Sincan merkezli, tüm ilçelere' },
   { icon: 'clock', title: '08:00 – 23:00 Hizmet', text: 'Haftanın her günü' },
-  { icon: 'shield-check', title: 'Profesyonel Elektrik Çözümleri', text: 'Güvenli ve kaliteli işçilik' },
+  { icon: 'shield-check', title: 'Yetkili Elektrikçi', text: 'Ustalık ve usta öğreticilik belgeli' },
 ] as const;
 
 export const whyUs = [
