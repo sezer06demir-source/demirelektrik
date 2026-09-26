@@ -92,11 +92,12 @@ export const districts: District[] = [
     parent: 'Sincan',
     featured: true,
     content: {
-      h1: 'Yenikent Elektrikçi',
-      subtitle: 'Sincan merkezimize birkaç dakika mesafede. Yenikent\'in sitelerinde, müstakil evlerinde ve iş yerlerinde arıza, tesisat ve aydınlatma hizmeti.',
+      h1: 'Yenikent Elektrikçi ve Elektrik Ustası',
+      subtitle: 'Sincan\'daki merkezimizden Yenikent\'e her gün çıkıyoruz. Sitelerde, müstakil evlerde ve iş yerlerinde arıza, tesisat ve aydınlatma işlerini kapınıza gelen usta yapıyor.',
       intro: [
         'Yenikent, Sincan\'ın kuzeyinde, Ankara-İstanbul yolu üzerinde büyüyen ve son yıllarda yeni sitelerle hızla gelişen bir bölge. Bir yanda TOKİ konutları ve çok katlı siteler, diğer yanda müstakil evler ve bahçeli yapılar aynı semtte yer alıyor. Demir Elektrik olarak Yenikent\'teki bu farklı konut tiplerinin tamamında elektrik arıza, tesisat ve aydınlatma işleri yapıyoruz.',
         'Merkezimiz Sincan Menderes Mahallesi\'nde olduğu için Yenikent\'e arıza çağrılarına çok kısa sürede ulaşıyoruz. Sigorta atması, elektrik kesintisi ve kaçak akım gibi acil durumlarda aynı gün müdahale ediyor; yeni taşınılan dairelerde priz, anahtar ve aydınlatma düzenlemelerini tek seferde tamamlıyoruz.',
+        'Yenikent elektrik ustası arayanların çoğu aslında tek bir şey istiyor: telefonu açan kişinin işi bilmesi ve gelen ustanın arızayı ilk ziyarette bulması. Bizde telefonu açan da, kapınıza gelen de 30 yılı aşkın süredir sahada çalışan ustanın kendisi. Arızayı ölçü aletiyle tespit ediyor, ne yapılacağını ve fiyatını işe başlamadan söylüyoruz; onay vermediğiniz hiçbir işe dokunmuyoruz.',
       ],
       highlightedServices: ['elektrik-ariza', 'ev-elektrik-tesisati', 'villa-elektrik-tesisati', 'spot-montaji'],
       localNotes: [
@@ -127,10 +128,18 @@ export const districts: District[] = [
           q: 'Müstakil evimizin bahçe aydınlatmasını yapabilir misiniz?',
           a: 'Evet. Yenikent\'teki bahçeli evlerde dış mekan aydınlatması, bahçe prizleri ve sensörlü armatür montajı yapıyoruz.',
         },
+        {
+          q: 'Yenikent\'te elektrik ustası hangi saatlerde çağrılabilir?',
+          a: 'Her gün 08:00 ile 23:00 arasında 0506 254 76 78\'den ya da WhatsApp\'tan ulaşabilirsiniz. Akşam işten döndükten sonra fark edilen sigorta atması ve elektrik kesintilerine de aynı gün çıkıyoruz.',
+        },
+        {
+          q: 'Fiyatı gelmeden söyleyebilir misiniz?',
+          a: 'Avize-spot sayısı ya da priz ekleme gibi net işlerde telefonda veya WhatsApp\'tan gönderdiğiniz fotoğrafla yaklaşık fiyat veriyoruz. Arızada ise sebebi görmeden fiyat söylemek doğru olmuyor; yerinde tespitten sonra net fiyatı söylüyor, onayınızla başlıyoruz.',
+        },
       ],
-      seoTitle: 'Yenikent Elektrikçi – Aynı Gün Servis, 08:00–23:00 | Demir Elektrik',
+      seoTitle: 'Yenikent Elektrikçi ve Elektrik Ustası – Aynı Gün | Demir Elektrik',
       seoDescription:
-        'Yenikent\'te elektrik arızası mı var? Sincan\'dan aynı gün geliyoruz: sigorta atması, kaçak akım, daire ve müstakil ev tesisatı, avize-spot. Keşif sonrası net fiyat ☎ 0506 254 76 78',
+        'Yenikent elektrikçi ve elektrik ustası: sigorta atması, kaçak akım, daire ve müstakil ev tesisatı, avize-spot. Sincan\'dan aynı gün, 08:00–23:00 ☎ 0506 254 76 78',
     },
   },
   {

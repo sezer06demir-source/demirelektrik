@@ -250,7 +250,7 @@ export const posts: BlogPost[] = [
       },
     ],
     related: [
-      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+      { label: 'Yenikent Elektrik Ustası', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
       { label: 'Elektrik Arıza Tespiti ve Onarımı', href: '/hizmetler/elektrik-ariza' },
       { label: 'LED ve Dış Mekân Aydınlatma', href: '/hizmetler/led-aydinlatma' },
       { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
