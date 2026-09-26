@@ -25,6 +25,8 @@ export interface DistrictContent {
   neighborhoods: string[];
   faq: { q: string; a: string }[];
   seoTitle: string;
+  /** Sayfa altındaki arama ifadeleri bloğuna eklenecek bölgeye özgü ifadeler */
+  seoTags?: string[];
   seoDescription: string;
 }
 
@@ -51,7 +53,7 @@ export const districts: District[] = [
       h1: 'Sincan Elektrikçi',
       subtitle: 'Merkezimiz Sincan\'da. Arıza, tesisat, pano ve aydınlatma işlerinde en yakın ekip biziz.',
       intro: [
-        'Demir Elektrik\'in merkezi Sincan Menderes Mahallesi\'nde bulunuyor. Bu nedenle Sincan içindeki elektrik arızalarına ve tesisat işlerine en hızlı ulaşabildiğimiz bölge burası. Törekent, Fatih, Yenikent, Temelli ve Sincan merkezdeki konut, iş yeri ve sanayi müşterilerimize 30 yılı aşkın süredir hizmet veriyoruz.',
+        'Demir Elektrik\'in merkezi Sincan Yenikent\'te, Menderes Mahallesi\'nde bulunuyor. Bu nedenle Sincan içindeki elektrik arızalarına ve tesisat işlerine en hızlı ulaşabildiğimiz bölge burası. Törekent, Fatih, Yenikent, Temelli ve Sincan merkezdeki konut, iş yeri ve sanayi müşterilerimize 30 yılı aşkın süredir hizmet veriyoruz.',
         'Sincan hem yoğun konut bölgeleri hem de Sincan Organize Sanayi Bölgesi ve 1. OSB ile Ankara\'nın en önemli üretim merkezlerinden biri. Bu yapı, ekibimizin bir günde hem bir dairede sigorta arızasına hem de bir fabrikada pano montajına müdahale etmesi anlamına geliyor.',
       ],
       highlightedServices: ['elektrik-ariza', 'ev-elektrik-tesisati', 'fabrika-elektrik', 'elektrik-pano-montaji'],
@@ -82,7 +84,7 @@ export const districts: District[] = [
       ],
       seoTitle: 'Sincan Elektrikçi – Aynı Gün Arıza Servisi, 30+ Yıl | Demir Elektrik',
       seoDescription:
-        'Sincan\'da elektrik mi gitti, sigorta mı atıyor? Menderes Mahallesi\'ndeki dükkanımızdan aynı gün geliyoruz. Arıza, pano, tesisat, avize. 08:00–23:00 ☎ 0506 254 76 78',
+        'Sincan\'da elektrik mi gitti, sigorta mı atıyor? Yenikent Menderes\'teki dükkanımızdan aynı gün geliyoruz. Arıza, pano, tesisat, avize. 08:00–23:00 ☎ 0506 254 76 78',
     },
   },
   {
@@ -93,53 +95,73 @@ export const districts: District[] = [
     featured: true,
     content: {
       h1: 'Yenikent Elektrikçi ve Elektrik Ustası',
-      subtitle: 'Sincan\'daki merkezimizden Yenikent\'e her gün çıkıyoruz. Sitelerde, müstakil evlerde ve iş yerlerinde arıza, tesisat ve aydınlatma işlerini kapınıza gelen usta yapıyor.',
+      subtitle: 'Dükkanımız Yenikent\'te, Menderes Mahallesi Alparslan Caddesi No:24\'te. Arızaya da tesisata da başka birini değil, ustanın kendisini gönderiyoruz.',
       intro: [
-        'Yenikent, Sincan\'ın kuzeyinde, Ankara-İstanbul yolu üzerinde büyüyen ve son yıllarda yeni sitelerle hızla gelişen bir bölge. Bir yanda TOKİ konutları ve çok katlı siteler, diğer yanda müstakil evler ve bahçeli yapılar aynı semtte yer alıyor. Demir Elektrik olarak Yenikent\'teki bu farklı konut tiplerinin tamamında elektrik arıza, tesisat ve aydınlatma işleri yapıyoruz.',
-        'Merkezimiz Sincan Menderes Mahallesi\'nde olduğu için Yenikent\'e arıza çağrılarına çok kısa sürede ulaşıyoruz. Sigorta atması, elektrik kesintisi ve kaçak akım gibi acil durumlarda aynı gün müdahale ediyor; yeni taşınılan dairelerde priz, anahtar ve aydınlatma düzenlemelerini tek seferde tamamlıyoruz.',
-        'Yenikent elektrik ustası arayanların çoğu aslında tek bir şey istiyor: telefonu açan kişinin işi bilmesi ve gelen ustanın arızayı ilk ziyarette bulması. Bizde telefonu açan da, kapınıza gelen de 30 yılı aşkın süredir sahada çalışan ustanın kendisi. Arızayı ölçü aletiyle tespit ediyor, ne yapılacağını ve fiyatını işe başlamadan söylüyoruz; onay vermediğiniz hiçbir işe dokunmuyoruz.',
+        'Yenikent\'te elektrikçi arıyorsanız uzağa bakmanıza gerek yok: dükkanımız Menderes Mahallesi\'nde, Alparslan Caddesi No:24\'te. Otuz yılı aşkın süredir bu işi yapıyoruz; Yenikent\'in TOKİ dairelerini de, yeni sitelerini de, bahçeli müstakil evlerini de içeriden biliyoruz. Hangi blokta kolon hattının zayıf olduğunu, hangi evde bahçe hattının yağmurda sorun çıkardığını çoğu zaman siz telefonda anlatırken tahmin ediyoruz.',
+        'Sigorta attı, kaldırıyorsunuz tutmuyor mu? Evin yarısında elektrik yok mu? Önce telefonda birkaç soru soruyoruz; bazen sorun tek bir cihazdan çıkıyor, fişten çektirip orada çözüyoruz, boşuna usta çağırmış olmuyorsunuz. Gelmek gerekiyorsa aynı gün kalkıp geliyoruz; mahalle içi olduğu için çoğu zaman uzun beklemiyorsunuz.',
+        'Yenikent elektrik ustası arayanın ne istediğini biliyoruz: telefonu açan işi bilsin, gelen usta arızayı ilk seferde bulsun, iş bitince fiyat değişmesin. Bizde telefonu açan da kapınıza gelen de usta. Ölçü aletiyle arızayı buluyor, ne yapacağımızı ve fiyatı işe başlamadan söylüyoruz; siz "tamam" demeden kabloya el sürmüyoruz.',
       ],
       highlightedServices: ['elektrik-ariza', 'ev-elektrik-tesisati', 'villa-elektrik-tesisati', 'spot-montaji'],
       localNotes: [
         {
           title: 'Yeni site ve TOKİ daireleri',
-          text: 'Yenikent\'teki yeni sitelerde ve TOKİ konutlarında ek priz hattı, ankastre mutfak için güçlendirilmiş hat, klima hattı çekimi ve spot aydınlatma düzenlemesi en sık aldığımız talepler.',
+          text: 'Yeni teslim dairede en çok şunlar geliyor: mutfağa ankastre için ayrı hat, salona klima hattı, tavanda bekleyen kablo uçlarına avize ve spot. Hepsini tek ziyarette topluyoruz ki evinizi iki kere toza boğmayalım.',
         },
         {
           title: 'Müstakil ve bahçeli evler',
-          text: 'Yenikent\'in müstakil evlerinde bahçe aydınlatması, dış mekan priz ve armatür montajı, garaj ve depo elektriği, eski tesisatın kaçak akım röleli panoyla yenilenmesi işlerini yapıyoruz.',
+          text: 'Bahçeli evde sorun çoğu zaman dışarıda başlar: su almış bahçe lambası, kapağı kırık dış priz, toprağın altından geçen eski kablo. Bahçe aydınlatmasını da dış prizleri de dış mekana uygun malzemeyle ve kaçak akım rölesinin arkasına alarak yapıyoruz.',
         },
         {
-          title: 'Ankara-İstanbul yolu iş yerleri',
-          text: 'Yenikent çevresindeki dükkan, depo, oto servis ve küçük atölyelerde üç faz hat çekimi, pano kurulumu ve tabela-vitrin aydınlatması konusunda hizmet veriyoruz.',
+          title: 'Dükkan, depo ve atölyeler',
+          text: 'Yenikent\'teki dükkan, depo, oto servis ve küçük atölyelerde üç faz hat, pano kurulumu, tabela ve vitrin aydınlatması yapıyoruz. İşinizi durdurmamak için gerekirse kapanıştan sonra ya da sabah erkenden geliyoruz.',
         },
       ],
-      neighborhoods: ['Yenikent Merkez', 'Yenikent TOKİ', 'Alcı', 'Yenipeçenek', 'Mülk', 'Ücret', 'Osmaniye', 'Temelli', 'Malıköy'],
+      neighborhoods: ['Menderes', 'Yenikent Merkez', 'Yenikent TOKİ', 'Alcı', 'Yenipeçenek', 'Mülk', 'Ücret', 'Osmaniye'],
       faq: [
         {
-          q: 'Yenikent\'e ne kadar sürede geliyorsunuz?',
-          a: 'Merkezimiz Sincan\'da olduğu için Yenikent\'e çoğu zaman aynı gün, acil arızalarda genellikle bir saat içinde ulaşıyoruz.',
+          q: 'Yenikent\'te acil arızaya ne kadar sürede geliyorsunuz?',
+          a: 'Dükkanımız Yenikent\'in içinde, Menderes\'te. Acil arızada çoğu zaman aynı gün, genelde kısa sürede kapınızdayız. Yakınsanız Alparslan Caddesi No:24\'e uğrayın, derdinizi yüz yüze konuşalım.',
         },
         {
           q: 'Yeni taşındığımız dairede priz ve aydınlatma düzenlemesi yapıyor musunuz?',
-          a: 'Evet. Yenikent\'teki yeni dairelerde ek priz, anahtar değişimi, klima ve ankastre hattı ile spot ve avize montajını tek seferde yapıyoruz.',
+          a: 'Yaparız. Ek priz, anahtar değişimi, klima ve ankastre hattı, avize ve spot; ne varsa önce listeyi çıkarıyor, hepsini tek seferde bitiriyoruz.',
         },
         {
           q: 'Müstakil evimizin bahçe aydınlatmasını yapabilir misiniz?',
-          a: 'Evet. Yenikent\'teki bahçeli evlerde dış mekan aydınlatması, bahçe prizleri ve sensörlü armatür montajı yapıyoruz.',
+          a: 'Yaparız. Bahçe lambası, sensörlü armatür, dış priz, su motoru hattı; hepsini dış mekana uygun malzemeyle ve kaçak akım korumalı çekiyoruz.',
         },
         {
           q: 'Yenikent\'te elektrik ustası hangi saatlerde çağrılabilir?',
-          a: 'Her gün 08:00 ile 23:00 arasında 0506 254 76 78\'den ya da WhatsApp\'tan ulaşabilirsiniz. Akşam işten döndükten sonra fark edilen sigorta atması ve elektrik kesintilerine de aynı gün çıkıyoruz.',
+          a: 'Her gün sabah 08:00\'den gece 23:00\'e kadar telefonumuz açık: 0506 254 76 78. WhatsApp\'tan arızanın fotoğrafını da atabilirsiniz. Akşam eve geldiniz, elektrik yok; sabahı beklemeyin, arayın.',
         },
         {
           q: 'Fiyatı gelmeden söyleyebilir misiniz?',
-          a: 'Avize-spot sayısı ya da priz ekleme gibi net işlerde telefonda veya WhatsApp\'tan gönderdiğiniz fotoğrafla yaklaşık fiyat veriyoruz. Arızada ise sebebi görmeden fiyat söylemek doğru olmuyor; yerinde tespitten sonra net fiyatı söylüyor, onayınızla başlıyoruz.',
+          a: 'Avize takma, priz ekleme gibi belli işlerde fotoğrafa bakıp aşağı yukarı fiyat söylüyoruz. Arızada ise sebebi görmeden fiyat vermek doğru olmaz; gelip buluyoruz, fiyatı söylüyoruz, siz onaylarsanız başlıyoruz.',
         },
       ],
       seoTitle: 'Yenikent Elektrikçi ve Elektrik Ustası – Aynı Gün | Demir Elektrik',
       seoDescription:
-        'Yenikent elektrikçi ve elektrik ustası: sigorta atması, kaçak akım, daire ve müstakil ev tesisatı, avize-spot. Sincan\'dan aynı gün, 08:00–23:00 ☎ 0506 254 76 78',
+        'Yenikent elektrikçi ve elektrik ustası, dükkanımız Yenikent Menderes\'te: sigorta atması, kaçak akım, daire-villa tesisatı, avize-spot. 08:00–23:00 ☎ 0506 254 76 78',
+      seoTags: [
+        'Sincan Yenikent Elektrikçi',
+        'Yenikent Sincan Elektrikçi',
+        'Yenikent Elektrikçi Usta',
+        'Sincan Yenikent Elektrik Ustası',
+        'Yenikent Menderes Elektrikçi',
+        'Yenikent Alparslan Caddesi Elektrikçi',
+        'Yenikent Yakınımdaki Elektrikçi',
+        'Yenikent Elektrik Tamiri',
+        'Yenikent Elektrik Arızası',
+        'Yenikent Sigorta Atıyor',
+        'Yenikent Elektrikçi Fiyatları',
+        'Yenikent Ev Elektrikçisi',
+        'Yenikent TOKİ Elektrikçi',
+        'Yenikent Site Elektrikçisi',
+        'Yenikent Avize Takma',
+        'Yenikent Klima Hattı Çekimi',
+        'Yenikent Bahçe Aydınlatması',
+        'Yenikent Dükkan Elektrikçisi',
+      ],
     },
   },
   {

@@ -279,21 +279,21 @@ export const sincanNeighborhoods: Neighborhood[] = [
     slug: 'menderes-elektrikci',
     districtSlug: 'sincan-elektrikci',
     content: {
-      h1: 'Menderes Elektrikçi',
-      subtitle: 'Dükkanımız Menderes Mahallesi Alparslan Caddesi No:24\'te; mahallenizin elektrikçisi kapı komşunuz.',
+      h1: 'Yenikent Menderes Elektrikçi',
+      subtitle: 'Dükkanımız Yenikent Menderes Mahallesi, Alparslan Caddesi No:24\'te; mahallenizin elektrikçisi kapı komşunuz.',
       intro: [
-        'Menderes, Sincan\'ın kalbi: belediye çevresi, çarşı, bankalar, kafeler ve Alparslan Caddesi boyunca uzanan iş yerleri hep bu mahallede. Demir Elektrik\'in dükkanı da tam burada, Alparslan Caddesi No:24\'te. Menderes\'te elektrikçi arayan biri için bu, çoğu zaman yürüyerek gelebileceği bir adres demek.',
-        'Mahallenin kendi elektrikçisi olmanın farkı şu: arıza çağrısında aracı çıkarmadan yola koyuluyor, iş yerlerinde öğle molasında uğrayıp bakıyor, malzeme eksikse dükkandan hemen tamamlıyoruz. Menderes\'teki apartmanlarda sigorta ve kaçak akım arızaları, çarşıdaki mağaza ve ofislerde ise aydınlatma, pano ve ek hat işleri günlük rutinimiz.',
+        'Menderes, Sincan\'ın Yenikent tarafındaki mahallelerinden biri; apartmanlar, siteler ve Alparslan Caddesi boyunca uzanan dükkanlar bir arada. Demir Elektrik\'in dükkanı da tam burada, Alparslan Caddesi No:24\'te. Menderes\'te elektrikçi arayan biri için bu, çoğu zaman yürüyerek gelebileceği bir adres demek.',
+        'Mahallenin kendi elektrikçisi olmanın farkı şu: arıza çağrısında aracı çıkarmadan yola koyuluyor, iş yerlerinde öğle molasında uğrayıp bakıyor, malzeme eksikse dükkandan hemen tamamlıyoruz. Menderes\'teki apartmanlarda sigorta ve kaçak akım arızaları, cadde üzerindeki dükkan ve ofislerde ise aydınlatma, pano ve ek hat işleri günlük rutinimiz.',
         'Uzun yıllardır bu mahallede olduğumuz için Menderes\'teki binaların çoğunu, hangi apartmanda kolon hattının zayıf olduğunu, hangi dükkanın panosunun yenilendiğini biliyoruz. Bu tanışıklık teşhisi hızlandırıyor.',
       ],
       highlightedServices: ['elektrik-ariza', 'magaza-elektrik-tesisati', 'elektrik-tesisati', 'led-aydinlatma'],
       localNotes: [
         {
-          title: 'Çarşı mağaza ve ofisleri',
-          text: 'Menderes\'teki mağaza, ofis, kafe ve bankalarda vitrin ve raf LED aydınlatması, ek priz ve data hattı, pano düzenlemesi, kompanzasyon ve acil çıkış aydınlatması işlerini kapalı saatlerde yaparak işletmeyi aksatmıyoruz.',
+          title: 'Cadde üzeri dükkan ve ofisler',
+          text: 'Menderes\'teki dükkan, ofis ve kafelerde vitrin ve raf LED aydınlatması, ek priz ve data hattı, pano düzenlemesi, kompanzasyon ve acil çıkış aydınlatması işlerini kapalı saatlerde yaparak işletmeyi aksatmıyoruz.',
         },
         {
-          title: 'Merkezdeki apartmanlar',
+          title: 'Menderes apartmanları',
           text: 'Alt katı dükkan, üst katları konut olan Menderes apartmanlarında ortak pano, sayaç odası, merdiven otomatiği ve daire içi sigorta-kaçak akım arızalarına çoğunlukla çağrıdan sonraki bir saat içinde bakıyoruz.',
         },
         {
@@ -303,13 +303,11 @@ export const sincanNeighborhoods: Neighborhood[] = [
       ],
       landmarks: [
         'Alparslan Caddesi',
-        'Menderes Merkez',
-        'Sincan Belediyesi çevresi',
-        'Sincan Çarşı',
-        'Ankara Caddesi',
-        'Lale Meydanı çevresi',
-        'Menderes Pazar Yeri',
-        'Sincan Tren İstasyonu yönü',
+        'Kıbrıs Caddesi',
+        'Ayaş Sokak',
+        'Yenikent Menderes Mahallesi',
+        'Yenikent merkezi',
+        'Menderes\'teki apartman ve siteler',
       ],
       faq: [
         {
@@ -321,13 +319,21 @@ export const sincanNeighborhoods: Neighborhood[] = [
           a: 'Aynı mahallede olduğumuz için Menderes\'teki acil arızalara çoğu zaman yarım saat içinde, bazen yürüyerek ulaşıyoruz.',
         },
         {
-          q: 'Çarşıdaki mağazamızın vitrin aydınlatmasını mesai dışında yapabilir misiniz?',
-          a: 'Yapabiliriz. Menderes çarşısındaki mağazalarda vitrin ve raf LED işlerini kapanıştan sonra ya da sabah açılıştan önce bitiriyoruz.',
+          q: 'Dükkanımızın vitrin aydınlatmasını mesai dışında yapabilir misiniz?',
+          a: 'Yapabiliriz. Menderes ve Yenikent\'teki dükkanlarda vitrin ve raf LED işlerini kapanıştan sonra ya da sabah açılıştan önce bitiriyoruz.',
         },
       ],
-      seoTitle: 'Menderes Elektrikçi | Dükkanımız Bu Mahallede | Demir Elektrik',
+      seoTitle: 'Yenikent Menderes Elektrikçi | Dükkanımız Burada | Demir Elektrik',
       seoDescription:
-        'Menderes elektrikçi: dükkanımız Sincan Menderes Alparslan Caddesi\'nde. Çarşı mağazaları ve apartmanlarda arıza, tesisat, LED. Demir Elektrik: 0506 254 76 78.',
+        'Yenikent Menderes elektrikçi: dükkanımız Alparslan Caddesi No:24\'te. Apartman, site ve dükkanlarda arıza, tesisat, LED. Demir Elektrik: 0506 254 76 78.',
+      seoTags: [
+        'Yenikent Menderes Elektrikçi',
+        'Sincan Menderes Elektrikçi',
+        'Menderes Mahallesi Elektrikçi',
+        'Yenikent Elektrikçi',
+        'Yenikent Elektrik Ustası',
+        'Alparslan Caddesi Elektrikçi',
+      ],
     },
   },
   {

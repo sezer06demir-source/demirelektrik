@@ -25,6 +25,8 @@ export interface NeighborhoodContent {
   seoTitle: string;
   /** 150–160 karakter, telefon numarasıyla biter */
   seoDescription: string;
+  /** Sayfa altındaki arama ifadeleri bloğuna eklenecek bölgeye özgü ifadeler */
+  seoTags?: string[];
 }
 
 export interface Neighborhood {

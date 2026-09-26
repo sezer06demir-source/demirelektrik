@@ -23,6 +23,8 @@ interface Props {
   bodyClass?: string;
   /** Sayfa altındaki arama ifadeleri bloğu için bölge adı. Boş bırakılırsa Ankara. */
   seoArea?: string;
+  /** Arama ifadeleri bloğuna eklenecek sayfaya özgü ifadeler */
+  seoExtra?: string[];
 }
 
 const {
@@ -35,6 +37,7 @@ const {
   noindex = false,
   bodyClass,
   seoArea = 'Ankara',
+  seoExtra = [],
 } = Astro.props;
 
 const fullTitle = buildTitle(title, !rawTitle);
@@ -97,7 +100,7 @@ const jsonLd = [websiteSchema(), localBusinessSchema(), ...schema];
     <main id="main">
       <slot />
     </main>
-    <SeoTags area={seoArea} />
+    <SeoTags area={seoArea} extra={seoExtra} />
     <Footer />
     <WhatsAppButton />
     <MobileCallBar />

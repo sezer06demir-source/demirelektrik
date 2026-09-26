@@ -30,12 +30,13 @@ export const site = {
   address: {
     street: 'Menderes Mahallesi, Alparslan Caddesi No:24',
     neighborhood: 'Menderes Mahallesi',
+    semt: 'Yenikent',
     line1: 'Alparslan Caddesi No:24',
     district: 'Sincan',
     city: 'Ankara',
     country: 'Türkiye',
     countryCode: 'TR',
-    full: 'Menderes Mahallesi, Alparslan Caddesi No:24, Sincan / Ankara',
+    full: 'Menderes Mahallesi, Alparslan Caddesi No:24, Yenikent, Sincan / Ankara',
   },
 
   hours: {
@@ -56,12 +57,12 @@ export const site = {
     placeHref: 'https://maps.google.com/?cid=6604405414158608828',
     get directionsHref() {
       return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-        'Menderes Mahallesi, Alparslan Caddesi No:24, Sincan, Ankara',
+        'Menderes Mahallesi, Alparslan Caddesi No:24, Yenikent, Sincan, Ankara',
       )}`;
     },
     get embedSrc() {
       return `https://www.google.com/maps?q=${encodeURIComponent(
-        'Menderes Mahallesi Alparslan Caddesi No:24 Sincan Ankara',
+        'Menderes Mahallesi Alparslan Caddesi No:24 Yenikent Sincan Ankara',
       )}&output=embed&z=15&hl=tr`;
     },
   },

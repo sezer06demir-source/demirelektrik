@@ -246,7 +246,7 @@ export const posts: BlogPost[] = [
       },
       {
         q: 'Yenikent dışında da geliyor musunuz?',
-        a: 'Sincan merkezliyiz; Yenikent, Törekent, Pınarbaşı ve çevresi en sık gittiğimiz bölgeler. Ankara’nın diğer ilçelerine de 08:00–23:00 arasında çıkıyoruz. 0506 254 76 78’den ulaşabilirsiniz.',
+        a: 'Dükkanımız Sincan Yenikent’te; Yenikent, Törekent, Pınarbaşı ve çevresi en sık gittiğimiz bölgeler. Ankara’nın diğer ilçelerine de 08:00–23:00 arasında çıkıyoruz. 0506 254 76 78’den ulaşabilirsiniz.',
       },
     ],
     related: [

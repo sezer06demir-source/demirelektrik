@@ -42,7 +42,7 @@ const { headingLevel: Tag = 'h2', showLink = true } = Astro.props;
         <span>yıllık sektör tecrübesi</span>
       </div>
       <ul class="about__facts">
-        <li><Icon name="map-pin" size={18} /> <span><strong>Merkez:</strong> {site.address.district} / {site.address.city}</span></li>
+        <li><Icon name="map-pin" size={18} /> <span><strong>Merkez:</strong> {site.address.semt}, {site.address.district} / {site.address.city}</span></li>
         <li><Icon name="navigation" size={18} /> <span><strong>Hizmet bölgesi:</strong> {site.serviceArea}</span></li>
         <li><Icon name="clock" size={18} /> <span><strong>Çalışma saatleri:</strong> {site.hours.daysText} {site.hours.display}</span></li>
         <li><Icon name="layers" size={18} /> <span><strong>Alanlar:</strong> Konut, ticari ve endüstriyel elektrik</span></li>

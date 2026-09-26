@@ -39,6 +39,7 @@ const hoods = getNeighborhoodsOf(district.slug);
   title={c.seoTitle}
   rawTitle
   seoArea={district.name}
+  seoExtra={c.seoTags}
   description={c.seoDescription}
   schema={[
     breadcrumbSchema(crumbs),
@@ -59,7 +60,7 @@ const hoods = getNeighborhoodsOf(district.slug);
           <ul>
             <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
             <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
-            <li><Icon name="map-pin" size={18} /> Merkez: {site.address.district} / {site.address.city}</li>
+            <li><Icon name="map-pin" size={18} /> Merkez: {site.address.semt}, {site.address.district} / {site.address.city}</li>
             <li><Icon name="award" size={18} /> 30+ yıllık tecrübe</li>
           </ul>
         </aside>

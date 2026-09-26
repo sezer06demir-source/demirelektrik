@@ -50,7 +50,7 @@ export function localBusinessSchema() {
     priceRange: '₺₺',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: site.address.street,
+      streetAddress: `${site.address.street}, ${site.address.semt}`,
       addressLocality: site.address.district,
       addressRegion: site.address.city,
       addressCountry: site.address.countryCode,
