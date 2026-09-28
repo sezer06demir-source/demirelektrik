@@ -50,41 +50,80 @@ export const districts: District[] = [
     type: 'ilce',
     featured: true,
     content: {
-      h1: 'Sincan Elektrikçi',
-      subtitle: 'Merkezimiz Sincan\'da. Arıza, tesisat, pano ve aydınlatma işlerinde en yakın ekip biziz.',
+      h1: 'Sincan Elektrikçi ve Elektrik Ustası',
+      subtitle: 'Dükkanımız Sincan\'ın içinde, Yenikent Menderes\'te. Arızaya da tesisata da çırağı değil, ustanın kendisini gönderiyoruz.',
       intro: [
-        'Demir Elektrik\'in merkezi Sincan Yenikent\'te, Menderes Mahallesi\'nde bulunuyor. Bu nedenle Sincan içindeki elektrik arızalarına ve tesisat işlerine en hızlı ulaşabildiğimiz bölge burası. Törekent, Fatih, Yenikent, Temelli ve Sincan merkezdeki konut, iş yeri ve sanayi müşterilerimize 30 yılı aşkın süredir hizmet veriyoruz.',
-        'Sincan hem yoğun konut bölgeleri hem de Sincan Organize Sanayi Bölgesi ve 1. OSB ile Ankara\'nın en önemli üretim merkezlerinden biri. Bu yapı, ekibimizin bir günde hem bir dairede sigorta arızasına hem de bir fabrikada pano montajına müdahale etmesi anlamına geliyor.',
+        'Sincan\'da elektrikçi arıyorsanız uzağa bakmayın: dükkanımız Yenikent Menderes Mahallesi\'nde, Alparslan Caddesi No:24\'te. Otuz yılı aşkın süredir Sincan\'da elektrik işi yapıyoruz. Törekent\'in yüksek bloklarını, Fatih\'in cadde üstü dükkanlarını, Pınarbaşı\'nın eski evlerini, Plevne\'nin yeni sitelerini, OSB\'nin fabrikalarını içeriden biliyoruz. Çoğu zaman siz telefonda anlatırken arızanın nerede olduğunu tahmin ediyoruz.',
+        'Bizde telefonu açan da kapınıza gelen de usta: Recep Usta ya da Sezer Usta. İkimizin de Ustalık ve Usta Öğreticilik belgesi var; Sincan\'da da Ankara\'nın her yerinde yetkili elektrikçi olarak çalışıyoruz. Gelen usta arızayı ölçü aletiyle bulur, ne yapılacağını ve fiyatı işe başlamadan söyler; siz onay vermeden kabloya el sürmeyiz. İş bitince fiyat değişmez.',
+        'Sincan elektrik ustası olarak bir günümüz şöyle geçer: sabah bir dairede atan sigorta, öğlen Fatih\'te bir dükkanın panosu, öğleden sonra OSB\'de bir makinenin enerji bağlantısı, akşam Törekent\'te bir site yönetiminin merdiven otomatiği. Hepsinin malzemesi araçta hazır durur; parça için ikinci kez gelmeyiz. Her gün 08:00–23:00 arası telefonumuz açık.',
       ],
       highlightedServices: ['elektrik-ariza', 'ev-elektrik-tesisati', 'fabrika-elektrik', 'elektrik-pano-montaji'],
       localNotes: [
         {
-          title: 'Sincan OSB ve sanayi tesisleri',
-          text: 'Sincan Organize Sanayi Bölgesi\'ndeki atölye ve fabrikalara pano montajı, makine enerji bağlantısı ve arıza tespiti için yakınlık avantajıyla hızlı ulaşıyoruz.',
+          title: 'Sincan merkezin eski apartmanları',
+          text: 'Sincan merkezdeki 80\'li ve 90\'lı yıl apartmanlarında kolon hattı bugünkü yükü taşımıyor: kombi, klima, bulaşık makinesi eklendikçe sayaç panosu ısınıyor. Sayaç panosunu, kolon hattını ve daire içi tesisatı bina sakinlerini en az etkileyecek şekilde, gerekirse blok blok yeniliyoruz.',
         },
         {
-          title: 'Toplu konut ve yeni siteler',
-          text: 'Yenikent, Törekent ve Fatih bölgelerindeki yeni sitelerde daire tesisatı, spot ve avize montajı en sık aldığımız taleplerin başında geliyor.',
+          title: 'Törekent, Plevne ve Yenikent\'in yeni siteleri',
+          text: 'Yeni teslim dairelerde en çok gelen iş: ankastreye ayrı hat, salona klima hattı, tavandaki kablo uçlarına avize ve spot. Hepsini tek ziyarette toplarız ki ev iki kere toza bulanmasın. Site yönetimleriyle de ortak alan, asansör beslemesi ve otopark aydınlatmasında çalışıyoruz.',
         },
         {
-          title: 'Eski yapılarda tesisat yenileme',
-          text: 'Sincan merkezdeki eski apartmanlarda sayaç panosu, kolon hattı ve daire içi tesisat yenileme işlerini bina sakinlerini en az etkileyecek şekilde planlıyoruz.',
+          title: 'Sincan OSB ve sanayi',
+          text: 'Sincan Organize Sanayi Bölgesi ve 1. OSB\'deki fabrika ve atölyelere pano montajı, makine enerji bağlantısı, faz ve kompanzasyon arızası için yakınlık avantajıyla hızlı ulaşıyoruz. Üretim durmasın diye gerekirse mesai dışında çalışıyoruz.',
+        },
+        {
+          title: 'Esnaf ve dükkanlar',
+          text: 'Fatih, 29 Ekim ve Menderes\'teki dükkanlarda tabela, vitrin aydınlatması, soğutucu hattı ve üç faz besleme işlerini kapanıştan sonra ya da sabah erkenden yapıyoruz; siz kepenk açıkken müşteriniz elektriksiz kalmasın.',
         },
       ],
       neighborhoods: ['Menderes', 'Törekent', 'Fatih', 'Yenikent', 'Temelli', 'Pınarbaşı', 'Osmanlı', 'Plevne', 'Akşemsettin', 'Ahievran', 'Sincan OSB'],
       faq: [
         {
           q: 'Sincan içinde arızaya ne kadar sürede geliyorsunuz?',
-          a: 'Merkezimiz Sincan\'da olduğu için Sincan içindeki arızalara Ankara\'nın diğer ilçelerine kıyasla en kısa sürede ulaşıyoruz. Aradığınızda o anki yoğunluğa göre net bir süre veriyoruz.',
+          a: 'Dükkanımız Sincan\'ın içinde, Yenikent Menderes\'te. Sincan içindeki arızalara Ankara\'nın diğer ilçelerine göre çok daha kısa sürede ulaşıyoruz; aradığınızda o anki işe göre net bir saat söylüyoruz.',
+        },
+        {
+          q: 'Eve kim geliyor, işi usta mı yapıyor?',
+          a: 'Evet, işi usta yapar. Çağrılara Recep Usta ya da Sezer Usta bizzat çıkar; ikisinin de Ustalık ve Usta Öğreticilik belgesi var. Gelen ustaya belgesini sormaktan çekinmeyin.',
+        },
+        {
+          q: 'Sigorta atıyor, kaldırınca yine atıyor. Ne yapayım?',
+          a: 'Üst üste kaldırmayın, her seferinde o hat biraz daha zorlanır. Çamaşır makinesi, fırın, şofben gibi büyük cihazları fişten çekip sigortayı bir kez kaldırın. Tutuyorsa cihazları tek tek takın; hangisinde atıyorsa sorun o cihazdadır. Yine atıyorsa sorun tesisattadır, bizi arayın.',
+        },
+        {
+          q: 'Sokakta herkesin elektriği yok, sizi mi aramalıyım?',
+          a: 'Komşularda da elektrik yoksa bu şebeke kesintisidir, 186 elektrik arıza hattını arayın. Komşularda var, sadece sizde yoksa sorun binanızda ya da dairenizdedir; o zaman bizi arayın.',
         },
         {
           q: 'Sincan OSB\'deki fabrikamıza pano montajı için gelir misiniz?',
-          a: 'Evet. Sincan OSB ve 1. OSB\'deki tesislere pano montajı, revizyon, makine bağlantısı ve arıza tespiti için düzenli olarak hizmet veriyoruz.',
+          a: 'Evet. Sincan OSB ve 1. OSB\'deki tesislere pano montajı, revizyon, makine bağlantısı ve arıza tespiti için düzenli olarak gidiyoruz.',
+        },
+        {
+          q: 'Fiyatı gelmeden söyleyebilir misiniz?',
+          a: 'Avize takma, priz ekleme gibi belli işlerde fotoğrafa bakıp aşağı yukarı fiyat söylüyoruz. Arızada ise sebebi görmeden fiyat vermek doğru olmaz: gelir, buluruz, fiyatı söyleriz; siz onaylarsanız başlarız.',
         },
       ],
-      seoTitle: 'Sincan Elektrikçi – Aynı Gün Arıza Servisi, 30+ Yıl | Demir Elektrik',
+      seoTitle: 'Sincan Elektrikçi ve Elektrik Ustası – Aynı Gün | Demir Elektrik',
+      seoTags: [
+        'Sincan Elektrik Ustası',
+        'Sincan Yetkili Elektrikçi',
+        'Sincan Belgeli Elektrikçi',
+        'Sincan Yakınımdaki Elektrikçi',
+        'Sincan Elektrik Arızası',
+        'Sincan Sigorta Atıyor',
+        'Sincan Elektrikçi Fiyatları',
+        'Sincan Ev Elektrikçisi',
+        'Sincan Dükkan Elektrikçisi',
+        'Sincan OSB Elektrikçi',
+        'Sincan Pano Montajı',
+        'Sincan Avize Takma',
+        'Sincan Klima Hattı Çekimi',
+        'Sincan Tesisat Yenileme',
+        'Törekent Elektrik Ustası',
+        'Sincan Merkez Elektrikçi',
+      ],
       seoDescription:
-        'Sincan\'da elektrik mi gitti, sigorta mı atıyor? Yenikent Menderes\'teki dükkanımızdan aynı gün geliyoruz. Arıza, pano, tesisat, avize. 08:00–23:00 ☎ 0506 254 76 78',
+        'Sincan elektrikçi: dükkanımız Yenikent Menderes\'te. Recep Usta ve Sezer Usta, belgeli yetkili elektrikçi. Arıza, sigorta, pano, tesisat, avize; aynı gün. 08:00–23:00 ☎ 0506 254 76 78',
     },
   },
   {
@@ -143,9 +182,9 @@ export const districts: District[] = [
           a: 'Avize takma, priz ekleme gibi belli işlerde fotoğrafa bakıp aşağı yukarı fiyat söylüyoruz. Arızada ise sebebi görmeden fiyat vermek doğru olmaz; gelip buluyoruz, fiyatı söylüyoruz, siz onaylarsanız başlıyoruz.',
         },
       ],
-      seoTitle: 'Yenikent Elektrikçi ve Elektrik Ustası – Aynı Gün | Demir Elektrik',
+      seoTitle: 'Yenikent Elektrikçi ve Elektrik Ustası – Dükkanımız Menderes\'te',
       seoDescription:
-        'Yenikent elektrikçi ve elektrik ustası, dükkanımız Yenikent Menderes\'te: sigorta atması, kaçak akım, daire-villa tesisatı, avize-spot. 08:00–23:00 ☎ 0506 254 76 78',
+        'Yenikent\'te elektrik mi gitti? Dükkanımız Menderes Alparslan Cd. No:24\'te, mahallenin içinde. Belgeli usta aynı gün kapınızda: sigorta, kaçak akım, tesisat, avize. ☎ 0506 254 76 78',
       seoTags: [
         'Sincan Yenikent Elektrikçi',
         'Yenikent Sincan Elektrikçi',
