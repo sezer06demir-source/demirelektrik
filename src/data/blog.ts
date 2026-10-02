@@ -256,6 +256,80 @@ export const posts: BlogPost[] = [
       { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
     ],
   },
+  {
+    slug: 'klima-montaji-elektrik-hatti-29-ekim',
+    title: 'Klima Montajında Elektrik Hattı: 29 Ekim’de Sık Yaptığımız Hatasız Kurulum',
+    description:
+      '29 Ekim’de yeni klima taktıracaklar için: elektrik hattı ayrı mı çekilmeli, mevcut prize mi bağlanmalı? Sincan elektrikçi gözünden doğru kurulum. Demir Elektrik: 0506 254 76 78.',
+    keyword: '29 Ekim elektrikçi',
+    date: '2026-10-02',
+    readingMin: 6,
+    excerpt:
+      '29 Ekim’de klima taktıracak olanların en çok sorduğu soru: elektrik hattını mevcut prize mi bağlamalı, ayrı mı çekmeli? Sahadan doğru cevabı anlatıyoruz.',
+    intro:
+      '29 Ekim’deki yeni sitelerde ve TOKİ bloklarında yaz öncesi en çok aldığımız çağrılardan biri klima montajı için elektrik hattı. Klimacı cihazı duvara asıyor ama elektrik bağlantısı çoğu zaman “en yakın priz nereye denk gelirse” mantığıyla yapılıyor. 29 Ekim elektrikçi olarak söyleyelim: bu, kısa vadede çalışır ama uzun vadede sigorta atması, priz ısınması ya da daha kötüsü yangın riskine kadar gidebilen bir hata olabilir.',
+    sections: [
+      {
+        h: 'Klima için mevcut prize bağlanabilir mi?',
+        p: [
+          'Kısa cevap: küçük kapasiteli (9.000–12.000 BTU) bir klima için, hat uygunsa genelde bağlanabilir. Ama o prizin hangi sigortadan beslendiğine ve o hatta zaten başka ne bağlı olduğuna bakmadan karar vermiyoruz. Aynı hatta buzdolabı, çamaşır makinesi ya da ısıtıcı da varsa, klima devreye girdiğinde o hat taşıyamayacağı bir yüke çıkabilir.',
+          '18.000 BTU ve üzeri klimalarda ise çoğu zaman ayrı bir hat öneriyoruz; bu kapasitedeki klimaların kalkış akımı yüksektir ve paylaşılan bir hatta sık sorun çıkarır.',
+        ],
+      },
+      {
+        h: 'Ayrı hat çekmek neden daha güvenli?',
+        p: [
+          'Ayrı hat, klimayı kendi sigortasına ve gerekiyorsa kendi kaçak akım rölesine bağlamak anlamına gelir. Bu sayede klima çalışırken evin başka bir yerinde sigorta atmaz, klima arızalansa da evin geri kalanı etkilenmez. 29 Ekim’deki yeni sitelerde daireler genelde yeterli sigorta kapasitesine sahip olsa da, pano içinde boş yer bırakılmamış olabiliyor; biz bu durumda mevcut grubu bozmadan uygun bir çözüm çıkarıyoruz.',
+          'Dış ünite için çekilen kablonun dış ortam koşullarına uygun ve doğru kesitte olması da önemli; cam balkon ya da dışa açık duvardan geçen hatlarda bu noktayı özellikle kontrol ediyoruz.',
+        ],
+      },
+      {
+        h: 'Kablo kesiti neden önemli?',
+        p: [
+          'Klimanın etiketinde yazan akım değerine göre doğru kesit seçilmeli; çoğu konut klimasında 2,5 mm² yeterli olsa da, yüksek kapasiteli ve uzun kablo mesafesi olan kurulumlarda daha kalın kesit gerekebiliyor. İnce kesitle çekilmiş bir hat, klima tam güçte çalışırken ısınır; bu ısınma zamanla kablonun yalıtımını bozup kalıcı arızaya yol açabilir.',
+          '29 Ekim’de yeni yapılan bazı sitelerde klimacı ekibinin kendi başına çektiği ince kablolu hatları, montaj sonrası kontrol için çağrıldığımızda düzelttiğimiz oluyor.',
+        ],
+      },
+      {
+        h: 'Topraklama ve kaçak akım rölesi klimada şart mı?',
+        p: [
+          'Evet. Klima metal gövdeli bir cihazdır ve nemli dış ortamda çalışır; topraklama bağlantısı olmadan kurulmuş bir klima, bir arıza anında gövdesinde gerilim taşıyabilir. Aynı şekilde klima hattının bir kaçak akım rölesinin arkasında olması gerekir; bu, hem cihazı hem de kullanıcıyı korur.',
+          '29 Ekim’deki yeni bloklarda pano standartlara uygun kurulmuş olsa da, klima sonradan eklendiği için bu hattın doğru röleye bağlı olup olmadığını montaj sırasında ayrıca kontrol ediyoruz.',
+        ],
+      },
+      {
+        h: '29 Ekim’de klima montajı için elektrik hattını nasıl hazırlıyoruz?',
+        p: [
+          'Önce panodaki boş kapasiteyi ve mevcut grupları kontrol ediyoruz; uygunsa klimaya özel bir sigorta ayırıyor, gerekmiyorsa mevcut uygun bir hattı güçlendiriyoruz. İç ve dış ünite arası kabloyu doğru kesitte çekip topraklama bağlantısını tamamlıyor, son olarak hattı yük altında test ediyoruz.',
+          'Klimacı firma geldiğinde elektrik hattı zaten hazır ve test edilmiş oluyor; bu da montaj gününü kısaltıyor ve sonradan “priz yetersiz geldi” gibi sürprizleri önlüyor. 29 Ekim’in TOKİ blokları ve yeni sitelerinde bu işi yaz öncesi toplu halde yapan site yönetimleriyle de çalışıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: '29 Ekim’de klima için elektrikçiyi ne zaman çağırmalıyım?',
+        a: 'En doğrusu klima montaj tarihinden önce. Elektrik hattını önceden hazırlayıp test ettiğimizde klimacı geldiğinde iş tek seferde bitiyor; montaj günü hat sorunuyla uğraşmıyorsunuz.',
+      },
+      {
+        q: 'Mevcut prizden klima çalıştırıyorum, sigorta sık atıyor; sebebi ne?',
+        a: 'Genelde o hatta klimayla birlikte başka yüklü bir cihazın da bağlı olması ya da hattın klimanın kalkış akımına yetmemesidir. Hattı ölçüp gerekiyorsa klimaya ayrı bir sigorta ve hat çıkarmak kalıcı çözüm oluyor.',
+      },
+      {
+        q: 'Dış ünite kablosu için özel bir önlem gerekir mi?',
+        a: 'Evet. Dış ortama açık kabloların neme ve güneşe dayanıklı, doğru kesitte ve düzgün sabitlenmiş olması gerekir; aksi halde zamanla yalıtım bozulup arıza çıkabilir.',
+      },
+      {
+        q: '29 Ekim dışındaki Sincan mahallelerine de geliyor musunuz?',
+        a: 'Geliyoruz. Dükkanımız Sincan Yenikent’te; 29 Ekim, Menderes, Fevzi Çakmak ve Sincan’ın tüm mahallelerine 08:00–23:00 arasında çıkıyoruz. 0506 254 76 78’den ulaşabilirsiniz.',
+      },
+    ],
+    related: [
+      { label: '29 Ekim Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/29-ekim-elektrikci' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Elektrik Arıza Tespiti ve Onarımı', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Priz Neden Isınır?', href: '/rehber/priz-neden-isinir-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
