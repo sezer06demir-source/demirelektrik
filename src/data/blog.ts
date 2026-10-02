@@ -258,7 +258,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'klima-montaji-elektrik-hatti-29-ekim',
-    title: 'Klima Montajında Elektrik Hattı: 29 Ekim’de Sık Yaptığımız Hatasız Kurulum',
+    title: 'Sincan 29 Ekim Mahallesi’nde Klima Montajı: Elektrik Hattı Nasıl Hazırlanır?',
     description:
       '29 Ekim’de yeni klima taktıracaklar için: elektrik hattı ayrı mı çekilmeli, mevcut prize mi bağlanmalı? Sincan elektrikçi gözünden doğru kurulum. Demir Elektrik: 0506 254 76 78.',
     keyword: '29 Ekim elektrikçi',
@@ -300,7 +300,7 @@ export const posts: BlogPost[] = [
       {
         h: '29 Ekim’de klima montajı için elektrik hattını nasıl hazırlıyoruz?',
         p: [
-          'Önce panodaki boş kapasiteyi ve mevcut grupları kontrol ediyoruz; uygunsa klimaya özel bir sigorta ayırıyor, gerekmiyorsa mevcut uygun bir hattı güçlendiriyoruz. İç ve dış ünite arası kabloyu doğru kesitte çekip topraklama bağlantısını tamamlıyor, son olarak hattı yük altında test ediyoruz.',
+          'Önce panodaki boş kapasiteyi ve mevcut grupları kontrol ediyoruz; yer varsa klimaya özel bir sigorta ayırıyor, yoksa mevcut uygun bir hattı güçlendiriyoruz. İç ve dış ünite arası kabloyu doğru kesitte çekip topraklama bağlantısını tamamlıyor, son olarak hattı yük altında test ediyoruz.',
           'Klimacı firma geldiğinde elektrik hattı zaten hazır ve test edilmiş oluyor; bu da montaj gününü kısaltıyor ve sonradan “priz yetersiz geldi” gibi sürprizleri önlüyor. 29 Ekim’in TOKİ blokları ve yeni sitelerinde bu işi yaz öncesi toplu halde yapan site yönetimleriyle de çalışıyoruz.',
         ],
       },
