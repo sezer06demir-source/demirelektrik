@@ -35,7 +35,7 @@ export const site = {
   googleAds: {
     id: 'AW-18229186854',
     phoneLabel: 'uDxnCOSr-5UdEKairfRD',
-    whatsappLabel: '',
+    whatsappLabel: 'tnddCIa0hJYdEKairfRD',
   },
 
   address: {
