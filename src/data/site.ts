@@ -33,8 +33,8 @@ export const site = {
    * Etiketler: Google Ads → Hedefler → Dönüşümler → işlem → "Etiketi kullan" → send_to: 'AW-.../<etiket>'.
    */
   googleAds: {
-    id: '', // örn. 'AW-123456789'
-    phoneLabel: '',
+    id: 'AW-18229186854',
+    phoneLabel: 'uDxnCOSr-5UdEKairfRD',
     whatsappLabel: '',
   },
 
