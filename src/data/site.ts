@@ -27,6 +27,17 @@ export const site = {
     },
   },
 
+  /**
+   * Google Ads dönüşüm takibi (telefon ve WhatsApp tıklamaları).
+   * id boşsa etiket ve çerez çubuğu hiç yüklenmez.
+   * Etiketler: Google Ads → Hedefler → Dönüşümler → işlem → "Etiketi kullan" → send_to: 'AW-.../<etiket>'.
+   */
+  googleAds: {
+    id: '', // örn. 'AW-123456789'
+    phoneLabel: '',
+    whatsappLabel: '',
+  },
+
   address: {
     street: 'Menderes Mahallesi, Alparslan Caddesi No:24',
     neighborhood: 'Menderes Mahallesi',

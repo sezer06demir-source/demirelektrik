@@ -10,7 +10,7 @@ const crumbs = [
 ];
 ---
 
-<BaseLayout title="Çerez Politikası" description="Demir Elektrik web sitesinde kullanılan çerezler ve üçüncü taraf bileşenler hakkında bilgilendirme." schema={[breadcrumbSchema(crumbs)]}>
+<BaseLayout title="Çerez Politikası" description="Demir Elektrik web sitesinde kullanılan çerezler ve Google Ads dönüşüm ölçümü ve üçüncü taraf bileşenler hakkında bilgilendirme." schema={[breadcrumbSchema(crumbs)]}>
   <PageHero title="Çerez Politikası" breadcrumbs={crumbs} showCta={false} />
   <section class="section">
     <div class="container prose">
@@ -19,12 +19,19 @@ const crumbs = [
 
       <h2>Sitemizde Kullanılan Çerezler</h2>
       <p>
-        {site.name} web sitesi, kendi adına takip veya reklam çerezi kullanmaz. Sitemiz statik olarak yayınlanır ve ziyaretçi
-        davranışlarını izleyen bir analitik aracı bulunmamaktadır.
+        {site.name} web sitesi, kendi adına analitik veya profil çıkarma amaçlı çerez kullanmaz. Siteyi ilk ziyaretinizde
+        ekranın altında bir çerez tercihi çubuğu görürsünüz. Google reklam çerezleri yalnızca <strong>Kabul Et</strong>
+        düğmesine bastığınızda etkinleşir.
       </p>
 
       <h2>Üçüncü Taraf Çerezleri</h2>
       <ul>
+        <li>
+          <strong>Google Ads dönüşüm ölçümü:</strong> Google reklamlarımızdan gelen ziyaretçilerin telefon veya WhatsApp
+          düğmesine tıklayıp tıklamadığını ölçmek için kullanılır. Onay verirseniz Google tarayıcınıza reklam çerezi yazar.
+          Onay vermezseniz çerez yazılmaz; Google'a yalnızca kimliğinizi içermeyen, çerezsiz bir sinyal gider. Seçiminiz
+          tarayıcınızda saklanır.
+        </li>
         <li>
           <strong>Google Haritalar:</strong> İletişim sayfasındaki harita bileşeni yüklendiğinde Google, kendi çerezlerini
           yerleştirebilir. Bu çerezler Google'ın gizlilik politikasına tabidir.
@@ -33,7 +40,11 @@ const crumbs = [
 
       <h2>Çerezleri Yönetme</h2>
       <p>
-        Tarayıcınızın ayarlarından çerezleri silebilir veya engelleyebilirsiniz. Çerezleri engellemeniz sitemizin temel
+        Verdiğiniz kararı istediğiniz zaman değiştirebilirsiniz:
+        <button type="button" class="cookie-settings" data-cookie-settings>Çerez tercihlerimi değiştir</button>
+      </p>
+      <p>
+        Tarayıcınızın ayarlarından da çerezleri silebilir veya engelleyebilirsiniz. Çerezleri engellemeniz sitemizin temel
         işlevlerini etkilemez; yalnızca harita bileşeni görüntülenmeyebilir.
       </p>
 
@@ -42,3 +53,18 @@ const crumbs = [
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .cookie-settings {
+    display: inline-block;
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    background: var(--gray-light);
+    color: var(--text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>

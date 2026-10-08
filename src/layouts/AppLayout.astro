@@ -7,6 +7,8 @@ import '@fontsource-variable/inter';
 import '@styles/global.css';
 import { site } from '@data/site';
 import { canonicalUrl } from '@utils/seo';
+import GoogleAdsTag from '@components/GoogleAdsTag.astro';
+import CookieConsent from '@components/CookieConsent.astro';
 
 interface Props {
   title: string;
@@ -21,6 +23,7 @@ const canonical = canonicalUrl(Astro.url.pathname);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <GoogleAdsTag />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -43,6 +46,7 @@ const canonical = canonicalUrl(Astro.url.pathname);
   </head>
   <body class="app-body">
     <slot />
+    <CookieConsent />
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

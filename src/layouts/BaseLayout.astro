@@ -9,6 +9,8 @@ import SeoTags from '@components/SeoTags.astro';
 import Footer from '@components/Footer.astro';
 import MobileCallBar from '@components/MobileCallBar.astro';
 import WhatsAppButton from '@components/WhatsAppButton.astro';
+import GoogleAdsTag from '@components/GoogleAdsTag.astro';
+import CookieConsent from '@components/CookieConsent.astro';
 
 interface Props {
   title: string;
@@ -51,6 +53,7 @@ const jsonLd = [websiteSchema(), localBusinessSchema(), ...schema];
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <GoogleAdsTag />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -104,6 +107,7 @@ const jsonLd = [websiteSchema(), localBusinessSchema(), ...schema];
     <Footer />
     <WhatsAppButton />
     <MobileCallBar />
+    <CookieConsent />
 
     <script>
       // Scroll ile görünürlük animasyonu (fade-up)
