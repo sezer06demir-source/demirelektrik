@@ -797,6 +797,7 @@ const description = 'Ankara genelinde elektrik arızası bildirin, randevu istey
       ].filter((l) => l !== '');
       const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(lines.join('\n'))}`;
       if (doneLink) doneLink.href = url;
+      (window as unknown as { deTrackWhatsApp?: () => void }).deTrackWhatsApp?.();
       window.open(url, '_blank', 'noopener');
       form.hidden = true;
       if (done) {

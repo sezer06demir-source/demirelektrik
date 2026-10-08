@@ -38,6 +38,11 @@ const { id, phoneLabel, whatsappLabel } = site.googleAds;
         gtag('js', new Date());
         gtag('config', id);
 
+        // Bağlantı olmadan WhatsApp açan yerler (iletişim/talep formları window.open kullanır) bunu çağırır.
+        window.deTrackWhatsApp = function () {
+          if (whatsappLabel) gtag('event', 'conversion', { send_to: id + '/' + whatsappLabel });
+        };
+
         // Tüm sayfalardaki arama ve WhatsApp bağlantıları (menü, sabit çubuk, yüzen düğme, sayfa içi).
         document.addEventListener(
           'click',

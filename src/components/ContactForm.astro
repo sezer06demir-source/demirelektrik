@@ -243,6 +243,7 @@ import Icon from './Icon.astro';
           message ? `Mesaj: ${message}` : '',
         ].filter((l) => l !== undefined);
         const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(lines.join('\n'))}`;
+        (window as unknown as { deTrackWhatsApp?: () => void }).deTrackWhatsApp?.();
         window.open(url, '_blank', 'noopener');
         if (status) status.textContent = 'Talebiniz WhatsApp üzerinden iletilmek üzere hazırlandı. Açılan pencerede "Gönder" tuşuna basmanız yeterli.';
         form.reset();
