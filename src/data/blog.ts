@@ -339,14 +339,14 @@ export const posts: BlogPost[] = [
     date: '2026-10-09',
     readingMin: 5,
     excerpt:
-      "Fevzi Çakmak Caddesi'ndeki dükkanlarda vitrin LED'i, ara sokaklardaki apartmanlarda ise merdiven ve ortak alan LED'i en sık gördüğümüz işlerden. İkisinde de doğru güç ve sigorta hesabı yapılmazsa ışık kısa ömürlü oluyor.",
+      "Sincan Fevzi Çakmak Mahallesi'ndeki dükkanlarda vitrin LED'i, apartmanlarda ise merdiven ve ortak alan LED'i en sık gördüğümüz işlerden. İkisinde de doğru güç ve sigorta hesabı yapılmazsa ışık kısa ömürlü oluyor.",
     intro:
-      "Fevzi Çakmak Caddesi'ndeki esnafla da, arka sokaklardaki apartman yönetimleriyle de sık çalışıyoruz; ikisinin de talebi son yıllarda aynı yöne kaydı: LED. Dükkan sahibi vitrinini daha parlak göstermek istiyor, apartman yönetimi ise merdiven ve ortak alan aydınlatmasını tasarruflu hale getirmek istiyor. Fevzi Çakmak elektrikçi olarak şunu söyleyelim: LED'e geçmek doğru bir karar ama güç ve sigorta hesabı yapılmadan takılan her LED, bir süre sonra ya titriyor ya da erken ölüyor.",
+      "Fevzi Çakmak Mahallesi'ndeki esnafla da, apartman yönetimleriyle de sık çalışıyoruz; ikisinin de talebi son yıllarda aynı yöne kaydı: LED. Dükkan sahibi vitrinini daha parlak göstermek istiyor, apartman yönetimi ise merdiven ve ortak alan aydınlatmasını tasarruflu hale getirmek istiyor. Fevzi Çakmak elektrikçi olarak şunu söyleyelim: LED'e geçmek doğru bir karar ama güç ve sigorta hesabı yapılmadan takılan her LED, bir süre sonra ya titriyor ya da erken ölüyor.",
     sections: [
       {
         h: "Vitrin LED'inde güç hesabı neden gözle yapılmaz?",
         p: [
-          'Doğrudan cevap: vitrin LED şeridi ya da panosu, metre veya adet başına belli bir watt çeker; toplam yük hesaplanmadan takılan sürücü (trafo) ya zorlanıp ısınır ya da yetersiz kalıp ışığı kısar. Fevzi Çakmak Caddesi\'ndeki bir lokantada tezgah üstü LED\'i hesapsız bağlanmış, iki ay içinde sürücü yanmıştı.',
+          'Doğrudan cevap: vitrin LED şeridi ya da panosu, metre veya adet başına belli bir watt çeker; toplam yük hesaplanmadan takılan sürücü (trafo) ya zorlanıp ısınır ya da yetersiz kalıp ışığı kısar. Fevzi Çakmak Mahallesi\'ndeki bir lokantada tezgah üstü LED\'i hesapsız bağlanmış, iki ay içinde sürücü yanmıştı.',
           'Biz önce şeridin veya panonun metre/adet başına çektiği watt değerini çıkarıp sürücüyü ona göre, üstüne biraz pay bırakarak seçiyoruz. Vitrin saat boyunca açık kaldığı için burada pay bırakmak özellikle önemli; ucuz ve tam sınırda çalışan bir sürücü, esnafa birkaç ay içinde tekrar masraf çıkarıyor.',
         ],
       },
@@ -361,7 +361,7 @@ export const posts: BlogPost[] = [
         h: "Apartmanlarda merdiven ve ortak alan LED'i",
         p: [
           'Doğrudan cevap: ortak alan LED\'ine geçerken en çok atlanan nokta, eski merdiven otomatiğinin yeni LED armatürle uyumlu olup olmadığıdır. Bazı eski otomatikler, düşük akım çeken LED armatürlerle düzgün çalışmayıp ışığı yanıp söndürebilir ya da hiç yakmayabilir.',
-          'Fevzi Çakmak\'ın ara sokaklarındaki dört beş katlı apartmanlarda bu durumla sık karşılaşıyoruz; armatürü değiştirirken otomatiği de kontrol edip gerekirse LED uyumlu bir otomatikle değiştiriyoruz. Aksi halde yönetim "LED\'e geçtik ama merdiven karanlık kalıyor" şikayetiyle bize tekrar dönüyor.',
+          'Fevzi Çakmak Mahallesi\'ndeki dört beş katlı apartmanlarda bu durumla sık karşılaşıyoruz; armatürü değiştirirken otomatiği de kontrol edip gerekirse LED uyumlu bir otomatikle değiştiriyoruz. Aksi halde yönetim "LED\'e geçtik ama merdiven karanlık kalıyor" şikayetiyle bize tekrar dönüyor.',
         ],
       },
       {
@@ -390,7 +390,7 @@ export const posts: BlogPost[] = [
       },
       {
         q: "Fevzi Çakmak'ta dükkan LED'i için ne kadar sürede gelirsiniz?",
-        a: 'Dükkanımız caddeye birkaç dakika mesafede; Fevzi Çakmak\'taki vitrin ve tabela LED işlerine genellikle aynı gün bakabiliyoruz.',
+        a: 'Dükkanımız Fevzi Çakmak Mahallesi\'ne birkaç dakika mesafede; mahalledeki vitrin ve tabela LED işlerine genellikle aynı gün bakabiliyoruz.',
       },
       {
         q: 'Vitrin ve tabela LED\'i için ayrı sigorta şart mı?',

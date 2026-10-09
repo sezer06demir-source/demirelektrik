@@ -342,9 +342,9 @@ export const sincanNeighborhoods: Neighborhood[] = [
     districtSlug: 'sincan-elektrikci',
     content: {
       h1: 'Fevzi Çakmak Elektrikçi',
-      subtitle: 'Fevzi Çakmak Caddesi esnafı ve çevresindeki apartmanlar için çarşıya bitişik, birkaç dakika mesafede elektrikçi.',
+      subtitle: 'Sincan Fevzi Çakmak Mahallesi esnafı ve apartmanları için çarşıya bitişik, birkaç dakika mesafede elektrikçi.',
       intro: [
-        'Fevzi Çakmak Mahallesi, Sincan çarşısına omuz veren konumuyla hem esnafın hem de konut sakinlerinin yoğun olduğu bir bölge. Fevzi Çakmak Caddesi üzerinde lokantalar, beyaz eşyacılar, kırtasiyeler ve marketler; ara sokaklarda ise dört beş katlı apartmanlar sıralanıyor. Bir elektrikçi için bu, gün içinde dükkan ve daire arasında mekik dokumak anlamına geliyor.',
+        'Fevzi Çakmak Mahallesi, Sincan çarşısına omuz veren konumuyla hem esnafın hem de konut sakinlerinin yoğun olduğu bir bölge. Mahallede lokantalar, beyaz eşyacılar, kırtasiyeler ve marketlerin yanında dört beş katlı apartmanlar sıralanıyor. Bir elektrikçi için bu, gün içinde dükkan ve daire arasında mekik dokumak anlamına geliyor.',
         'Demir Elektrik\'in dükkanı Fevzi Çakmak\'a birkaç dakika uzaklıkta. Bu yakınlık bize esnafa kısa sürede yetişme, daire arızalarında ise gün içinde birkaç randevuyu peş peşe sığdırma imkanı veriyor. Fevzi Çakmak\'ta elektrikçi arayıp elektrik arıza, iş yeri tesisatı ve aydınlatma işleri için bize ulaşan herkesin karşısına aynı gün çıkıyoruz.',
         'Dükkanlarda ocak ve soğutucu hatları, tabela beslemesi ve kompanzasyon; dairelerde ise sigorta atması, kaçak akım tespiti, avize ve spot montajı en sık gördüğümüz talepler. Keşif sonrası fiyatı netleştirip işe öyle başlıyoruz.',
       ],
@@ -352,11 +352,11 @@ export const sincanNeighborhoods: Neighborhood[] = [
       localNotes: [
         {
           title: 'Lokanta, market ve beyaz eşyacılar',
-          text: 'Fevzi Çakmak Caddesi\'ndeki lokantalarda sanayi tipi ocak ve davlumbaz hattı, marketlerde soğutucu grupları için ayrı hat ve pano, mağazalarda vitrin LED ve tabela beslemesi kuruyoruz; sigorta değerlerini cihaz gücüne göre seçiyoruz.',
+          text: 'Fevzi Çakmak Mahallesi\'ndeki lokantalarda sanayi tipi ocak ve davlumbaz hattı, marketlerde soğutucu grupları için ayrı hat ve pano, mağazalarda vitrin LED ve tabela beslemesi kuruyoruz; sigorta değerlerini cihaz gücüne göre seçiyoruz.',
         },
         {
           title: 'Dört beş katlı apartmanlar',
-          text: 'Fevzi Çakmak\'ın ara sokaklarındaki apartmanlarda merdiven otomatiği, kapı zili ve diyafon hattı, çatı ve ortak alan aydınlatması ile daire içi sigorta ve kaçak akım arızaları öne çıkıyor.',
+          text: 'Fevzi Çakmak Mahallesi\'ndeki apartmanlarda merdiven otomatiği, kapı zili ve diyafon hattı, çatı ve ortak alan aydınlatması ile daire içi sigorta ve kaçak akım arızaları öne çıkıyor.',
         },
         {
           title: 'Çarşıya yakın yoğun trafik',
@@ -364,12 +364,11 @@ export const sincanNeighborhoods: Neighborhood[] = [
         },
       ],
       landmarks: [
-        'Fevzi Çakmak Caddesi',
         'Fevzi Çakmak Merkez',
         'Sincan Çarşı bölgesi',
         'Fevzi Çakmak Pazar Yeri',
         'Ankara Caddesi bağlantısı',
-        'Fevzi Çakmak Caddesi üzerindeki lokanta ve marketler',
+        'Fevzi Çakmak Mahallesi\'ndeki lokanta ve marketler',
       ],
       faq: [
         {
