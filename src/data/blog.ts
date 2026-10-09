@@ -330,6 +330,80 @@ export const posts: BlogPost[] = [
       { label: 'Priz Neden Isınır?', href: '/rehber/priz-neden-isinir-sincan' },
     ],
   },
+  {
+    slug: 'led-aydinlatma-vitrin-fevzi-cakmak',
+    title: "Fevzi Çakmak'ta Dükkan Vitrini ve Apartmanda LED Aydınlatma: Doğru Güç ve Sigorta Seçimi",
+    description:
+      "Fevzi Çakmak'ta vitrin LED'i ya da apartman ortak alan LED'i taktırmadan önce güç ve sigorta hesabı neden önemli? Sahadan anlatım. Demir Elektrik: 0506 254 76 78.",
+    keyword: 'Fevzi Çakmak elektrikçi',
+    date: '2026-10-09',
+    readingMin: 5,
+    excerpt:
+      "Fevzi Çakmak Caddesi'ndeki dükkanlarda vitrin LED'i, ara sokaklardaki apartmanlarda ise merdiven ve ortak alan LED'i en sık gördüğümüz işlerden. İkisinde de doğru güç ve sigorta hesabı yapılmazsa ışık kısa ömürlü oluyor.",
+    intro:
+      "Fevzi Çakmak Caddesi'ndeki esnafla da, arka sokaklardaki apartman yönetimleriyle de sık çalışıyoruz; ikisinin de talebi son yıllarda aynı yöne kaydı: LED. Dükkan sahibi vitrinini daha parlak göstermek istiyor, apartman yönetimi ise merdiven ve ortak alan aydınlatmasını tasarruflu hale getirmek istiyor. Fevzi Çakmak elektrikçi olarak şunu söyleyelim: LED'e geçmek doğru bir karar ama güç ve sigorta hesabı yapılmadan takılan her LED, bir süre sonra ya titriyor ya da erken ölüyor.",
+    sections: [
+      {
+        h: "Vitrin LED'inde güç hesabı neden gözle yapılmaz?",
+        p: [
+          'Doğrudan cevap: vitrin LED şeridi ya da panosu, metre veya adet başına belli bir watt çeker; toplam yük hesaplanmadan takılan sürücü (trafo) ya zorlanıp ısınır ya da yetersiz kalıp ışığı kısar. Fevzi Çakmak Caddesi\'ndeki bir lokantada tezgah üstü LED\'i hesapsız bağlanmış, iki ay içinde sürücü yanmıştı.',
+          'Biz önce şeridin veya panonun metre/adet başına çektiği watt değerini çıkarıp sürücüyü ona göre, üstüne biraz pay bırakarak seçiyoruz. Vitrin saat boyunca açık kaldığı için burada pay bırakmak özellikle önemli; ucuz ve tam sınırda çalışan bir sürücü, esnafa birkaç ay içinde tekrar masraf çıkarıyor.',
+        ],
+      },
+      {
+        h: 'Dükkanda LED için ayrı sigorta gerekir mi?',
+        p: [
+          'Doğrudan cevap: vitrin LED\'i, tabela ve kasa aydınlatması aynı hatta toplanmışsa ve o hat zaten dar kesitli ise evet, ayrı bir sigorta önerilir. Fevzi Çakmak\'taki birçok dükkanda eski tesisat, aydınlatma ve priz hattını ayırmadan tek sigortada bırakmış; LED eklenince bu hat daha sık zorlanıyor.',
+          'Ayrı sigorta, hem LED\'i hem de dükkanın diğer cihazlarını korur. Bir hatta sorun çıktığında diğerini etkilemeden sadece o grubu kesebilirsiniz; bu da esnaf için işin durmaması anlamına gelir.',
+        ],
+      },
+      {
+        h: "Apartmanlarda merdiven ve ortak alan LED'i",
+        p: [
+          'Doğrudan cevap: ortak alan LED\'ine geçerken en çok atlanan nokta, eski merdiven otomatiğinin yeni LED armatürle uyumlu olup olmadığıdır. Bazı eski otomatikler, düşük akım çeken LED armatürlerle düzgün çalışmayıp ışığı yanıp söndürebilir ya da hiç yakmayabilir.',
+          'Fevzi Çakmak\'ın ara sokaklarındaki dört beş katlı apartmanlarda bu durumla sık karşılaşıyoruz; armatürü değiştirirken otomatiği de kontrol edip gerekirse LED uyumlu bir otomatikle değiştiriyoruz. Aksi halde yönetim "LED\'e geçtik ama merdiven karanlık kalıyor" şikayetiyle bize tekrar dönüyor.',
+        ],
+      },
+      {
+        h: 'LED montajında sık gördüğümüz üç hata',
+        p: [
+          "Birincisi, sürücüyü kapalı ve havasız bir tavan boşluğuna sıkıştırmak; ısınan sürücü zamanla ömrünü kaybediyor. İkincisi, farklı renk sıcaklığındaki (soğuk-sıcak beyaz) armatürleri aynı vitrinde ya da merdivende karıştırmak; görüntü düzensiz oluyor. Üçüncüsü, dış cepheye bakan tabela ve vitrin LED'lerinde neme dayanıklı olmayan bağlantı kullanmak; yağmur sonrası kısa devre riski doğuyor.",
+          'Bu üçü de montaj sırasında küçük bir dikkatle önlenebilir; biz keşif aşamasında bu noktaları esnafa ve yöneticiye baştan söylüyor, sürpriz çıkmasını önlüyoruz.',
+        ],
+      },
+      {
+        h: "Fevzi Çakmak'ta LED aydınlatmayı nasıl kuruyoruz?",
+        p: [
+          "Önce alanı ve kullanım şeklini (vitrin, tabela, merdiven, ortak alan) birlikte değerlendirip doğru güç ve sigorta planını çıkarıyoruz. Dükkanımız Fevzi Çakmak'a birkaç dakika mesafede olduğu için esnafın işini uzun süre bekletmiyoruz; apartman işlerinde de yönetimle keşif sonrası net fiyatı konuşup iş öyle başlıyoruz.",
+          'Montaj bittiğinde LED\'i bir süre yük altında çalışır bırakıp ısınma ve titreme kontrolü yapıyoruz. Bu basit test, hem esnafı hem yönetimi birkaç ay sonra aynı arızayla karşılaşmaktan kurtarıyor.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Vitrin LED'im birkaç ay sonra sönükleşti, sebebi ne olabilir?",
+        a: 'Genelde sürücünün gücü yetersiz seçilmiş ya da sürücü ısınarak zayıflamıştır. Şeridin gerçek yüküne göre doğru sürücüyü seçip havalanan bir yere monte etmek bu sorunu çözer.',
+      },
+      {
+        q: 'Apartmanda LED\'e geçtik, merdiven otomatiği düzgün çalışmıyor, bu normal mi?',
+        a: 'Hayır, bu eski otomatiğin düşük akım çeken LED armatürle uyumsuz olduğunun işareti. Otomatiği LED uyumlu bir modelle değiştirmek sorunu kalıcı çözer.',
+      },
+      {
+        q: "Fevzi Çakmak'ta dükkan LED'i için ne kadar sürede gelirsiniz?",
+        a: 'Dükkanımız caddeye birkaç dakika mesafede; Fevzi Çakmak\'taki vitrin ve tabela LED işlerine genellikle aynı gün bakabiliyoruz.',
+      },
+      {
+        q: 'Vitrin ve tabela LED\'i için ayrı sigorta şart mı?',
+        a: 'Hat zaten dar kesitli ve başka cihazlarla paylaşılıyorsa evet önerilir; bu hem LED\'i hem diğer cihazları korur, bir arıza diğerini etkilemez.',
+      },
+    ],
+    related: [
+      { label: 'Fevzi Çakmak Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/fevzi-cakmak-elektrikci' },
+      { label: 'LED Aydınlatma', href: '/hizmetler/led-aydinlatma' },
+      { label: 'Mağaza Elektrik Tesisatı', href: '/hizmetler/magaza-elektrik-tesisati' },
+      { label: 'Sincan 29 Ekim\'de Klima Montajı İçin Elektrik Hattı', href: '/rehber/klima-montaji-elektrik-hatti-29-ekim' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
