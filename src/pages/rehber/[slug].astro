@@ -8,6 +8,8 @@ import PhoneButton from '@components/PhoneButton.astro';
 import WhatsAppLink from '@components/WhatsAppLink.astro';
 import { site } from '@data/site';
 import { posts, getPost } from '@data/blog';
+import { landingDistricts } from '@data/districts';
+import { neighborhoods } from '@data/neighborhoods';
 import { absoluteUrl, breadcrumbSchema, faqSchema } from '@utils/seo';
 
 export function getStaticPaths() {
@@ -23,6 +25,16 @@ const fmtDate = (d: string) => {
   const aylar = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
   return `${Number(day)} ${aylar[Number(m) - 1]} ${y}`;
 };
+
+/* Yazının bölgesi: ilgili bağlantılardaki ilk mahalle/ilçe sayfası. Arama ifadeleri bloğu bu adla üretilir. */
+const bolgeAdi = post.related
+  .map(({ href }) => {
+    const [, , ilce, mahalle] = href.split('/');
+    if (!href.startsWith('/hizmet-bolgeleri/')) return undefined;
+    if (mahalle) return neighborhoods.find((n) => n.districtSlug === ilce && n.slug === mahalle)?.name;
+    return landingDistricts.find((d) => d.slug === ilce)?.name;
+  })
+  .find(Boolean);
 
 const path = `/rehber/${post.slug}`;
 const crumbs = [
@@ -57,6 +69,7 @@ const articleSchema = {
   rawTitle
   description={post.description}
   schema={[breadcrumbSchema(crumbs), articleSchema, faqSchema(post.faq)]}
+  seoArea={bolgeAdi}
 >
   <PageHero eyebrow="Rehber" title={post.title} text={post.excerpt} breadcrumbs={crumbs} showCta={false} />
 

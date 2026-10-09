@@ -12,6 +12,9 @@ interface Props {
   /** Blok başlığı */
   heading?: string;
 }
+import { landingDistricts } from '@data/districts';
+import { neighborhoods } from '@data/neighborhoods';
+
 const { area = 'Ankara', extra = [], heading } = Astro.props;
 
 const isAnkara = area === 'Ankara';
@@ -64,7 +67,24 @@ const ankaraKombin = isAnkara
       `Ankara ${area} Acil Elektrikçi`,
     ];
 
-const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...extra])];
+const yakinKombin = isAnkara
+  ? ['Sincan Elektrik Ustası', 'Sincan Elektrik Tamircisi', 'Yenikent Elektrik Ustası', 'Etimesgut Elektrik Ustası', 'Eryaman Elektrik Ustası']
+  : [];
+
+const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...yakinKombin, ...extra])];
+
+/* Dükkanın bulunduğu Sincan ve komşu Etimesgut: sayfası olan bölgeler kendi sayfasına bağlanır */
+const ODAK_ILCELER = ['sincan-elektrikci', 'yenikent-elektrikci', 'etimesgut-elektrikci', 'eryaman-elektrikci'];
+const SAYFASIZ = ['Mareşal Çakmak', 'Saraycık', 'İstasyon'];
+const bolgeler: { name: string; href?: string }[] = [
+  ...landingDistricts
+    .filter((d) => ODAK_ILCELER.includes(d.slug))
+    .map((d) => ({ name: d.name, href: `/hizmet-bolgeleri/${d.slug}` })),
+  ...neighborhoods
+    .filter((n) => n.districtSlug === 'sincan-elektrikci' || n.districtSlug === 'etimesgut-elektrikci')
+    .map((n) => ({ name: n.name, href: `/hizmet-bolgeleri/${n.districtSlug}/${n.slug}` })),
+  ...SAYFASIZ.map((name) => ({ name })),
+].filter((b) => b.name !== area);
 ---
 
 <section class="seotags" aria-labelledby="seotags-h">
@@ -72,6 +92,12 @@ const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...extra])];
     <h2 class="seotags__h" id="seotags-h">{heading ?? `${area} elektrikçi için sık aranan ifadeler`}</h2>
     <ul class="seotags__list">
       {terms.map((t) => <li>{t}</li>)}
+    </ul>
+    <h2 class="seotags__h seotags__h--sub">Sincan ve Etimesgut’ta hizmet verdiğimiz bölgeler</h2>
+    <ul class="seotags__list">
+      {bolgeler.map((b) => (
+        <li>{b.href ? <a href={b.href}>{b.name} Elektrikçi</a> : `${b.name} Elektrikçi`}</li>
+      ))}
     </ul>
   </div>
 </section>
@@ -108,6 +134,13 @@ const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...extra])];
     border-radius: 999px;
     padding: 0.3rem 0.7rem;
     transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  }
+  .seotags__h--sub {
+    margin-top: 1.4rem;
+  }
+  .seotags__list a {
+    color: inherit;
+    text-decoration: none;
   }
   .seotags__list li:hover {
     color: var(--text);
