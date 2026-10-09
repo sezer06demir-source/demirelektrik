@@ -404,6 +404,161 @@ export const posts: BlogPost[] = [
       { label: 'Sincan 29 Ekim\'de Klima Montajı İçin Elektrik Hattı', href: '/rehber/klima-montaji-elektrik-hatti-29-ekim' },
     ],
   },
+  {
+    slug: 'torekent-yuksek-blok-elektrik-gitti-kolon-hatti',
+    title: 'Törekent’te Yüksek Blokta Elektrik Gitti: Daire Sigortası mı, Sayaç Panosu mu, Kolon Hattı mı?',
+    description:
+      'Törekent’teki yüksek bloklarda elektrik gidince sorun dairede mi, sayaç panosunda mı, kolon hattında mı? Ustanın sırasıyla baktığı yerler. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Törekent elektrikçi',
+    date: '2026-10-09',
+    readingMin: 6,
+    excerpt:
+      'Törekent’in on katlı bloklarında elektrik gidince insanlar önce daire panosuna bakıyor, orada bir şey bulamayınca da çaresiz kalıyor. Biz hangi sırayla bakıyoruz, kolon hattı ne zaman suçlu, anlattık.',
+    intro:
+      'Törekent’ten gelen çağrıların bir kısmı hep aynı cümleyle başlar: “Usta, evde elektrik yok ama panoda hiçbir sigorta inmemiş.” Sincan’ın en kalabalık mahallesinde, on katlı bloklarda ve çok bloklu sitelerde bu durumu sık görüyoruz. Çünkü elektrik daireye gelene kadar birkaç duraktan geçiyor ve sorun bu duraklardan herhangi birinde olabiliyor. Törekent elektrikçi olarak sahada hangi sırayla baktığımızı, sizin de telefonda bize nasıl yardımcı olabileceğinizi aşağıda anlattım.',
+    sections: [
+      {
+        h: 'Elektrik daireye gelene kadar nereden geçiyor?',
+        p: [
+          'Kısaca üç durak var: binanın ana panosu ve sayaç panosu, sayaçtan dairenize çıkan kolon hattı, en son da dairenizin içindeki sigorta kutusu. Bunlardan biri sorun çıkarırsa daire karanlıkta kalır, ama hangisi olduğuna göre çözüm de, çağrılacak kişi de değişir.',
+          'Törekent’teki bloklarda sayaçlar çoğunlukla zemin katta ya da bodrumda topludur. Her dairenin sayacının yanında ona ait bir sigorta veya şalter bulunur. Daire panosu sağlam görünüyorsa sıradaki bakılacak yer burasıdır.',
+        ],
+      },
+      {
+        h: 'Önce daire panosuna nasıl bakmalı?',
+        p: [
+          'Panonun kapağını açın ve en büyük şaltere, yani ana şaltere bakın; yanında genelde kaçak akım rölesi durur. İkisinin de kolu yukarıdaysa ve yine de hiçbir odada elektrik yoksa sorun büyük ihtimalle daire içinde değil, daha yukarıdadır.',
+          'Burada sık gördüğüm bir yanlış var: bazı sakinler kolu indirip kaldırarak “sıfırlamaya” çalışıyor, olmayınca da defalarca deniyor. Elektrik gelmiyorsa şalteri zorlamanın bir faydası yok. Kolların konumunu söyleyip bizi aramanız daha doğru.',
+        ],
+      },
+      {
+        h: 'Sayaç panosundaki daire sigortası neden atar?',
+        p: [
+          'Daire panosunda her şey yukarıdaysa ve elektrik yoksa, sayaç panosundaki daire sigortanız atmış olabilir. Bu sigorta dairenin toplam yükünü korur; kışın iki ısıtıcı, fırın ve çamaşır makinesi aynı anda çalışınca toplam akım sınırı aşabilir ve en önce o sigorta düşer.',
+          'Geçen kış Törekent’te bir blokta aynı hafta üç daireden bu şikayetle arandık. Üçünde de sorun sayaç panosundaki daire sigortasıydı, üçünde de akşam yemeği saatinde atıyordu. Sigortayı değiştirmek değil, dairenin yükünü dağıtmak kalıcı çözüm oldu. Sayaç panosuna yönetimin bilgisi olmadan müdahale etmeyin; çoğu blokta kilitlidir, yöneticiyle birlikte açarız.',
+        ],
+      },
+      {
+        h: 'Kolon hattı ne zaman suçlu?',
+        p: [
+          'Kolon hattı, sayaç panosundan dairenize kadar çıkan kablodur. Daire sigortası sağlamsa, sayaç dönüyorsa ama dairede elektrik yoksa ya da lambalar sebepsiz yere titriyorsa, kolon hattında bir bağlantı gevşemiş olabilir.',
+          'Yüksek bloklarda bu hat on kat boyunca şaftın içinden geçer, ek yeri ya da klemens bağlantısı ısınıp gevşeyebilir. Belirtisi genelde şudur: elektrik gidip gelir, prizlerde voltaj düşer, bazen bir cihaz açılınca bütün ışıklar kısılır. Bu iş ölçü aletiyle ve hattın iki ucunu da kontrol ederek yapılır; tahminle kablo değiştirilmez.',
+        ],
+      },
+      {
+        h: 'Bütün blok karanlıksa kimi aramalı?',
+        p: [
+          'Sadece sizin daire değil, komşular ve merdiven ışıkları da gittiyse sorun binanın ana hattında ya da şebekededir. Önce 186 şebeke arıza hattını arayıp bölgede kesinti olup olmadığını sorun. Kesinti yoksa ve sadece sizin blok karanlıksa bina ana panosuna bakmak gerekir; o zaman yönetimle birlikte geliyoruz.',
+          'Törekent’teki birçok site yönetimiyle çalıştığımız için ana pano ve sayaç odasının yerini, hangi şalterin hangi bloğu beslediğini çoğu zaman önceden biliyoruz. Bu da arızanın yerini bulma süresini ciddi şekilde kısaltıyor.',
+        ],
+      },
+      {
+        h: 'Törekent’te bizi aradığınızda ne soruyoruz?',
+        p: [
+          'İlk sorularımız hep aynı: Sadece sizin daire mi, komşular da mı? Daire panosundaki ana şalter ve röle yukarıda mı? Elektrik tamamen mi gitti, yoksa bazı odalarda var mı? Bu üç cevap, Törekent’e yola çıkmadan önce sorunun hangi durakta olduğunu büyük ölçüde gösteriyor.',
+          'Demir Elektrik olarak Yenikent Menderes’teki dükkanımızdan Törekent’e 10 dakika içinde varıyoruz; haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Gelince önce ölçüp yeri tespit ediyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Panoda sigorta inmemiş ama evde elektrik yok, neden?',
+        a: 'Büyük ihtimalle sorun daire panosundan önce, sayaç panosundaki daire sigortasında ya da kolon hattındadır. Komşularda elektrik varsa bizi arayın; sayaç panosuna yönetimle birlikte bakarız.',
+      },
+      {
+        q: 'Törekent’e akşam elektrikçi gelir mi?',
+        a: 'Gelir. 23:00’e kadar çağrı alıyoruz ve Törekent’e dükkanımızdan 10 dakikada varıyoruz; akşam giden elektriğe aynı akşam bakıyoruz.',
+      },
+      {
+        q: 'Lambalar bazen kısılıp açılıyor, kolon hattı mı bozuk?',
+        a: 'Olabilir. Bir cihaz çalışınca bütün ışıklar kısılıyorsa hatta gevşek bir bağlantı ya da voltaj düşümü vardır. Ölçmeden kesin konuşmak doğru olmaz ama ertelenecek bir belirti değil.',
+      },
+      {
+        q: 'Sayaç panosundaki sigortayı kendim kaldırabilir miyim?',
+        a: 'Sayaç panosu bina ortak alanıdır, çoğu blokta kilitlidir. Sigorta tekrar tekrar atıyorsa kaldırmak sorunu çözmez; yük dağılımına bakılması gerekir.',
+      },
+    ],
+    related: [
+      { label: 'Törekent Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/torekent-elektrikci' },
+      { label: 'Bina Elektrik Tesisatı', href: '/hizmetler/bina-elektrik-tesisati' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
+    ],
+  },
+  {
+    slug: 'fatih-toplu-konut-ankastre-mutfak-hatti',
+    title: 'Sincan Fatih’te Toplu Konut Dairesine Ankastre Set: Mutfak Hattı Nasıl Hazırlanır?',
+    description:
+      'Fatih Mahallesi’ndeki toplu konut dairelerinde ankastre ocak ve fırın takarken mutfak hattı neden ayrılmalı? Usta anlatımıyla kablo, sigorta ve sık hatalar. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Sincan Fatih elektrikçi',
+    date: '2026-10-09',
+    readingMin: 6,
+    excerpt:
+      'Fatih’teki toplu konut dairelerinde ankastre set takıldığı gün sigorta atmaya başlıyorsa sebep çoğu zaman cihaz değil, mutfağa giden hattır. Ocak ve fırın için hattı nasıl hazırladığımızı anlattık.',
+    intro:
+      'Sincan Fatih Mahallesi’nde toplu konut bloklarından gelen çağrılarda son yıllarda en çok değişen şey mutfak oldu. Eskiden tüplü ocak, tezgah üstü fırın vardı; şimdi neredeyse her taşınmada ankastre ocak, ankastre fırın ve davlumbaz geliyor. Bloklar ise o yükü düşünerek yapılmamış. Fatih elektrikçi olarak bu işe girerken ilk baktığımız yer cihazlar değil, panodan mutfağa giden hat oluyor. Nedenini sahada gördüklerimizle anlatayım.',
+    sections: [
+      {
+        h: 'Ankastre ocak normal prize takılabilir mi?',
+        p: [
+          'Elektrikli ankastre ocak normal priz hattına bağlanmamalı. Cam seramik ve indüksiyon ocakların gücü birkaç kilovata çıkar; bu yük, aynı hattaki buzdolabı, kettle ve mikrodalgayla birleşince kablo ısınır ve sigorta atar. Atmazsa daha kötüsü olur, kablo yıllarca sınırda çalışır.',
+          'Fatih’teki toplu konut dairelerinde mutfak prizleri genelde tek bir hattan beslenir. Taşınma günü ocağı bu hatta bağlayan çok gördük; ilk hafta sorun çıkmıyor, kış gelip ısıtıcı da devreye girince sigorta akşam yemeği saatinde atmaya başlıyor.',
+        ],
+      },
+      {
+        h: 'Ocak ve fırın için ayrı hat nasıl çekilir?',
+        p: [
+          'Ocak ve fırın için panodan mutfağa her birine ayrı bir hat çekiyoruz. Kesiti ve sigorta değerini cihazın etiketindeki güce göre seçiyoruz; ocak için genelde priz hattından daha kalın kablo gerekir, fırın için ise ayrı bir 2,5 mm² hat çoğu zaman yeterli olur. Rakamı kataloğa bakarak değil, takılacak cihazın etiketine bakarak belirliyoruz.',
+          'Toplu konutlarda kabloyu nereden geçireceğimiz de önemli. Mevcut boruda yer varsa oradan çekiyoruz; yoksa sıva üstü kanal ya da dolap arkasından, sitenin kurallarına uygun ve göze batmayan bir güzergah seçiyoruz. Duvar kırmadan çözmeye çalışıyoruz ama gerekiyorsa bunu işe başlamadan söylüyoruz.',
+        ],
+      },
+      {
+        h: 'Daire panosu bu yükü kaldırır mı?',
+        p: [
+          'Ayrı hat çekmek yetmeyebilir; panonun ve dairenin toplam gücünün de buna izin vermesi gerekir. Fatih’teki eski bloklarda daire panosunda yeni sigorta için yer olmadığını, kaçak akım rölesinin hiç bulunmadığını sık görüyoruz.',
+          'Böyle bir durumda panoyu genişletiyor ya da yeniliyoruz. Bir dairede panoyu açtığımızda dört sigortanın ikisinin üstü kararmıştı; ev sahibi ankastre setin faturasını ödemiş, panoyu hiç düşünmemişti. Önce panoyu toparladık, sonra ocağı bağladık. Sıralama bu olmalı.',
+        ],
+      },
+      {
+        h: 'Davlumbaz ve bulaşık makinesi ne olacak?',
+        p: [
+          'Davlumbaz az güç çeker, priz hattından beslenebilir; yeter ki prizi dolabın içinde ulaşılabilir bir yere koyalım. Bulaşık makinesi ise ısıtıcılı çalıştığı için yüksek akım çeker; mümkünse onu da ocak ve fırından ayrı, kendi sigortası olan bir prize bağlıyoruz.',
+          'Sık gördüğümüz bir hata, bulaşık makinesinin prizini evyenin hemen altına koymak. Su kaçağında ilk ıslanan yer o priz olur. Prizi yan dolaba alıyor, mutfak hattını kaçak akım rölesi arkasında bırakıyoruz.',
+        ],
+      },
+      {
+        h: 'Fatih’te işi nasıl planlıyoruz?',
+        p: [
+          'Ankastre set gelmeden önce aranmak işimizi kolaylaştırıyor. Cihazların modelini ya da gücünü söylerseniz malzemeyi ona göre getiriyor, hattı set gelmeden hazır ediyoruz; montajcı geldiğinde bağlantı noktası onu bekliyor oluyor.',
+          'Demir Elektrik olarak Yenikent Menderes’teki dükkanımızdan Fatih’e Yenikent yolu üzerinden 10–15 dakikada geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den bize ulaşabilirsiniz. Keşfe gelip panoyu ve güzergahı görüyor, net fiyatı söylüyor, onayınızla başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Ankastre ocak takınca sigorta atıyor, ocak mı arızalı?',
+        a: 'Çoğu zaman değil. Ocak, gücünü taşıyamayan bir priz hattına bağlanmıştır. Ayrı hat ve uygun sigortayla sorun kalıcı olarak çözülür.',
+      },
+      {
+        q: 'Fırın ve ocak aynı hattan beslenebilir mi?',
+        a: 'Önermiyoruz. İkisi aynı anda çalıştığında yük birleşir. Her birine kendi hattını ve sigortasını vermek hem daha güvenli hem de arıza anında hangisinin sorun çıkardığını hemen gösterir.',
+      },
+      {
+        q: 'Toplu konutta duvar kırmadan hat çekilir mi?',
+        a: 'Çoğu dairede evet. Mevcut boruda yer varsa oradan, yoksa kanal veya dolap arkasından geçiyoruz. Kırım gerekiyorsa bunu işe başlamadan söylüyoruz.',
+      },
+      {
+        q: 'Fatih’e ne kadar sürede geliyorsunuz?',
+        a: 'Menderes’teki dükkanımızdan Yenikent yolu üzerinden 10–15 dakikada Fatih’te oluyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Fatih Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/fatih-elektrikci' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Sincan 29 Ekim’de Klima Montajı İçin Elektrik Hattı', href: '/rehber/klima-montaji-elektrik-hatti-29-ekim' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
