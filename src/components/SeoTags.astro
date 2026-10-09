@@ -75,7 +75,15 @@ const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...yakinKombin, 
 
 /* Dükkanın bulunduğu Sincan ve komşu Etimesgut: sayfası olan bölgeler kendi sayfasına bağlanır */
 const ODAK_ILCELER = ['sincan-elektrikci', 'yenikent-elektrikci', 'etimesgut-elektrikci', 'eryaman-elektrikci'];
-const SAYFASIZ = ['Mareşal Çakmak', 'Saraycık', 'İstasyon'];
+/* Sayfası olmayan yerler: Yenikent'teki TOKİ'ler Yenikent sayfasına bağlanır, diğerleri düz metin */
+const EK: { name: string; href?: string }[] = [
+  { name: 'İlksan TOKİ', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+  { name: 'Ortapınar TOKİ', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+  { name: 'Mareşal Çakmak' },
+  { name: 'Saraycık' },
+  { name: 'Saraycık TOKİ' },
+  { name: 'İstasyon' },
+];
 const bolgeler: { name: string; href?: string }[] = [
   ...landingDistricts
     .filter((d) => ODAK_ILCELER.includes(d.slug))
@@ -83,7 +91,7 @@ const bolgeler: { name: string; href?: string }[] = [
   ...neighborhoods
     .filter((n) => n.districtSlug === 'sincan-elektrikci' || n.districtSlug === 'etimesgut-elektrikci')
     .map((n) => ({ name: n.name, href: `/hizmet-bolgeleri/${n.districtSlug}/${n.slug}` })),
-  ...SAYFASIZ.map((name) => ({ name })),
+  ...EK,
 ].filter((b) => b.name !== area);
 ---
 
