@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import PageHero from '@components/PageHero.astro';
 import DistrictsSection from '@components/DistrictsSection.astro';
 import CTASection from '@components/CTASection.astro';
+import ServiceAreaMap from '@components/ServiceAreaMap.astro';
 import { breadcrumbSchema } from '@utils/seo';
 
 const crumbs = [
@@ -23,6 +24,7 @@ const crumbs = [
     breadcrumbs={crumbs}
     eyebrow="Yerel hizmet"
   />
+  <ServiceAreaMap />
   <DistrictsSection headingLevel="h2" showLink={false} />
   <CTASection title="Bulunduğunuz ilçeye geliyoruz" text="Ankara'nın hangi ilçesinde olursanız olun, elektrik arızası ve tesisat işleri için bizi arayabilirsiniz." />
 </BaseLayout>

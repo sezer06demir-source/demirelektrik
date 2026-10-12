@@ -1,0 +1,77 @@
+---
+import { site } from '@data/site';
+import SectionTitle from './SectionTitle.astro';
+import Icon from './Icon.astro';
+
+const id = site.maps.serviceAreaMapId;
+const embed = `https://www.google.com/maps/d/embed?mid=${id}&ehbc=2E312F`;
+const viewer = `https://www.google.com/maps/d/viewer?mid=${id}`;
+---
+
+<section class="section section--gray">
+  <div class="container">
+    <SectionTitle
+      eyebrow="Hizmet haritası"
+      title="Sincan, Yenikent ve Etimesgut'ta gittiğimiz mahalleler"
+      text="Haritadaki her iğne hizmet verdiğimiz bir mahalle. İğneye dokunun; o mahalledeki hizmetlerimizi ve dükkanımıza uzaklığı görün. Yıldız, Yenikent'teki dükkanımız."
+    />
+    <div class="sam">
+      <div class="sam__frame">
+        <iframe
+          src={embed}
+          title="Demir Elektrik hizmet bölgesi haritası – Sincan, Yenikent ve Etimesgut mahalleleri"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="sam__bar">
+        <p><Icon name="map-pin" size={18} /> Merkez: {site.address.full}</p>
+        <a href={viewer} class="btn btn--outline btn--sm" target="_blank" rel="noopener">Haritayı büyük aç</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sam {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    background: var(--white);
+  }
+  .sam__frame {
+    aspect-ratio: 4 / 5;
+    background: var(--gray-100);
+  }
+  @media (min-width: 768px) {
+    .sam__frame {
+      aspect-ratio: 16 / 9;
+    }
+  }
+  .sam__frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .sam__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.875rem 1.25rem;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+  }
+  .sam__bar p {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+  .sam__bar svg {
+    color: var(--orange);
+  }
+</style>

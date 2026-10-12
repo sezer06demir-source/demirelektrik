@@ -62,6 +62,8 @@ export const site = {
   districtCount: 25,
 
   maps: {
+    /** Google My Maps — Sincan, Yenikent, Etimesgut hizmet bölgesi haritası (mahalle başına bir iğne) */
+    serviceAreaMapId: '1Gs3bPMJNs47EXoyAgn1aC34OoQUlDRk',
     /** Google İşletme Profili — müşteriye gönderilen yorum bağlantısı (kısa adres: /yorum) */
     reviewHref: 'https://g.page/r/Cbwpl4e7j6dbEBM/review',
     /** Google Haritalar işletme kaydı (CID) */
