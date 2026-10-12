@@ -12,6 +12,11 @@
       "permanent": false
     },
     {
+      "source": "/cogluelektrik/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
