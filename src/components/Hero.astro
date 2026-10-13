@@ -1,4 +1,5 @@
 ---
+import heroBg from '../../public/images/hero-bg.svg?raw';
 import { site, trustBadges } from '@data/site';
 import Icon from './Icon.astro';
 import PhoneButton from './PhoneButton.astro';
@@ -14,7 +15,7 @@ import WhatsAppLink from './WhatsAppLink.astro';
     Koyu gradient overlay (.hero__overlay) yazıların okunabilirliğini korur.
   -->
   <div class="hero__bg" aria-hidden="true">
-    <img src="/images/hero-bg.svg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" />
+    <Fragment set:html={heroBg} />
     <div class="hero__overlay"></div>
   </div>
 
@@ -68,7 +69,7 @@ import WhatsAppLink from './WhatsAppLink.astro';
     position: absolute;
     inset: 0;
   }
-  .hero__bg img {
+  .hero__bg :global(svg) {
     width: 100%;
     height: 100%;
     object-fit: cover;
