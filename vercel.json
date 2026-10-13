@@ -6,6 +6,14 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/sincan-avize-spot-led-montaji", "destination": "/sincan-avize-montaji", "permanent": true },
+    { "source": "/sincan-elektrik-ariza-tamiri", "destination": "/sincan-elektrik-tamircisi", "permanent": true },
+    { "source": "/yenikent-avize-spot-led-montaji", "destination": "/yenikent-avize-montaji", "permanent": true },
+    { "source": "/yenikent-elektrik-ariza-tamiri", "destination": "/yenikent-elektrik-tamircisi", "permanent": true },
+    { "source": "/etimesgut-avize-spot-led-montaji", "destination": "/etimesgut-avize-montaji", "permanent": true },
+    { "source": "/etimesgut-elektrik-ariza-tamiri", "destination": "/etimesgut-elektrik-tamircisi", "permanent": true },
+    { "source": "/eryaman-avize-spot-led-montaji", "destination": "/eryaman-avize-montaji", "permanent": true },
+    { "source": "/eryaman-elektrik-ariza-tamiri", "destination": "/eryaman-elektrik-tamircisi", "permanent": true },
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
