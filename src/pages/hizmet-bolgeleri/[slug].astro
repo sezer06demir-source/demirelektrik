@@ -8,6 +8,7 @@ import Process from '@components/Process.astro';
 import Icon from '@components/Icon.astro';
 import { landingDistricts, type District, type DistrictContent } from '@data/districts';
 import { getNeighborhoodsOf } from '@data/neighborhoods';
+import { getLocalServicesOf } from '@data/localServices';
 import { getService } from '@data/services';
 import { site } from '@data/site';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@utils/seo';
@@ -33,6 +34,7 @@ const crumbs = [
 const highlighted = c.highlightedServices.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
 const otherDistricts = landingDistricts.filter((d) => d.slug !== district.slug);
 const hoods = getNeighborhoodsOf(district.slug);
+const localPages = getLocalServicesOf(district.slug);
 ---
 
 <BaseLayout
@@ -107,6 +109,31 @@ const hoods = getNeighborhoodsOf(district.slug);
       </div>
     </div>
   </section>
+
+  {
+    localPages.length > 0 && (
+      <section class="section" aria-labelledby="dist-local-pages">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-title__eyebrow">Öne çıkan işler</span>
+            <h2 id="dist-local-pages">{inDistrict} En Çok Çağrıldığımız İşler</h2>
+          </div>
+          <ul class="district__hood-pages">
+            {localPages.map((l, i) => (
+              <li>
+                <a href={`/${l.slug}`} class="district__hood-card reveal" data-delay={i % 4}>
+                  <span class="icon-badge"><Icon name="zap" size={20} /></span>
+                  <span class="district__hood-name">{l.h1}</span>
+                  <span class="district__hood-sub">{l.subtitle}</span>
+                  <span class="district__hood-arrow"><Icon name="arrow-right" size={18} /></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
 
   {
     hoods.length > 0 && (

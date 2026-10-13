@@ -1,0 +1,242 @@
+---
+/**
+ * Bölge × hizmet sayfaları — örn. /sincan-kacak-akim-rolesi
+ * Veri: src/data/localServices.ts (her sayfanın metni bölgeye özgü yazıldı).
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import ServiceCard from '@components/ServiceCard.astro';
+import CTASection from '@components/CTASection.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import Icon from '@components/Icon.astro';
+import { localServices, getLocalServicesOf, getLocalServicesByKey, type LocalService } from '@data/localServices';
+import { getDistrict } from '@data/districts';
+import { getService } from '@data/services';
+import { site } from '@data/site';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@utils/seo';
+
+export function getStaticPaths() {
+  return localServices.map((l) => ({ params: { local: l.slug }, props: { page: l } }));
+}
+
+interface Props {
+  page: LocalService;
+}
+const { page } = Astro.props;
+const district = getDistrict(page.districtSlug);
+if (!district?.content) throw new Error(`Bölge sayfası bulunamadı: ${page.districtSlug}`);
+
+const path = `/${page.slug}`;
+const districtPath = `/hizmet-bolgeleri/${district.slug}`;
+const crumbs = [
+  { name: 'Ana Sayfa', href: '/' },
+  { name: 'Hizmet Bölgeleri', href: '/hizmet-bolgeleri' },
+  { name: district.content.h1, href: districtPath },
+  { name: page.h1, href: path },
+];
+const related = page.relatedServices.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
+const sameArea = getLocalServicesOf(page.districtSlug).filter((l) => l.slug !== page.slug);
+const sameService = getLocalServicesByKey(page.serviceKey).filter((l) => l.slug !== page.slug);
+---
+
+<BaseLayout
+  title={page.seoTitle}
+  rawTitle
+  seoArea={page.area}
+  seoExtra={page.seoTags}
+  description={page.seoDescription}
+  schema={[
+    breadcrumbSchema(crumbs),
+    serviceSchema({ name: page.h1, description: page.seoDescription, path, areaName: `${page.area}, Ankara` }),
+    faqSchema(page.faq),
+  ]}
+>
+  <PageHero title={page.h1} text={page.subtitle} breadcrumbs={crumbs} eyebrow={`${page.area} · ${page.serviceLabel}`} />
+
+  <article class="section ls">
+    <div class="container">
+      <div class="ls__intro">
+        <div class="ls__text">
+          {page.intro.map((p) => <p>{p}</p>)}
+        </div>
+        <aside class="ls__facts">
+          <h2>{page.area} için hızlı bilgi</h2>
+          <ul>
+            <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
+            <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
+            <li><Icon name="navigation" size={18} /> Dükkan: {site.address.neighborhood}, {site.address.semt} / {site.address.district}</li>
+            <li><Icon name="award" size={18} /> Belgeli usta, 30+ yıl</li>
+          </ul>
+          <a href={districtPath} class="ls__parent"><Icon name="arrow-right" size={16} /> {district.content.h1} sayfası</a>
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <section class="section section--gray" aria-labelledby="ls-causes">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-title__eyebrow">{page.serviceLabel}</span>
+        <h2 id="ls-causes">{page.areaLocative} En Sık Karşılaştığımız Durumlar</h2>
+      </div>
+      <div class="grid grid--4">
+        {
+          page.causes.map((c, i) => (
+            <div class="card reveal" data-delay={i}>
+              <span class="icon-badge"><Icon name="zap" size={22} /></span>
+              <h3 class="ls__card-title">{c.title}</h3>
+              <p class="ls__card-text">{c.text}</p>
+            </div>
+          ))
+        }
+      </div>
+      <div class="ls__local">
+        <h3><Icon name="map-pin" size={18} /> {page.local.title}</h3>
+        <p>{page.local.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="ls-faq">
+    <div class="container container--narrow">
+      <div class="section-title section-title--center">
+        <span class="section-title__eyebrow">Sık sorulanlar</span>
+        <h2 id="ls-faq">{page.h1} Hakkında Sorular</h2>
+      </div>
+      <FAQAccordion items={page.faq} />
+    </div>
+  </section>
+
+  <section class="section section--gray" aria-labelledby="ls-related">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-title__eyebrow">İlgili hizmetler</span>
+        <h2 id="ls-related">Ayrıntılı hizmet sayfaları</h2>
+      </div>
+      <div class="grid grid--3">
+        {related.map((s, i) => <ServiceCard service={s} delay={i} />)}
+      </div>
+    </div>
+  </section>
+
+  <CTASection title={`${page.areaLocative} ${page.serviceLabel.toLocaleLowerCase('tr')} için arayın`} text={`Yenikent'teki dükkanımızdan ${page.area} ve çevresine belgeli usta geliyor. Ücreti işe başlamadan söylüyoruz.`} />
+
+  <section class="section" aria-labelledby="ls-more">
+    <div class="container">
+      <h2 id="ls-more" class="ls__more-title">{page.areaLocative} diğer işlerimiz</h2>
+      <ul class="ls__links">
+        {sameArea.map((l) => <li><a href={`/${l.slug}`} class="tag"><Icon name="zap" size={14} /> {l.h1}</a></li>)}
+        <li><a href={districtPath} class="tag tag--muted">{district.content.h1} <Icon name="arrow-right" size={14} /></a></li>
+      </ul>
+      <h2 class="ls__more-title ls__more-title--gap">{page.serviceLabel} — diğer bölgeler</h2>
+      <ul class="ls__links">
+        {sameService.map((l) => <li><a href={`/${l.slug}`} class="tag"><Icon name="map-pin" size={14} /> {l.h1}</a></li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .ls__intro {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .ls__intro {
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 3.5rem;
+    }
+  }
+  .ls__text {
+    color: #344054;
+    font-size: var(--fs-md);
+    max-width: 68ch;
+  }
+  .ls__text p + p {
+    margin-top: 1rem;
+  }
+  .ls__facts {
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--primary-dark);
+    color: var(--white);
+    background-image: radial-gradient(70% 60% at 100% 0%, rgba(255, 193, 7, 0.18), transparent 60%);
+  }
+  .ls__facts h2 {
+    font-size: var(--fs-base);
+    margin-bottom: 1rem;
+  }
+  .ls__facts ul {
+    display: grid;
+    gap: 0.75rem;
+    font-size: var(--fs-sm);
+    color: var(--on-dark);
+  }
+  .ls__facts li {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  .ls__facts svg {
+    color: var(--yellow);
+    flex: none;
+  }
+  .ls__facts li a {
+    font-weight: 800;
+    font-size: var(--fs-lg);
+    color: var(--white);
+  }
+  .ls__parent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--yellow);
+  }
+  .ls__card-title {
+    margin-top: 1rem;
+  }
+  .ls__card-text {
+    margin-top: 0.5rem;
+    color: var(--text-gray);
+    font-size: var(--fs-sm);
+  }
+  .ls__local {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--yellow);
+    background: var(--white);
+    border-radius: var(--radius);
+  }
+  .ls__local h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-base);
+    margin-bottom: 0.5rem;
+  }
+  .ls__local svg {
+    color: var(--orange-text);
+  }
+  .ls__local p {
+    color: #344054;
+  }
+  .ls__more-title {
+    font-size: var(--fs-lg);
+    margin-bottom: 1rem;
+  }
+  .ls__more-title--gap {
+    margin-top: 2rem;
+  }
+  .ls__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .ls__links svg {
+    color: var(--orange-text);
+  }
+</style>
