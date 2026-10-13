@@ -19,8 +19,10 @@
   --text: #0f172a;
   --text-gray: #667085;
   --text-light: #98a2b3;
-  --success: #25d366;
-  --success-dark: #1da851;
+  --success: #15803d;
+  --success-dark: #166534;
+  /* Açık zemin üzerindeki turuncu yazı (WCAG AA kontrastı için koyu ton) */
+  --orange-text: #b45309;
 
   --on-dark: rgba(255, 255, 255, 0.82);
   --on-dark-muted: rgba(255, 255, 255, 0.62);
@@ -279,6 +281,9 @@ button {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--orange-text);
+}
+.section--dark .section-title__eyebrow {
   color: var(--orange);
 }
 
@@ -554,7 +559,7 @@ a.tag:hover {
   margin-top: 0.375rem;
 }
 .prose a {
-  color: var(--orange);
+  color: var(--orange-text);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
