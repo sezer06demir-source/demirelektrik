@@ -721,6 +721,80 @@ export const posts: BlogPost[] = [
       { label: 'Sincan Fatih’te Ankastre Set için Mutfak Hattı', href: '/rehber/fatih-toplu-konut-ankastre-mutfak-hatti' },
     ],
   },
+  {
+    slug: 'mevlana-mahallesi-isiklar-titriyor-kolon-notr',
+    title: 'Mevlana Mahallesi’nde Apartmanın Işıkları Birden Titriyor: Kolon Hattı ve Nötr Gevşemesi',
+    description:
+      'Mevlana Mahallesi’nde birden fazla dairede aynı anda titreyen ışıklar genelde kolon hattındaki nötr bağlantısının gevşediğini gösterir. Nedenini ve doğru çözümü sahadan anlattık. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Mevlana Mahallesi elektrikçi',
+    date: '2026-10-16',
+    readingMin: 6,
+    excerpt:
+      'Bir dairede ışık titremesi küçük bir sorundur; ama Mevlana’da aynı anda birkaç dairede birden başlarsa mesele dairenin içinde değil, binanın kolon hattındadır. Hangi belirtiyi ciddiye almanız gerektiğini anlattık.',
+    intro:
+      'Mevlana Mahallesi’nden gelen çağrıların bir kısmı tek bir dairenin değil, apartmanın geneliyle ilgili. Yöneticiden ya da birkaç komşudan art arda aynı şikayet gelir: “Işıklar aynı anda titredi, bir dairede ampul patladı, komşunun buzdolabı normalden hızlı çalışmaya başladı.” Otuz yılı aşkın süredir Sincan’da bu işi yapan biri olarak söyleyeyim: bu tablo neredeyse her zaman tek bir yeri gösterir, binanın ortak kolon hattındaki nötr bağlantısı.',
+    sections: [
+      {
+        h: 'Kolon hattı ve nötr ne işe yarar?',
+        p: [
+          'Kolon hattı, sayaç panosundan her dairenin kendi panosuna kadar inen ana besleme hattıdır. Mevlana’daki apartmanların çoğunda daireler bu hattı ortak kullanır; faz kabloları ayrı gitse de nötr genelde ortaktır. Nötr, akımın devresini tamamlayıp geri döndüğü yoldur ve her dairenin geriliminin dengeli kalmasını bu ortak hat sağlar.',
+          'Kolon hattındaki nötr bağlantısı bir noktada gevşer, paslanır ya da tamamen kopacak kadar zayıflarsa dengeler bozulur. Bazı dairelerde gerilim normalin üstüne çıkar, bazılarında düşer; bu da ışıkların birden parlayıp sönmesi, bazı cihazların zayıf çalışması olarak kendini gösterir.',
+        ],
+      },
+      {
+        h: 'Neden tek daire değil, birkaç daire birden etkilenir?',
+        p: [
+          'Bir dairenin kendi tesisatındaki sorun yalnızca o daireyi etkiler. Ama kolon hattındaki ortak nötr bozulduğunda aynı hattı paylaşan dairelerin hepsi aynı anda, hatta aynı saniyede etkilenir. Mevlana’da aldığımız çağrılarda “bizim dairede de, üst kattaki komşuda da aynı anda oldu” cümlesini sık duyarız; bu cümle bize sorunun daire içinde değil ortak hatta olduğunu baştan söyler.',
+          'Eski binalarda yıllar içinde kolon panosundaki klemensler ısı farkından gevşer, bazen nem alır. Ahmet Kabaklı Caddesi çevresindeki eski bloklarda bu panolara son kontrolün üstünden uzun süre geçmiş oluyor; sorun orada birikiyor.',
+        ],
+      },
+      {
+        h: 'Hangi belirtileri ciddiye almak gerekir?',
+        p: [
+          'Birden fazla dairede aynı anda ışıkların kısılıp parlaması en net işarettir. Bir dairede ampul ya da elektronik bir cihaz beklenmedik şekilde yanıyorsa, komşu dairede ise aynı saatte cihazların zayıf çalıştığı söyleniyorsa, bu da gerilim dengesizliğinin tipik görüntüsüdür. Tek bir dairenin kendi sigortasında yaşanan normal bir arızadan farkı budur: zamanlama ve yaygınlık aynı anda.',
+          'Bu belirtiler görüldüğünde panodaki sigortaları değiştirmek ya da daire içini aramak zaman kaybıdır. Doğrudan bina yönetimine haber verip ortak kolon hattının ölçülmesini istemek gerekir.',
+        ],
+      },
+      {
+        h: 'Biz böyle bir çağrıda ne yapıyoruz?',
+        p: [
+          'Önce hangi dairelerin etkilendiğini ve ne zaman başladığını soruyoruz; bu bize sorunun kolon hattının hangi bölümünde olduğu konusunda ilk ipucunu veriyor. Sonra bina ana panosunu ve kolon klemenslerini açıp her fazın ve nötrün gerilimini ölçüyoruz. Gevşek ya da ısınmış bir klemens bulduğumuzda o bağlantıyı temizleyip yeniden, sıkı ve doğru şekilde kuruyoruz.',
+          'Bazı eski binalarda sorun tek bir gevşek vidadan değil, yıllanmış ve kesiti yetersiz kalmış kolon kablosunun kendisinden kaynaklanır. Böyle durumlarda geçici bir sıkma yerine o bölümün yenilenmesini öneriyoruz; aksi halde birkaç ay sonra aynı şikayetle tekrar karşılaşılır.',
+        ],
+      },
+      {
+        h: 'Yönetim ve daire sahipleri ne yapmalı?',
+        p: [
+          'Böyle bir şikayet geldiğinde yöneticinin tek tek dairelerle uğraşmak yerine ortak pano için elektrikçi çağırması en hızlı çözümdür; maliyet de dairelere ortak gider olarak çok daha makul paylaşılır. Daire sahipleri ise bu süreçte hassas elektronik cihazlarını (televizyon, bilgisayar gibi) prizden çekip bekleyebilir, çünkü gerilim dengesizliği bu tip cihazlara zarar verebilir.',
+          'Demir Elektrik olarak Mevlana Mahallesi’nde hem daire içi arızalara hem apartman ortak pano ve kolon hattı işlerine bakıyoruz. Menderes’teki dükkanımızdan Mevlana’ya kısa sürede geliyoruz; haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Önce ölçüyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Sadece bizim dairede ışıklar titriyor, bu da kolon hattı sorunu mu?',
+        a: 'Genelde hayır. Tek dairede kalıyorsa sorun büyük ihtimalle o dairenin kendi tesisatı ya da panosundadır. Kolon hattı sorunu genelde birden fazla daireyi aynı anda etkiler.',
+      },
+      {
+        q: 'Işıklar titrerken bir cihaz yaktık, zarar görür mü?',
+        a: 'Görebilir; gerilim dengesizliğinde bazı cihazlar normalden yüksek gerilim alabilir. Belirtiyi fark eder etmez hassas cihazları prizden çekmek daha güvenlidir.',
+      },
+      {
+        q: 'Kolon hattı arızasını kim çağırmalı, yönetici mi daire sahibi mi?',
+        a: 'En hızlısı yöneticinin ortak pano için çağırmasıdır; birden fazla daireyi ilgilendiren bir arıza olduğu için maliyet de ortak gider olarak paylaşılabilir.',
+      },
+      {
+        q: 'Mevlana Mahallesi’ne aynı gün gelir misiniz?',
+        a: 'Çoğu zaman evet. Menderes’teki dükkanımız Mevlana’ya yakın; 08:00–23:00 arası gelen çağrılara aynı gün bakmaya çalışıyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Mevlana Mahallesi Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/mevlana-elektrikci' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Bina Elektrik Tesisatı', href: '/hizmetler/bina-elektrik-tesisati' },
+      { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
