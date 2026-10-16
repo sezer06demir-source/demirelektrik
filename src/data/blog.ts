@@ -559,6 +559,168 @@ export const posts: BlogPost[] = [
       { label: 'Sincan 29 Ekim’de Klima Montajı İçin Elektrik Hattı', href: '/rehber/klima-montaji-elektrik-hatti-29-ekim' },
     ],
   },
+  {
+    slug: 'yenikent-salon-avize-mi-led-spot-mu',
+    title: 'Yenikent’te Salonda Avize mi, LED Spot mu? Tavan Aydınlatmasını Planlamak',
+    description:
+      'Yenikent’te salon için avize mi, LED spot mu, ikisi birden mi? Tavan yüksekliği, spot aralığı, renk sıcaklığı ve avize montajında usta tavsiyeleri. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Yenikent avize montajı',
+    date: '2026-10-16',
+    readingMin: 6,
+    excerpt:
+      'Yenikent’te salon aydınlatması için gelen ilk soru hep aynı: “Avize mi taktıralım, spot mu?” Cevap tavana, salonun kullanımına ve anahtar düzenine göre değişiyor. Sahada nasıl karar verdiğimizi anlattık.',
+    intro:
+      'Yenikent’te yeni taşınan bir aile bizi salona çağırdığında genelde elinde iki fotoğraf olur: biri büyük bir LED avize, öbürü tavana dizilmiş spotlar. “Hangisi daha güzel olur usta?” diye sorarlar. Güzellik zevk meselesi ama işin elektrik tarafı öyle değil. Tavanın yapısı, salonun büyüklüğü ve anahtarların yeri kararı neredeyse kendisi veriyor. Yenikent avize montajı ve spot işlerinde yıllardır nasıl karar verdiğimizi, sık gördüğümüz hatalarla birlikte anlatayım.',
+    sections: [
+      {
+        h: 'Salonda avize mi, spot mu daha doğru?',
+        p: [
+          'Kısa cevap: çoğu salonda ikisi birlikte en doğrusu. Avize salonun ortasını ve oturma grubunu aydınlatır, spotlar ise kenarları, duvarları ve köşeleri doldurur. Tek başına avize köşeleri karanlık bırakır, tek başına spot ise salonu düz ve soğuk gösterir.',
+          'Yenikent’teki apartmanların çoğunda tavan yüksekliği standart, yani 2,5–2,7 metre civarında. Bu yükseklikte sarkıtı uzun bir avize başa çarpar. Ya basık, tavana yakın bir LED avize seçiyoruz ya da avizeyi yemek masasının üstüne alıp oturma tarafını spotla çözüyoruz.',
+        ],
+      },
+      {
+        h: 'Spot takmak için asma tavan şart mı?',
+        p: [
+          'Gömme spot için evet, tavanın altında boşluk olmalı; yani asma tavan ya da kartonpiyer bandı gerekir. Beton tavana doğrudan gömme spot yapılmaz. Asma tavan istemeyenler için sıva üstü spot ya da ray spot iyi bir seçenek.',
+          'Asma tavan yapılacaksa kablolama alçıpan kapanmadan önce bitmeli. Sık gördüğüm hata, alçıpancı tavanı kapattıktan sonra elektrikçinin çağrılması. O zaman her spot deliğinden kablo avlamaya çalışıyoruz, hem iş uzuyor hem de bağlantılar istediğimiz kadar düzgün olmuyor. Doğru sıra: önce biz hattı ve buatları döşeriz, sonra tavan kapanır, en son spotlar takılır.',
+        ],
+      },
+      {
+        h: 'Spotlar arası mesafe ve ışık rengi nasıl seçilir?',
+        p: [
+          'Standart tavanda spotları duvardan 50–60 santim içeride, kendi aralarında da yaklaşık 1–1,2 metre arayla diziyoruz. Daha sık dizince tavan delik deşik görünür, daha seyrek olunca da duvarda ışık lekeleri oluşur.',
+          'Salonda sıcak beyaz, yani 3000K civarı ışık öneriyoruz. 6500K beyaz ışık salonu ofis gibi gösterir. Avizenin ve spotların renk sıcaklığı da aynı olmalı. Avize sıcak, spot soğuk olunca tavanda iki ayrı renk görünür ve göz rahatsız olur.',
+        ],
+      },
+      {
+        h: 'Avize montajında nelere dikkat ediyoruz?',
+        p: [
+          'İlk iş tavandaki askı noktası. Beton tavanda avizenin ağırlığına uygun çelik dübel ve kanca kullanıyoruz. Avizeyi sadece kablosuna ya da plastik dübele asmak, ağır avizelerde zamanla sarkmaya yol açar. Asma tavanda avize alçıpana asılmaz; askıyı üstteki betona ya da taşıyıcı profile bağlarız.',
+          'İkinci iş bağlantı. Anahtarın fazı kestiğinden emin oluyoruz; nötrü kesen bir anahtar, LED avizeyi kapalıyken bile hafif yandırabilir ve ampul değiştirirken çarpılma riski yaratır. Metal gövdeli avizelerde toprak hattını da mutlaka bağlıyoruz.',
+        ],
+      },
+      {
+        h: 'Anahtar düzeni neden önemli?',
+        p: [
+          'Avize ve spotlar aynı anahtardan yanarsa salonu ya hep çok aydınlık ya hep karanlık kullanırsınız. Biz en az iki grup öneriyoruz: avize bir anahtardan, spotlar başka bir anahtardan. Uzun salonlarda spotları da iki gruba ayırıyoruz; akşam televizyon izlerken sadece arka grup yanıyor.',
+          'Salonun iki kapısı varsa vaviyen bağlantı, yani iki ayrı noktadan açılıp kapanan anahtar yapıyoruz. Bunu sonradan yapmak duvar kırmayı gerektirebilir; bu yüzden plan aşamasında konuşmak gerekiyor.',
+        ],
+      },
+      {
+        h: 'Yenikent’te nasıl çalışıyoruz?',
+        p: [
+          'Salonu görüp tavana, mevcut buat ve anahtar yerlerine bakıyoruz. Sonra avize ve spot yerlerini tavana işaretleyip sizinle birlikte son kararı veriyoruz. Keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+          'Demir Elektrik’in dükkanı Yenikent Menderes’te; Yenikent’in her yerine kısa sürede geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yenikent’te avize montajı aynı gün yapılır mı?',
+        a: 'Tavanda hazır bir avize çıkışı varsa çoğu zaman aynı gün yapılır. Yeni hat ya da asma tavan gerekiyorsa önce keşif yapıp planlıyoruz.',
+      },
+      {
+        q: 'LED avize kapalıyken hafif yanıyor, neden?',
+        a: 'Genelde anahtar fazı değil nötrü kesiyordur ya da ışıklı anahtar küçük bir akım geçiriyordur. Bağlantıyı düzeltmek ya da uygun anahtar takmak sorunu çözer.',
+      },
+      {
+        q: 'Salona kaç spot gerekir?',
+        a: 'Salonun ölçüsüne ve tavan yüksekliğine göre değişir. Standart tavanda yaklaşık 1–1,2 metre aralık iyi sonuç verir; yerinde ölçüp tavana işaretliyoruz.',
+      },
+      {
+        q: 'Ağır avizeyi asma tavana asabilir miyiz?',
+        a: 'Alçıpana asılmaz. Askıyı üstteki betona ya da taşıyıcı profile bağlıyoruz; aksi halde tavan zamanla çöker.',
+      },
+    ],
+    related: [
+      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+      { label: 'Avize Montajı', href: '/hizmetler/avize-montaji' },
+      { label: 'Spot Montajı', href: '/hizmetler/spot-montaji' },
+      { label: 'Yenikent’te Yağmur Yağınca Kaçak Akım Rölesi Neden Atıyor?', href: '/rehber/yenikent-yagmurda-kacak-akim-rolesi-atiyor' },
+    ],
+  },
+  {
+    slug: 'sincan-mutfak-tezgah-alti-serit-led',
+    title: 'Sincan’da Mutfak Tezgah Altı ve Dolap İçi Şerit LED: Doğru Döşeme Nasıl Yapılır?',
+    description:
+      'Sincan’da mutfak tezgah altı ve dolap içi şerit LED döşemesinde profil, sürücü yeri, ışık rengi ve anahtar seçimi. Usta anlatımıyla sık yapılan hatalar. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Sincan LED montajı',
+    date: '2026-10-16',
+    readingMin: 6,
+    excerpt:
+      'Tezgah altı şerit LED mutfağı hem güzelleştiriyor hem de çalışırken gölgeyi kaldırıyor. Ama profilsiz yapıştırılan, sürücüsü ocağın yanına sıkıştırılan LED birkaç ayda sönüyor. Sincan’da nasıl döşediğimizi anlattık.',
+    intro:
+      'Sincan’da mutfak yenileyen hemen herkes artık tezgah altına şerit LED istiyor. Haklılar da. Üst dolaplar tavan ışığını keser, tezgahta doğrarken eliniz kendi gölgenizde kalır. Tezgah altı LED bu gölgeyi kaldırır. Ama sahada çok gördüğümüz bir tablo var: marketten alınmış bir rulo şerit LED, dolabın altına doğrudan yapıştırılmış, sürücüsü de ocağın yanındaki dolaba sıkıştırılmış. Altı ay sonra şeridin yarısı sönük, yarısı yanıp sönüyor. Sincan’da bu işi nasıl yaptığımızı adım adım anlatayım.',
+    sections: [
+      {
+        h: 'Şerit LED dolabın altına doğrudan yapıştırılır mı?',
+        p: [
+          'Yapıştırılmamalı. Şerit LED çalışırken ısınır; ısısını atacağı bir yüzey yoksa ömrü kısalır. Ahşap ya da sunta dolap altı ısıyı dağıtmaz. Bu yüzden şeridi alüminyum bir profilin içine döşüyoruz. Profil ısıyı alır, önündeki difüzör kapak da LED’lerin nokta nokta görünmesini engeller.',
+          'Profilsiz şeridin bir sorunu daha var: mutfak buharı ve yağ doğrudan LED’in üstüne çöker. Profil kapağı silinir, şerit silinmez. Temizlik açısından da profil şart.',
+        ],
+      },
+      {
+        h: 'Sürücü nereye konmalı?',
+        p: [
+          'Şerit LED 220 volttan değil, 12 ya da 24 voltluk bir sürücüden beslenir. Sürücü de ısınır ve havasız bir yerde çabuk yorulur. Ocağın, fırının ya da bulaşık makinesinin yanına koymuyoruz. Üst dolabın içinde, havalanan ve kapağı açınca ulaşılabilen bir köşe seçiyoruz.',
+          'Sürücünün gücünü şeridin toplam çekişine göre, üstüne pay bırakarak seçiyoruz. Uzun tezgahlarda 24 voltluk şerit tercih ediyoruz; uzun hatta 12 voltta şeridin sonu başından sönük yanabilir. Çok uzun koşularda şeridi iki uçtan besliyoruz.',
+        ],
+      },
+      {
+        h: 'Mutfakta hangi ışık rengi seçilmeli?',
+        p: [
+          'Tezgah altı için 4000K civarı nötr beyaz öneriyoruz. Sıcak sarı ışık yemeğin rengini olduğundan farklı gösterir; çok soğuk beyaz ise mutfağı hastane gibi yapar. Mutfakta renk ayırt etmek önemli olduğu için renk gösterimi yüksek, yani CRI değeri 90 ve üstü olan şeritleri tercih ediyoruz.',
+          'Dolap içi aydınlatmada ise daha sıcak bir ışık seçilebilir; cam kapaklı vitrin dolaplarda 3000K tabaklara daha sıcak bir görüntü verir.',
+        ],
+      },
+      {
+        h: 'Evye ve ocak çevresinde nelere dikkat ediyoruz?',
+        p: [
+          'Evye üstünde su sıçrar. Bu bölümde profilin kapağı sızdırmaz olmalı, bağlantı noktaları evyenin hemen üstüne denk gelmemeli. Ocak tarafında ise asıl düşman ısı ve yağ buharı; şeridi ocağın tam üstüne değil, iki yanındaki dolapların altına alıyoruz.',
+          'Sürücünün 220 volt tarafını kaçak akım rölesi arkasındaki bir hattan besliyoruz. Mutfak, evin en çok su ile elektriğin yan yana geldiği yer.',
+        ],
+      },
+      {
+        h: 'Tezgah altı LED nasıl açılıp kapanır?',
+        p: [
+          'Seçenek çok: duvardaki ayrı bir anahtar, profilin ucundaki dokunmatik anahtar ya da el yaklaştırınca yanan sensör. Elleriniz ıslak ya da yağlıyken sensörlü anahtar çok pratik oluyor. Duvar anahtarı isteyenler için mutfak girişindeki anahtar grubuna bir anahtar ekliyoruz.',
+          'Sık yapılan bir hata, tezgah altı LED’i mutfak tavan lambasıyla aynı anahtara bağlamak. Tezgah ışığını gece tek başına yakmak çok kullanışlıdır; ayrı anahtar öneriyoruz.',
+        ],
+      },
+      {
+        h: 'Sincan’da işi nasıl planlıyoruz?',
+        p: [
+          'En doğrusu, mutfak dolapları takılmadan ya da takılırken çağrılmak. O zaman sürücü yerini ve kablo güzergahını dolapçıyla birlikte ayarlıyoruz. Dolaplar takılıysa da yapılır; sürücü yerini ve kabloyu dolap içinden, görünmeyecek şekilde çözüyoruz.',
+          'Demir Elektrik olarak Sincan’ın tüm mahallelerine Yenikent Menderes’teki dükkanımızdan kısa sürede geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Keşif sonrası net fiyatı söylüyor, onayınızla başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Tezgah altı LED birkaç ay sonra söndü, neden?',
+        a: 'Genelde profilsiz yapıştırıldığı için ısınmıştır ya da sürücü havasız bir yerde, gücünün sınırında çalışmıştır. Profil ve doğru sürücüyle yeniden döşemek kalıcı çözümdür.',
+      },
+      {
+        q: 'Şerit LED’in sonu başından sönük yanıyor, normal mi?',
+        a: 'Uzun hatta gerilim düşer. 24 voltluk şerit kullanmak ya da şeridi iki uçtan beslemek bu farkı ortadan kaldırır.',
+      },
+      {
+        q: 'Mevcut mutfağa sonradan tezgah altı LED yapılır mı?',
+        a: 'Yapılır. Kabloyu ve sürücüyü dolap içinden, görünmeyecek şekilde geçiriyoruz; çoğu mutfakta iş aynı gün biter.',
+      },
+      {
+        q: 'Sincan’da LED montajı için ne kadar sürede gelirsiniz?',
+        a: 'Sincan’ın her mahallesine dükkanımızdan kısa sürede ulaşıyoruz; aradığınızda o anki konuma göre net süre söylüyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
+      { label: 'LED Aydınlatma', href: '/hizmetler/led-aydinlatma' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Sincan Fatih’te Ankastre Set için Mutfak Hattı', href: '/rehber/fatih-toplu-konut-ankastre-mutfak-hatti' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
