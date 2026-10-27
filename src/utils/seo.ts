@@ -78,13 +78,13 @@ export function localBusinessSchema() {
     ],
     openingHoursSpecification: [openingHours],
     sameAs: [site.maps.placeHref, `https://wa.me/${site.whatsapp.number}`],
-    contactPoint: {
+    contactPoint: [site.phone.e164, site.phone2.e164].map((telephone) => ({
       '@type': 'ContactPoint',
-      telephone: site.phone.e164,
+      telephone,
       contactType: 'customer service',
       areaServed: 'TR',
       availableLanguage: 'Turkish',
-    },
+    })),
   };
 }
 

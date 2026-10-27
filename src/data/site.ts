@@ -19,6 +19,14 @@ export const site = {
     international: '+90 506 254 76 78',
   },
 
+  /** İkinci hat — Google Ads arama öğesi doğrulaması için sayfada görünür metin olarak durur. */
+  phone2: {
+    display: '0506 092 58 16',
+    href: 'tel:+905060925816',
+    e164: '+905060925816',
+    international: '+90 506 092 58 16',
+  },
+
   whatsapp: {
     number: '905062547678',
     message: 'Merhaba Demir Elektrik, elektrik hizmeti hakkında bilgi almak istiyorum.',
