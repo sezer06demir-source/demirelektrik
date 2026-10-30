@@ -795,6 +795,80 @@ export const posts: BlogPost[] = [
       { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
     ],
   },
+  {
+    slug: 'pinarbasi-kis-oncesi-elektrik-kontrolu',
+    title: 'Pınarbaşı’da Kış Öncesi Elektrik Kontrolü: Isıtıcı Devreye Girince Sigorta Neden Zorlanıyor?',
+    description:
+      'Pınarbaşı’da eski apartmanlarda kış gelince sigorta neden sık atıyor, kaçak akım rölesi kış öncesi neden test edilmeli? Pınarbaşı elektrikçi gözünden kontrol listesi. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Pınarbaşı elektrikçi',
+    date: '2026-10-30',
+    readingMin: 6,
+    excerpt:
+      'Hava soğuyup ısıtıcılar, soba ve şofbenler devreye girince Pınarbaşı’nın eski apartmanlarında sigorta atma şikayetleri artıyor. Kışa girmeden nereye bakmak gerektiğini sahadan anlatıyoruz.',
+    intro:
+      'Ekim sonu geldi mi, Pınarbaşı’dan gelen telefonların tonu değişir. Yazın hiç sesini çıkarmayan bir hat, ilk soğuk gecede ısıtıcı takılınca birden atmaya başlar. Mahallenin büyük kısmı 1980’ler ve 90’larda yapılmış apartmanlardan oluştuğu için bu şikayeti her kış aynı sokaklardan, bazen aynı binadan tekrar tekrar alıyoruz. Pınarbaşı elektrikçi olarak otuz yılı aşan tecrübemizle söyleyebiliriz: kışın attığı sigorta çoğu zaman “bozuk sigorta” değil, yıllardır küçülen bir kablonun artık yetişemediği bir yüktür. Bu yazıda kış öncesi hangi noktalara bakmanız gerektiğini, biz geldiğimizde ne kontrol ettiğimizi anlatıyorum.',
+    sections: [
+      {
+        h: 'Kış gelince sigorta neden daha sık atıyor?',
+        p: [
+          'Doğrudan cevap: kışın devreye giren elektrikli ısıtıcı, soba veya şofben, o hattın yazın hiç görmediği ek bir yük bindirir; eski kablo bu yükü taşıyamayınca sigorta devreyi keser. 2000-2500 watt’lık bir ısıtıcı tek başına önemli bir yük değildir, ama aynı hatta televizyon, buzdolabı ve birkaç priz zaten varsa toplam akım hızla sınırı zorlar.',
+          'Pınarbaşı’daki eski dairelerde salon ve koridor genelde aynı hattan beslenir; kışın hem ısıtıcı hem de daha çok kullanılan aydınlatma aynı anda çekince sigorta önce o hattan ses verir. Yazın fark edilmeyen bir zayıflık, kışın böyle ortaya çıkar.',
+        ],
+      },
+      {
+        h: 'Pınarbaşı’nın eski apartmanlarında kablo neden yetersiz kalıyor?',
+        p: [
+          'Doğrudan cevap: 30-40 yıl önce çekilen hatlar, bugünün cihaz sayısına göre değil, dönemin sınırlı yüküne göre hesaplanmıştı; bazı binalarda ise bakır yerine alüminyum kablo kullanılmış, bu da zamanla bağlantı noktalarında gevşemeye ve direnç artışına yol açıyor.',
+          'Sahada açtığımız panolarda sık görüyoruz: priz hattı 1,5 mm² kesitle çekilmiş, üstüne yıllar içinde ek priz, klima ve şimdi ısıtıcı eklenmiş. Kablo değişmeden sadece sigortayı büyütmek çözüm değil, aksine riski artırır; sigorta büyüyünce kablo artık koruyucusuz kalır ve ısınan nokta sigorta atmadan önce kendini gösterir.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi kış öncesi neden test edilmeli?',
+        p: [
+          'Doğrudan cevap: kışın nem, yoğuşma ve ısıtıcı kablolarının sık hareket ettirilmesi kaçak akım riskini artırır; 30 mA’lik röle bu kaçağı yakalayıp devreyi kesen tek koruma olduğu için kış öncesi test butonuyla kontrol edilmelidir.',
+          'Pınarbaşı’daki birçok eski panoda bu röle hâlâ yok, bazı panolarda ise var ama yıllardır test edilmemiş. Test butonuna bastığınızda röle anında atmıyorsa, mekanizma yorulmuş ya da röle arızalanmış olabilir; bu durumda ısıtıcı gibi yüksek güçlü bir cihazın arızası sırasında evde hiçbir koruma kalmaz.',
+        ],
+      },
+      {
+        h: 'Kendi başınıza kış öncesi neye bakabilirsiniz?',
+        p: [
+          'Doğrudan cevap: panoyu açıp buşon mu otomat sigorta mı olduğuna, kaçak akım rölesinin test butonuna basıp düzgün attığına ve ısıtıcı takacağınız prizin ısınıp ısınmadığına bakmak, elektrikle uğraşmadan yapabileceğiniz en güvenli kontroldür.',
+          'Priz kapağında sararma, pano içinde yanık kokusu ya da kararma görürseniz ısıtıcıyı o prize takmaktan vazgeçip bizi aramanız daha doğru olur; bu belirtiler geçmişte bir ısınma yaşandığını gösterir ve ısıtıcı yüküyle birlikte daha hızlı kötüleşebilir.',
+        ],
+      },
+      {
+        h: 'Pınarbaşı’da kış öncesi kontrolü nasıl yapıyoruz?',
+        p: [
+          'Önce panoyu açıp sigorta tipini, kaçak akım rölesinin varlığını ve çalışırlığını kontrol ediyoruz; sonra ısıtıcı, şofben gibi kışlık cihazların bağlanacağı hatları ölçüp kablo kesitinin ve bağlantı noktalarının durumunu değerlendiriyoruz. Sorun sadece gevşek bir bağlantıysa yerinde düzeltiyoruz; kablo yetersiz kalıyorsa o hattı ya da panonun tamamını yenilemeyi öneriyoruz.',
+          'Dükkanımız Menderes Mahallesi’nde, Pınarbaşı’na yürüme mesafesinde olduğu için mahalledeki kış öncesi kontrol ve acil arıza çağrılarına genellikle yarım saat içinde ulaşıyoruz. Haftanın her günü 08:00-23:00 arası 0506 254 76 78’den bize ulaşabilirsiniz; keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Pınarbaşı’da akşam elektrikçi bulunur mu?',
+        a: 'Bulunur. 08:00-23:00 arası çalışıyoruz ve Menderes’teki dükkanımız Pınarbaşı’na çok yakın olduğu için akşam saatlerindeki sigorta atması gibi arızalara da aynı gün bakıyoruz.',
+      },
+      {
+        q: 'Kaçak akım rölesi kışın neden sürekli atıyor?',
+        a: 'Çoğu zaman nemden kaynaklanan bir kaçaktır; bahçe, banyo ya da dış cepheye yakın bir hatta su veya yoğuşma sızmış olabilir. Hat hat ölçüp kaçağın hangi bölümde olduğunu bulup o noktayı onarıyoruz.',
+        },
+      {
+        q: 'Elektrikli ısıtıcıyı takınca sigorta atıyor, bu tehlikeli mi?',
+        a: 'Sigortanın atması aslında koruyucu bir tepkidir, tehlikeli olan sigortayı zorlayıp ısıtıcıyı yine de kullanmaya çalışmaktır. Hattı ölçtürüp ısıtıcıya uygun, gerekirse ayrı bir hat çıkarmak kalıcı çözümdür.',
+      },
+      {
+        q: 'Pınarbaşı dışındaki Sincan mahallelerine de geliyor musunuz?',
+        a: 'Geliyoruz. Dükkanımız Sincan Menderes Mahallesi’nde; Pınarbaşı, Plevne, Fatih ve Sincan’ın tüm mahallelerine 08:00-23:00 arası çıkıyoruz. 0506 254 76 78’den ulaşabilirsiniz.',
+      },
+    ],
+    related: [
+      { label: 'Pınarbaşı Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/pinarbasi-elektrikci' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
