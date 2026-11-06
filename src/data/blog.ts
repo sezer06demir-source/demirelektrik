@@ -869,6 +869,80 @@ export const posts: BlogPost[] = [
       { label: 'Sigorta Panosu Ne Zaman Yenilenir?', href: '/rehber/sigorta-panosu-yenileme-sincan' },
     ],
   },
+  {
+    slug: 'menderes-mahallesi-aksam-pazar-elektrikci',
+    title: 'Menderes Mahallesi’nde Akşam ve Pazar Günü Elektrikçi: Hangi Arıza Bekletilmez?',
+    description:
+      'Menderes Mahallesi’nde akşam saatlerinde ya da pazar günü sigorta atarsa, kaçak akım rölesi devreye girerse ne yapılmalı? Dükkanımız mahallenin içinde. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Menderes Mahallesi elektrikçi',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Menderes’te akşam yemeği hazırlanırken ya da pazar günü evdeyken birden elektrik giden bir dairenin hikayesinden yola çıkarak, hangi arızanın sabaha bırakılabileceğini hangisinin bekletilmemesi gerektiğini anlatıyoruz.',
+    intro:
+      'Geçen hafta bir cuma akşamı, Alparslan Caddesi’ne yakın bir apartmandan arandık: mutfakta fırın ve su ısıtıcısı aynı anda çalışırken sigorta atmış, ocak saat 21:00’i göstermiş. Dükkanımız Menderes Mahallesi’nde olduğu için beş dakikada kapıdaydık. Bu tür çağrılar bize mahallede çok geliyor, çünkü akşam saatleri evde en çok cihazın birlikte çalıştığı an. Menderes elektrikçi olarak otuz yılı aşan tecrübemizle, hangi arızanın akşam ya da pazar günü bekletilmemesi gerektiğini, hangisinin ertesi güne bırakılabileceğini bu yazıda anlatıyoruz.',
+    sections: [
+      {
+        h: 'Menderes’te akşam elektrikçi bulunur mu?',
+        p: [
+          'Doğrudan cevap: bulunur, ama 7/24 değil. Dükkanımız Menderes Mahallesi Alparslan Caddesi No:24’te ve haftanın her günü 08:00-23:00 arası açığız; akşam yemeği saatindeki sigorta ya da kaçak akım arızalarının büyük kısmı bu saatler içinde çözülür.',
+          '23:00’den sonra gelen bir çağrıyı da not alıp sabah ilk iş olarak dönüyoruz; ama mahallenin içinde olduğumuz için 22:30’da gelen bir arızaya bile çoğu zaman o gün ulaşabiliyoruz. "7/24 açığız" demiyoruz, çünkü gerçek olmayan bir söz vermek istemiyoruz.',
+        ],
+      },
+      {
+        h: 'Pazar günü sigorta atarsa ne olur?',
+        p: [
+          'Doğrudan cevap: pazar günü de çalışıyoruz, hafta içinden farkı yok. Menderes’teki apartmanların çoğunda pazar öğleden sonra aile kalabalıklaşır, fırın, çamaşır makinesi ve klima aynı anda devreye girer; bu da haftanın en çok sigorta attığı zaman dilimlerinden biri.',
+          'Sigorta attığında önce kolu tek seferde yukarı kaldırıp bırakın; tekrar atıyorsa zorlamayın, bu genelde o hatta gerçek bir aşırı yük veya kaçak olduğunu gösterir. Pazar günü aradığınızda da hafta içindeki gibi aynı gün geliyoruz.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi gece devreye girerse ne yapmalı?',
+        p: [
+          'Doğrudan cevap: röle gece aniden atıp evin tamamını karanlıkta bırakıyorsa, önce büyük cihazları (çamaşır makinesi, bulaşık makinesi, su ısıtıcısı) prizden çekip rölesiz kaldırmayı deneyin; kalkıyor ve tekrar atmıyorsa sabah ararsınız, tekrar atıyorsa o gece aramanız daha doğru olur.',
+          'Menderes’teki eski apartmanlarda nemli bir banyo hattı ya da dışarıya yakın bir priz, gece nem artınca kaçak vermeye başlayabilir. Biz geldiğimizde hat hat ölçüp kaçağın hangi bölümde olduğunu buluyor, o noktayı onarıyoruz; rölenin kendisini değiştirmek çoğu zaman gerçek sebebi gizler.',
+        ],
+      },
+      {
+        h: 'Hangi arıza sabaha bırakılabilir, hangisi bekletilmez?',
+        p: [
+          'Doğrudan cevap: tek bir prizin ya da odanın çalışmaması, evin diğer kısmı normal çalışıyorsa genelde sabaha bırakılabilir. Yanık kokusu, panoda kıvılcım, sigortanın sıcak olması ya da evin tamamının elektriksiz kalması ise bekletilmeden aranması gereken durumlar.',
+          'Menderes’te bir müşterimiz geçen ay pano içinden yanık kokusu geldiğini fark edip gece yarısı aramıştı; gittiğimizde gevşek bir bağlantının ısınıp izole bandı eritmeye başladığını gördük. O gece müdahale etmek, ertesi gün çıkabilecek bir yangını önledi.',
+        ],
+      },
+      {
+        h: 'Menderes’te bu çağrılara nasıl bakıyoruz?',
+        p: [
+          'Telefonda arızayı dinleyip hangi cihazın devredeyken sorunun başladığını soruyor, aciliyetine göre yola çıkıyoruz. Yerinde önce panoyu ölçüyor, sebebi bulup geçici bir çözümle mi yoksa parça değişimiyle mi düzeleceğine birlikte karar veriyoruz; keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+          'Dükkanımız Menderes Mahallesi Alparslan Caddesi No:24’te olduğu için mahalledeki akşam ve pazar çağrılarına çoğu zaman yarım saatten kısa sürede ulaşıyoruz. Haftanın her günü 08:00-23:00 arası 0506 254 76 78’den bize ulaşabilirsiniz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Menderes’te pazar günü elektrikçi bulunur mu?',
+        a: 'Bulunur; haftanın her günü 08:00-23:00 arası çalışıyoruz. Dükkanımız mahallenin içinde olduğu için pazar günü gelen çağrılara da hafta içi gibi aynı gün bakıyoruz.',
+      },
+      {
+        q: 'Gece yarısı elektrik arızası olursa ne yapmalıyım?',
+        a: '23:00’den sonrası için 7/24 söz vermiyoruz, çağrınızı not alıp sabah ilk iş döneriz. Yanık kokusu ya da kıvılcım gibi gerçekten tehlikeli bir durum varsa gece de aramanız daha doğru olur, mahalledeki konumumuz sayesinde çoğu zaman o gece ulaşabiliyoruz.',
+      },
+      {
+        q: 'Kaçak akım rölesi gece sürekli atıyor, sabaha kadar bekleyebilir miyim?',
+        a: 'Büyük cihazları prizden çekip röleyi kaldırabiliyorsanız ve bir daha atmıyorsa sabaha bırakabilirsiniz. Röle tekrar atıyorsa ya da hangi cihazın sebep olduğunu bulamıyorsanız, aynı gece aramanız daha güvenli.',
+      },
+      {
+        q: 'Menderes dışındaki Yenikent mahallelerine de akşam geliyor musunuz?',
+        a: 'Geliyoruz. Dükkanımız Menderes Mahallesi’nde; 29 Ekim, Fevzi Çakmak ve Yenikent’in diğer mahallelerine de 08:00-23:00 arası aynı gün çıkıyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Yenikent Menderes Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/menderes-elektrikci' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Pınarbaşı’da Kış Öncesi Elektrik Kontrolü', href: '/rehber/pinarbasi-kis-oncesi-elektrik-kontrolu' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
