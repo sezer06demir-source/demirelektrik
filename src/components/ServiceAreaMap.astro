@@ -3,6 +3,15 @@ import { site } from '@data/site';
 import SectionTitle from './SectionTitle.astro';
 import Icon from './Icon.astro';
 
+interface Props {
+  title?: string;
+  text?: string;
+}
+const {
+  title = "Sincan, Yenikent ve Etimesgut'ta gittiğimiz mahalleler",
+  text = "Haritadaki her iğne hizmet verdiğimiz bir mahalle. İğneye dokunun; o mahalledeki hizmetlerimizi ve dükkanımıza uzaklığı görün. Yıldız, Yenikent'teki dükkanımız.",
+} = Astro.props;
+
 const id = site.maps.serviceAreaMapId;
 const embed = `https://www.google.com/maps/d/embed?mid=${id}&ehbc=2E312F`;
 const viewer = `https://www.google.com/maps/d/viewer?mid=${id}`;
@@ -12,8 +21,8 @@ const viewer = `https://www.google.com/maps/d/viewer?mid=${id}`;
   <div class="container">
     <SectionTitle
       eyebrow="Hizmet haritası"
-      title="Sincan, Yenikent ve Etimesgut'ta gittiğimiz mahalleler"
-      text="Haritadaki her iğne hizmet verdiğimiz bir mahalle. İğneye dokunun; o mahalledeki hizmetlerimizi ve dükkanımıza uzaklığı görün. Yıldız, Yenikent'teki dükkanımız."
+      title={title}
+      text={text}
     />
     <div class="sam">
       <div class="sam__frame">

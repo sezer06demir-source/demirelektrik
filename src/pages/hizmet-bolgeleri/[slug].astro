@@ -7,6 +7,7 @@ import CTASection from '@components/CTASection.astro';
 import FAQAccordion from '@components/FAQAccordion.astro';
 import Process from '@components/Process.astro';
 import Icon from '@components/Icon.astro';
+import ServiceAreaMap from '@components/ServiceAreaMap.astro';
 import { landingDistricts, type District, type DistrictContent } from '@data/districts';
 import { getNeighborhoodsOf } from '@data/neighborhoods';
 import { getLocalServicesOf } from '@data/localServices';
@@ -37,6 +38,8 @@ const otherDistricts = landingDistricts.filter((d) => d.slug !== district.slug);
 const hoods = getNeighborhoodsOf(district.slug);
 const localPages = getLocalServicesOf(district.slug);
 const ph = phonesFor(Astro.url.pathname);
+/** My Maps hizmet haritası yalnızca haritadaki ilçelerde ve ana hattın öne çıktığı sayfalarda gösterilir */
+const showServiceMap = ['sincan-elektrikci', 'yenikent-elektrikci', 'etimesgut-elektrikci'].includes(district.slug) && !ph.alt;
 ---
 
 <BaseLayout
@@ -112,6 +115,15 @@ const ph = phonesFor(Astro.url.pathname);
       </div>
     </div>
   </section>
+
+  {
+    showServiceMap && (
+      <ServiceAreaMap
+        title={`${inDistrict} Gittiğimiz Mahalleler`}
+        text={`Haritadaki her iğne ${district.name} ve çevresinde hizmet verdiğimiz bir mahalle. İğneye dokunun; o mahallede yaptığımız işleri görün. Yıldız, Yenikent'teki dükkanımız.`}
+      />
+    )
+  }
 
   {
     localPages.length > 0 && (
