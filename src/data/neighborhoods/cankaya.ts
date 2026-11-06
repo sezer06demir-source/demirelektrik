@@ -116,13 +116,14 @@ export const cankayaNeighborhoods: Neighborhood[] = [
   {
     name: 'Çayyolu',
     slug: 'cayyolu-elektrikci',
+    hideBase: true,
     districtSlug: 'cankaya-elektrikci',
     locative: 'Çayyolu\'nda',
     content: {
       h1: 'Çayyolu Elektrikçi',
-      subtitle: 'Çayyolu\'nun sitelerinde ve villalarında tesisat, aydınlatma ve otomasyon; Sincan\'dan 20–25 dakikada kapınızdayız.',
+      subtitle: 'Çayyolu\'nun sitelerinde ve villalarında tesisat, aydınlatma ve otomasyon; Çayyolu, Ümitköy, Angora Evleri, Alacaatlı ve Yaşamkent\'te aynı gün servis.',
       intro: [
-        'Ankara\'nın batı ucunda yer alan Çayyolu, Sincan\'daki merkezimize Çankaya\'nın diğer semtlerinden çok daha yakın. Eskişehir Yolu üzerinden 20–25 dakikada Çayyolu\'nda oluyoruz; bu yakınlık, Çayyolu elektrikçi taleplerini çoğu zaman aynı gün karşılamamızı sağlıyor.',
+        'Çayyolu elektrikçi çağrılarına aynı gün, çoğu zaman birkaç saat içinde geliyoruz. Çayyolu\'nun yanında Ümitköy, Angora Evleri, Alacaatlı ve Yaşamkent\'teki site ve villalara da düzenli olarak gidiyor; sigorta atması, kaçak akım rölesi, ana şalter ve priz arızalarını yerinde ölçerek çözüyoruz.',
         'Çayyolu\'nda konutların büyük bölümü bahçeli site blokları, dubleks ve müstakil villalardan oluşuyor. Bu evlerde iş yalnızca arıza gidermekle kalmıyor: bahçe ve teras aydınlatması, otomatik kapı ve sulama hattı, jeneratör ya da UPS bağlantısı, akıllı anahtar ve sahne bazlı aydınlatma senaryoları gibi konular sık sık gündeme geliyor. Villa elektrik tesisatı planlamasını mimari projeyle birlikte yürütmeyi tercih ediyoruz.',
         'Site içindeki dairelerde ise salon spot düzeni, mutfak tezgah altı LED, ankastre hattı ve dekoratif avize montajı en yaygın işlerimiz. Elektrikçi olarak keşfe geldiğimizde evin mevcut pano kapasitesini ölçüyor, eklenecek her yükü ona göre planlıyor ve net fiyatı keşif sonrası paylaşıyoruz.',
       ],
@@ -145,6 +146,8 @@ export const cankayaNeighborhoods: Neighborhood[] = [
         'Arcadium AVM',
         'Gordion AVM',
         'Alacaatlı',
+        'Angora Evleri',
+        'Yaşamkent',
         'Koru Mahallesi',
         'Park Caddesi',
         'Ahmet Taner Kışlalı Mahallesi',
@@ -157,8 +160,8 @@ export const cankayaNeighborhoods: Neighborhood[] = [
           a: 'Evet. Bahçe direkleri, yürüme yolu armatürleri, alarm ve kamera hattı ile sensörlü aydınlatmayı toprak altı kablolamayla güvenli şekilde kuruyoruz.',
         },
         {
-          q: 'Çayyolu\'na Sincan\'dan gelmeniz uzun sürüyor mu?',
-          a: 'Hayır. Eskişehir Yolu üzerinden Çayyolu\'na genellikle 20–25 dakikada ulaşıyoruz; Çankaya\'nın bize en yakın semtlerinden biri.',
+          q: 'Çayyolu\'na ne kadar sürede geliyorsunuz?',
+          a: 'Çayyolu, Ümitköy, Angora Evleri, Alacaatlı ve Yaşamkent\'e aynı gün geliyoruz. Aradığınızda o anki yoğunluğa göre net varış süresini söylüyoruz.',
         },
         {
           q: 'Çayyolu\'nda yeni aldığımız dairede spot yerleşimini yeniden yapabilir misiniz?',
@@ -167,12 +170,13 @@ export const cankayaNeighborhoods: Neighborhood[] = [
       ],
       seoTitle: 'Çayyolu Elektrikçi | Villa, Site ve Akıllı Aydınlatma | Demir Elektrik',
       seoDescription:
-        'Çayyolu elektrikçi: villa tesisatı, bahçe aydınlatması, akıllı anahtar, site dairelerinde spot ve LED. Sincan\'dan 20–25 dk. Demir Elektrik: 0506 254 76 78.',
+        'Çayyolu elektrikçi: villa tesisatı, bahçe aydınlatması, akıllı anahtar, site dairelerinde spot ve LED. Aynı gün servis. Demir Elektrik: 0506 254 76 78.',
     },
   },
   {
     name: 'Ümitköy',
     slug: 'umitkoy-elektrikci',
+    hideBase: true,
     districtSlug: 'cankaya-elektrikci',
     content: {
       h1: 'Ümitköy Elektrikçi',
@@ -180,7 +184,7 @@ export const cankayaNeighborhoods: Neighborhood[] = [
       intro: [
         '"Dubleksin üst katında prizler çalışmıyor", "bahçe kapısının motoru elektrik almıyor", "salondaki dimmer titreşim yapıyor" — Ümitköy elektrikçi olarak en sık duyduğumuz cümleler bunlar. Ümitköy\'de konut tipleri Çayyolu\'yla benzer olsa da yapılar biraz daha eski; 1990\'larda kurulan sitelerin tesisatı bugünün cihaz yüküyle zorlanmaya başladı.',
         'Ümitköy\'deki villa ve dublekslerde iki kat arasındaki hat dağılımı, ayrı pano ihtiyacı ve topraklama kontrolü ilk baktığımız konular. Kaçak akım rölesi olmayan ya da bahçe hattı iç tesisatla aynı sigortadan beslenen evlerde önce güvenliği sağlıyor, sonra istenen aydınlatma ve otomasyon işlerine geçiyoruz.',
-        'Sincan\'dan Ümitköy\'e 20–25 dakikalık yol var; bu sayede elektrikçi çağrılarında aynı gün, çoğu zaman birkaç saat içinde kapınızdayız. Salon avizesi, mutfak LED, akıllı anahtar ve dış mekan aydınlatması gibi planlı işler için de önce keşif yapıp net fiyat veriyoruz.',
+        'Ümitköy\'deki elektrikçi çağrılarına aynı gün, çoğu zaman birkaç saat içinde geliyoruz. Salon avizesi, mutfak LED, akıllı anahtar ve dış mekan aydınlatması gibi planlı işler için de önce keşif yapıp net fiyat veriyoruz.',
       ],
       highlightedServices: ['villa-elektrik-tesisati', 'avize-montaji', 'spot-montaji', 'elektrik-ariza'],
       localNotes: [

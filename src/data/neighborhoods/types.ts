@@ -38,5 +38,7 @@ export interface Neighborhood {
   districtSlug: string;
   /** Bulunma hâli özel biçimi (iyelik ekli adlar için, örn. "Pınarbaşı'nda"). Boşsa kural ile üretilir. */
   locative?: string;
+  /** true ise sayfada merkez adresi ve Sincan/Yenikent ifadeleri gösterilmez (uzak reklam bölgeleri) */
+  hideBase?: boolean;
   content: NeighborhoodContent;
 }

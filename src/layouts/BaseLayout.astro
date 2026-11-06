@@ -26,6 +26,8 @@ interface Props {
   bodyClass?: string;
   /** Sayfa altındaki arama ifadeleri bloğu için bölge adı. Boş bırakılırsa Ankara. */
   seoArea?: string;
+  /** true ise merkez adresi ve Sincan/Etimesgut bölge listesi gizlenir */
+  hideBase?: boolean;
   /** Arama ifadeleri bloğuna eklenecek sayfaya özgü ifadeler */
   seoExtra?: string[];
 }
@@ -40,6 +42,7 @@ const {
   noindex = false,
   bodyClass,
   seoArea = 'Ankara',
+  hideBase = false,
   seoExtra = [],
 } = Astro.props;
 
@@ -104,8 +107,8 @@ const jsonLd = [websiteSchema(), localBusinessSchema(), ...schema];
     <main id="main">
       <slot />
     </main>
-    <SeoTags area={seoArea} extra={seoExtra} />
-    <Footer />
+    <SeoTags area={seoArea} extra={seoExtra} hideBase={hideBase} />
+    <Footer hideBase={hideBase} />
     <WhatsAppButton />
     <MobileCallBar />
     <CookieConsent />

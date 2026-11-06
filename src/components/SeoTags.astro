@@ -11,11 +11,13 @@ interface Props {
   extra?: string[];
   /** Blok başlığı */
   heading?: string;
+  /** true ise Sincan/Etimesgut bölge listesi gösterilmez */
+  hideBase?: boolean;
 }
 import { landingDistricts } from '@data/districts';
 import { neighborhoods } from '@data/neighborhoods';
 
-const { area = 'Ankara', extra = [], heading } = Astro.props;
+const { area = 'Ankara', extra = [], heading, hideBase = false } = Astro.props;
 
 const isAnkara = area === 'Ankara';
 
@@ -106,12 +108,16 @@ const bolgeler: { name: string; href?: string }[] = [
     <ul class="seotags__list">
       {terms.map((t) => <li>{t}</li>)}
     </ul>
-    <h2 class="seotags__h seotags__h--sub">Sincan ve Etimesgut’ta hizmet verdiğimiz bölgeler</h2>
-    <ul class="seotags__list">
-      {bolgeler.map((b) => (
-        <li>{b.href ? <a href={b.href}>{b.name} Elektrikçi</a> : `${b.name} Elektrikçi`}</li>
-      ))}
-    </ul>
+    {!hideBase && (
+      <>
+        <h2 class="seotags__h seotags__h--sub">Sincan ve Etimesgut’ta hizmet verdiğimiz bölgeler</h2>
+        <ul class="seotags__list">
+          {bolgeler.map((b) => (
+            <li>{b.href ? <a href={b.href}>{b.name} Elektrikçi</a> : `${b.name} Elektrikçi`}</li>
+          ))}
+        </ul>
+      </>
+    )}
   </div>
 </section>
 

@@ -10,6 +10,7 @@ const footerServices = servicesSorted.filter((s) =>
 );
 const footerDistricts = featuredDistricts.filter((d) => ['Sincan', 'Yenikent', 'Etimesgut', 'Eryaman', 'Yenimahalle', 'Çankaya', 'Keçiören', 'Mamak', 'Gölbaşı'].includes(d.name));
 const year = new Date().getFullYear();
+const { hideBase = false } = Astro.props as { hideBase?: boolean };
 ---
 
 <footer class="footer">
@@ -54,14 +55,16 @@ const year = new Date().getFullYear();
             <Icon name="phone" size={18} />
             <a href={site.phone2.href} class="footer__phone">{site.phone2.display}</a>
           </li>
-          <li>
-            <Icon name="map-pin" size={18} />
-            <address>
-              {site.address.neighborhood}<br />
-              {site.address.line1}<br />
-              {site.address.semt}, {site.address.district} / {site.address.city}
-            </address>
-          </li>
+          {!hideBase && (
+            <li>
+              <Icon name="map-pin" size={18} />
+              <address>
+                {site.address.neighborhood}<br />
+                {site.address.line1}<br />
+                {site.address.semt}, {site.address.district} / {site.address.city}
+              </address>
+            </li>
+          )}
           <li>
             <Icon name="clock" size={18} />
             <span>{site.hours.daysText} {site.hours.display}</span>
