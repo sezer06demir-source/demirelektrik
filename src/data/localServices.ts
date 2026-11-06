@@ -409,7 +409,7 @@ export const localServices: LocalService[] = [
       { q: 'Eryaman\'a ne zaman gelirsiniz?', a: 'Çoğu zaman aynı gün. Arayınca kaçta orada olacağımızı söylüyoruz.' },
     ],
     seoTitle: 'Eryaman Kaçak Akım Rölesi Montajı ve Tamiri | Demir Elektrik',
-    seoDescription: 'Eryaman kaçak akım rölesi: etaplarda rölesiz pano, sürekli atan röle, nemden giden elektrik. Kaçağı ölçerek buluyoruz, aynı gün usta ☎ 0506 254 76 78',
+    seoDescription: 'Eryaman kaçak akım rölesi: etaplarda rölesiz pano, sürekli atan röle, nemden giden elektrik. Kaçağı ölçerek buluyoruz, aynı gün usta ☎ 0506 092 58 16',
     seoTags: ['Eryaman Kaçak Akım Rölesi', 'Eryaman Röle Atıyor', 'Eryaman Röle Değişimi', 'Güzelkent Kaçak Akım Rölesi', 'Eryaman Kaçak Akım Tespiti', 'Eryaman Etap Elektrikçi'],
   },
   {
@@ -439,7 +439,7 @@ export const localServices: LocalService[] = [
       { q: 'Eryaman\'da pano yenileme ücretini nasıl söylüyorsunuz?', a: 'Panoya ve hat sayısına bakıp keşifte toplam ücreti söylüyoruz; sonradan ek ücret çıkarmıyoruz.' },
     ],
     seoTitle: 'Eryaman Sigorta ve Ana Şalter Değişimi, Pano | Demir Elektrik',
-    seoDescription: 'Eryaman sigorta atması, ısınan ana şalter, yirmi yıllık sigorta kutusu. Doğru amper, yeni röleli pano, aynı gün belgeli usta ☎ 0506 254 76 78',
+    seoDescription: 'Eryaman sigorta atması, ısınan ana şalter, yirmi yıllık sigorta kutusu. Doğru amper, yeni röleli pano, aynı gün belgeli usta ☎ 0506 092 58 16',
     seoTags: ['Eryaman Sigorta Atıyor', 'Eryaman Sigorta Değişimi', 'Eryaman Ana Şalter Değişimi', 'Eryaman Sigorta Kutusu Değişimi', 'Eryaman Pano Montajı', 'Güzelkent Sigorta Değişimi'],
   },
   {
@@ -469,7 +469,7 @@ export const localServices: LocalService[] = [
       { q: 'Spot için ücreti nasıl söylüyorsunuz?', a: 'Spot sayısına ve tavan tipine göre; fotoğraf gönderirseniz yaklaşık ücreti baştan söyleriz.' },
     ],
     seoTitle: 'Eryaman Avize Montajı, Spot ve Led Montajı | Demir Elektrik',
-    seoDescription: 'Eryaman avize takma, asma tavan spot, şerit Led ve gizli ışık montajı. Taşınma ve tadilat sonrası, doğru sürücü, sağlam askı ☎ 0506 254 76 78',
+    seoDescription: 'Eryaman avize takma, asma tavan spot, şerit Led ve gizli ışık montajı. Taşınma ve tadilat sonrası, doğru sürücü, sağlam askı ☎ 0506 092 58 16',
     seoTags: ['Eryaman Avize Montajı', 'Eryaman Avize Takma', 'Eryaman Spot Montajı', 'Eryaman Şerit Led', 'Eryaman Gizli Işık', 'Eryaman Led Aydınlatma'],
   },
   {
@@ -499,7 +499,7 @@ export const localServices: LocalService[] = [
       { q: 'Ücreti ne zaman söylüyorsunuz?', a: 'Arızayı bulduktan sonra, onarıma başlamadan söylüyoruz.' },
     ],
     seoTitle: 'Eryaman Elektrik Tamircisi – Arıza ve Tamir | Demir Elektrik',
-    seoDescription: 'Eryaman elektrik tamircisi: elektrik gitti, priz ısınıyor, ışıklar titriyor. Etaplara aynı gün belgeli usta, fiyat işe başlamadan ☎ 0506 254 76 78',
+    seoDescription: 'Eryaman elektrik tamircisi: elektrik gitti, priz ısınıyor, ışıklar titriyor. Etaplara aynı gün belgeli usta, fiyat işe başlamadan ☎ 0506 092 58 16',
     seoTags: ['Eryaman Elektrik Arıza', 'Eryaman Elektrik Tamiri', 'Eryaman Elektrik Tamircisi', 'Eryaman Elektrik Gitti', 'Eryaman Priz Tamiri', 'Eryaman Arıza Tespiti'],
   },
 ];

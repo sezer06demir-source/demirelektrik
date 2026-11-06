@@ -1,10 +1,12 @@
 ---
+import { phonesFor } from '@utils/phones';
 import { site, nav } from '@data/site';
 import Icon from './Icon.astro';
 import Logo from './Logo.astro';
 
 const current = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const isActive = (href: string) => (href === '/' ? current === '/' : current === href || current.startsWith(`${href}/`));
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <header class="header" id="site-header">
@@ -28,17 +30,17 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current ===
     </nav>
 
     <div class="header__cta">
-      <a href={site.phone.href} class="header__phone" aria-label={`Telefon: ${site.phone.display}`}>
+      <a href={ph.main.href} class="header__phone" aria-label={`Telefon: ${ph.main.display}`}>
         <Icon name="phone" size={18} />
-        <span>{site.phone.display}</span>
+        <span>{ph.main.display}</span>
       </a>
-      <a href={site.phone.href} class="btn btn--primary header__call">
+      <a href={ph.main.href} class="btn btn--primary header__call">
         <Icon name="phone" size={18} />
         Hemen Ara
       </a>
     </div>
 
-    <a href={site.phone.href} class="header__phone-mobile" aria-label={`Hemen ara: ${site.phone.display}`}>
+    <a href={ph.main.href} class="header__phone-mobile" aria-label={`Hemen ara: ${ph.main.display}`}>
       <Icon name="phone" size={22} />
     </a>
 
@@ -63,9 +65,9 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current ===
         }
       </ul>
       <div class="mobile-nav__contact">
-        <a href={site.phone.href} class="btn btn--primary btn--block btn--lg">
+        <a href={ph.main.href} class="btn btn--primary btn--block btn--lg">
           <Icon name="phone" size={20} />
-          {site.phone.display}
+          {ph.main.display}
         </a>
         <a href={site.whatsapp.href} class="btn btn--whatsapp btn--block" target="_blank" rel="noopener">
           <Icon name="whatsapp" size={20} />

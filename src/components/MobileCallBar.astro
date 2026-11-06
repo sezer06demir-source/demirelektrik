@@ -1,10 +1,12 @@
 ---
+import { phonesFor } from '@utils/phones';
 import { site } from '@data/site';
 import Icon from './Icon.astro';
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <div class="call-bar" role="region" aria-label="Hızlı iletişim">
-  <a href={site.phone.href} class="call-bar__btn call-bar__btn--phone">
+  <a href={ph.main.href} class="call-bar__btn call-bar__btn--phone">
     <Icon name="phone" size={22} />
     <span>Hemen Ara</span>
   </a>

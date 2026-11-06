@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 /**
  * Bölge × hizmet sayfaları — örn. /sincan-kacak-akim-rolesi
  * Veri: src/data/localServices.ts (her sayfanın metni bölgeye özgü yazıldı).
@@ -37,6 +38,7 @@ const crumbs = [
 const related = page.relatedServices.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
 const sameArea = getLocalServicesOf(page.districtSlug).filter((l) => l.slug !== page.slug);
 const sameService = getLocalServicesByKey(page.serviceKey).filter((l) => l.slug !== page.slug);
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <BaseLayout
@@ -62,7 +64,8 @@ const sameService = getLocalServicesByKey(page.serviceKey).filter((l) => l.slug 
         <aside class="ls__facts">
           <h2>{page.area} için hızlı bilgi</h2>
           <ul>
-            <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
+            <li><Icon name="phone" size={18} /> <a href={ph.main.href}>{ph.main.display}</a></li>
+            {ph.alt && <li><Icon name="phone" size={18} /> <a href={ph.second.href}>{ph.second.display}</a></li>}
             <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
             <li><Icon name="navigation" size={18} /> Dükkan: {site.address.neighborhood}, {site.address.semt} / {site.address.district}</li>
             <li><Icon name="award" size={18} /> Belgeli usta, 30+ yıl</li>

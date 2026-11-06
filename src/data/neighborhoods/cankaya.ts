@@ -170,7 +170,7 @@ export const cankayaNeighborhoods: Neighborhood[] = [
       ],
       seoTitle: 'Çayyolu Elektrikçi | Villa, Site ve Akıllı Aydınlatma | Demir Elektrik',
       seoDescription:
-        'Çayyolu elektrikçi: villa tesisatı, bahçe aydınlatması, akıllı anahtar, site dairelerinde spot ve LED. Aynı gün servis. Demir Elektrik: 0506 254 76 78.',
+        'Çayyolu elektrikçi: villa tesisatı, bahçe aydınlatması, akıllı anahtar, site dairelerinde spot ve LED. Aynı gün servis. Demir Elektrik: 0506 092 58 16.',
     },
   },
   {
@@ -227,7 +227,7 @@ export const cankayaNeighborhoods: Neighborhood[] = [
       ],
       seoTitle: 'Ümitköy Elektrikçi | Dubleks ve Akıllı Ev Elektriği | Demir Elektrik',
       seoDescription:
-        'Ümitköy elektrikçi: villa ve dubleks tesisat yenileme, akıllı anahtar, bahçe kapısı ve şarj hattı, avize ve spot montajı. Demir Elektrik: 0506 254 76 78.',
+        'Ümitköy elektrikçi: villa ve dubleks tesisat yenileme, akıllı anahtar, bahçe kapısı ve şarj hattı, avize ve spot montajı. Demir Elektrik: 0506 092 58 16.',
     },
   },
   {

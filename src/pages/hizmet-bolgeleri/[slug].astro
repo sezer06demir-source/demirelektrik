@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import PageHero from '@components/PageHero.astro';
 import ServiceCard from '@components/ServiceCard.astro';
@@ -35,6 +36,7 @@ const highlighted = c.highlightedServices.map(getService).filter((s): s is NonNu
 const otherDistricts = landingDistricts.filter((d) => d.slug !== district.slug);
 const hoods = getNeighborhoodsOf(district.slug);
 const localPages = getLocalServicesOf(district.slug);
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <BaseLayout
@@ -60,7 +62,8 @@ const localPages = getLocalServicesOf(district.slug);
         <aside class="district__facts">
           <h2>{district.name} için hızlı bilgi</h2>
           <ul>
-            <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
+            <li><Icon name="phone" size={18} /> <a href={ph.main.href}>{ph.main.display}</a></li>
+            {ph.alt && <li><Icon name="phone" size={18} /> <a href={ph.second.href}>{ph.second.display}</a></li>}
             <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
             <li><Icon name="map-pin" size={18} /> Merkez: {site.address.semt}, {site.address.district} / {site.address.city}</li>
             <li><Icon name="award" size={18} /> 30+ yıllık tecrübe</li>

@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 import { site } from '@data/site';
 import { servicesSorted } from '@data/services';
 import { featuredDistricts } from '@data/districts';
@@ -11,6 +12,7 @@ const footerServices = servicesSorted.filter((s) =>
 const footerDistricts = featuredDistricts.filter((d) => ['Sincan', 'Yenikent', 'Etimesgut', 'Eryaman', 'Yenimahalle', 'Çankaya', 'Keçiören', 'Mamak', 'Gölbaşı'].includes(d.name));
 const year = new Date().getFullYear();
 const { hideBase = false } = Astro.props as { hideBase?: boolean };
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <footer class="footer">
@@ -49,11 +51,11 @@ const { hideBase = false } = Astro.props as { hideBase?: boolean };
         <ul class="footer__contact">
           <li>
             <Icon name="phone" size={18} />
-            <a href={site.phone.href} class="footer__phone">{site.phone.display}</a>
+            <a href={ph.main.href} class="footer__phone">{ph.main.display}</a>
           </li>
           <li>
             <Icon name="phone" size={18} />
-            <a href={site.phone2.href} class="footer__phone">{site.phone2.display}</a>
+            <a href={ph.second.href} class="footer__phone">{ph.second.display}</a>
           </li>
           {!hideBase && (
             <li>
@@ -71,7 +73,7 @@ const { hideBase = false } = Astro.props as { hideBase?: boolean };
           </li>
         </ul>
         <div class="footer__actions">
-          <a href={site.phone.href} class="btn btn--primary btn--sm"><Icon name="phone" size={16} /> Hemen Ara</a>
+          <a href={ph.main.href} class="btn btn--primary btn--sm"><Icon name="phone" size={16} /> Hemen Ara</a>
           <a href={site.whatsapp.href} class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener"><Icon name="whatsapp" size={16} /> WhatsApp</a>
           <a href={site.maps.reviewHref} class="btn btn--outline-light btn--sm" target="_blank" rel="noopener"><Icon name="star" size={16} /> Bizi Değerlendirin</a>
         </div>

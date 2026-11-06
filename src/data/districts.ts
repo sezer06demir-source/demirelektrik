@@ -381,7 +381,7 @@ export const districts: District[] = [
         'Eryaman Etap Elektrikçi',
       ],
       seoDescription:
-        'Eryaman elektrikçi: etaplara ve sitelere aynı gün belgeli usta. Sigorta kutusu, kaçak akım rölesi, arıza, avize ve Led. Fiyat işe başlamadan. ☎ 0506 254 76 78',
+        'Eryaman elektrikçi: etaplara ve sitelere aynı gün belgeli usta. Sigorta kutusu, kaçak akım rölesi, arıza, avize ve Led. Fiyat işe başlamadan. ☎ 0506 092 58 16',
     },
   },
   {

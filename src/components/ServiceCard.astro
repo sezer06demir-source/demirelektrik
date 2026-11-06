@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 import type { Service } from '@data/services';
 import { site } from '@data/site';
 import Icon from './Icon.astro';
@@ -11,6 +12,7 @@ interface Props {
 }
 const { service, headingLevel: Tag = 'h3', delay = 0 } = Astro.props;
 const href = `/hizmetler/${service.slug}`;
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <article class="service-card card card--hover reveal" data-delay={delay || undefined}>
@@ -21,7 +23,7 @@ const href = `/hizmetler/${service.slug}`;
     <a href={href} class="service-card__more">
       Detaylı Bilgi <Icon name="arrow-right" size={16} />
     </a>
-    <a href={site.phone.href} class="btn btn--primary btn--sm" aria-label={`${service.title} için hemen ara`}>
+    <a href={ph.main.href} class="btn btn--primary btn--sm" aria-label={`${service.title} için hemen ara`}>
       <Icon name="phone" size={16} /> Hemen Ara
     </a>
   </div>

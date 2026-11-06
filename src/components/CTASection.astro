@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 import { site } from '@data/site';
 import Icon from './Icon.astro';
 import PhoneButton from './PhoneButton.astro';
@@ -17,6 +18,7 @@ const {
   buttonLabel = 'Şimdi Ara',
   compact = false,
 } = Astro.props;
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <section class:list={['cta', { 'cta--compact': compact }]} aria-labelledby="cta-title">
@@ -26,7 +28,8 @@ const {
       <h2 id="cta-title" class="cta__title">{title}</h2>
       <p class="cta__text">{text}</p>
       <ul class="cta__meta">
-        <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
+        <li><Icon name="phone" size={18} /> <a href={ph.main.href}>{ph.main.display}</a></li>
+        {ph.alt && <li><Icon name="phone" size={18} /> <a href={ph.second.href}>{ph.second.display}</a></li>}
         <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
         <li><Icon name="map-pin" size={18} /> Ankara geneli</li>
       </ul>

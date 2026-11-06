@@ -1,4 +1,5 @@
 ---
+import { phonesFor } from '@utils/phones';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import PageHero from '@components/PageHero.astro';
 import ServiceCard from '@components/ServiceCard.astro';
@@ -41,6 +42,7 @@ const crumbs = [
 ];
 const highlighted = c.highlightedServices.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
 const siblings = getNeighborhoodsOf(district.slug).filter((n) => n.slug !== neighborhood.slug);
+const ph = phonesFor(Astro.url.pathname);
 ---
 
 <BaseLayout
@@ -67,7 +69,8 @@ const siblings = getNeighborhoodsOf(district.slug).filter((n) => n.slug !== neig
         <aside class="hood__facts">
           <h2>{neighborhood.name} için hızlı bilgi</h2>
           <ul>
-            <li><Icon name="phone" size={18} /> <a href={site.phone.href}>{site.phone.display}</a></li>
+            <li><Icon name="phone" size={18} /> <a href={ph.main.href}>{ph.main.display}</a></li>
+            {ph.alt && <li><Icon name="phone" size={18} /> <a href={ph.second.href}>{ph.second.display}</a></li>}
             <li><Icon name="clock" size={18} /> {site.hours.daysText} {site.hours.display}</li>
             <li><Icon name="map-pin" size={18} /> {neighborhood.name} Mah. / {district.name}</li>
             {!neighborhood.hideBase && <li><Icon name="navigation" size={18} /> Merkez: {site.address.semt}, {site.address.district} / {site.address.city}</li>}
