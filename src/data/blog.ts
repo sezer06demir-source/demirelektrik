@@ -943,6 +943,154 @@ export const posts: BlogPost[] = [
       { label: 'Pınarbaşı’da Kış Öncesi Elektrik Kontrolü', href: '/rehber/pinarbasi-kis-oncesi-elektrik-kontrolu' },
     ],
   },
+  {
+    slug: 'sincan-avize-montaji-usta-anlatiyor',
+    title: 'Sincan’da Avize Montajı: Usta Anlatıyor, Tavana Asmadan Önce Bakılması Gereken 4 Şey',
+    description:
+      'Sincan’da avize montajı yaptırmadan önce tavan dübeli, anahtarın fazı kesip kesmediği, topraklama ve bağlantı şekli. Otuz yıllık ustadan sahadan notlar. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Sincan avize montajı',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Avize montajı "iki kablo bağla, tavana as" işi gibi görünür. Sincan’daki evlerde otuz yıldır avize asan bir usta olarak, montajdan önce baktığım dört şeyi ve en sık gördüğüm hataları anlattım.',
+    intro:
+      'Geçen ay Pınarbaşı’nda bir müşterim aradı: yeni aldığı kristal avizeyi damadı takmış, üç gün sonra gece yarısı bir çatırtı gelmiş, avize plastik dübeliyle birlikte tavandan yirmi santim sarkmış. Neyse ki kimse altında değilmiş. Ben bu işi otuz yılı aşkın süredir yapıyorum ve şunu rahatlıkla söyleyebilirim: avize montajında işin zor tarafı kabloyu bağlamak değil, o kabloyu ve avizeyi yıllarca güvenle tavanda tutmak. Sincan’da avize montajına gittiğimde ilk beş dakikada neye baktığımı burada sırayla anlatıyorum.',
+    sections: [
+      {
+        h: 'Avizeyi tavanda ne tutacak? Önce dübele bakarım',
+        p: [
+          'Kısa cevap: avizenin ağırlığına göre dübel seçilir, eldeki dübele göre avize asılmaz. Üç dört kiloluk sade bir avizeyi iyi oturmuş bir plastik dübel taşır; ama sekiz on kiloyu geçen kristal ya da metal gövdeli bir avizede ben çelik dübel ya da tavana sabitlenen kanca kullanırım.',
+          'Sincan’daki binaların tavanı birbirine benzemez. Atatürk ve Plevne taraflarındaki eski apartmanlarda tavan çoğu zaman asmolen döşemedir; matkap bazen betona değil, içindeki boşluklu tuğlaya denk gelir ve dübel orada tutmaz. Bunu matkabın giriş hissinden anlarım, boşluğa denk geldiyse yerini biraz kaydırıp betona oturturum. Yeni sitelerdeki asma tavanlarda ise alçıpan tek başına ağır avize taşımaz; askıyı alçıpanın üstündeki betona kadar indirmek gerekir.',
+        ],
+      },
+      {
+        h: 'Anahtar fazı mı kesiyor, nötrü mü?',
+        p: [
+          'Kısa cevap: anahtar mutlaka fazı kesmeli. Eski tesisatlarda anahtarın nötrü kestiğini çok görüyorum; o zaman lamba söner ama avizenin duyu hâlâ gerilimlidir. Siz ampul değiştirirken "nasılsa kapalı" diye duya dokunduğunuzda çarpılırsınız.',
+          'Bu yüzden eski avizeyi söktüğüm anda kontrol kalemiyle yetinmez, ölçü aletiyle hangi ucun faz olduğuna bakarım. Anahtar nötrü kesiyorsa anahtar kutusunda uçların yerini değiştirip düzeltirim. Bu iş beş dakika sürer ama bilmeyen biri yıllarca o riskle yaşar.',
+        ],
+      },
+      {
+        h: 'Metal gövdeli avizede topraklama şart',
+        p: [
+          'Kısa cevap: avizenin içinden sarı-yeşil bir kablo çıkıyorsa o boşuna konmamıştır, tavandaki toprak hattına bağlanmalıdır. Metal gövdeli bir avizede içeride bir kablonun yalıtımı sıyrılırsa gövde gerilim alır; toprak bağlıysa kaçak akım rölesi anında keser, bağlı değilse o gerilim avizenin üstünde bekler.',
+          'Sincan’ın eski apartmanlarında tavan buatından çoğu zaman toprak hattı inmez, sadece iki kablo vardır. Böyle durumlarda müşterime durumu açıkça söylerim: ya o hatta toprak çekeriz ya da en azından panoda düzgün çalışan bir kaçak akım rölesi olduğundan emin oluruz. Rölesi olmayan bir evde metal gövdeli avizeyi topraksız asmak bence doğru değil.',
+        ],
+      },
+      {
+        h: 'Kabloları bantla değil, klemensle bağlarım',
+        p: [
+          'Kısa cevap: kabloları birbirine burup üstünü izole bantla sarmak hem gevşer hem ısınır. Ben her avizede yaylı klemens kullanırım; kablo içine tam oturur, zamanla gevşemez ve sonradan sökmek gerektiğinde kabloyu kesmeden açılır.',
+          'Bağlantıyı yaptıktan sonra kabloları avizenin kapağının içine sıkıştırmam, düzgünce buata yerleştiririm. Kapağın altında ezilen bir kablo yıllar içinde yalıtımını kaybeder; bu da az önce anlattığım gövde kaçağının en sık sebebidir. LED avizelerde de sürücüyü, ısınacağı bir yere değil havalanacağı bir yere koyarım.',
+        ],
+      },
+      {
+        h: 'Sincan’da avize montajına nasıl geliyorum?',
+        p: [
+          'Aradığınızda önce avizenin yaklaşık ağırlığını ve tavanın betona mı asma tavana mı olduğunu sorarım, ona göre doğru dübel ve askıyla gelirim. Yerinde eski avizeyi söker, faz-nötr ve toprak kontrolünü yapar, avizeyi asıp her kolunu tek tek yakarak teslim ederim. Avize kutusunun ambalajını da toplarım, evinizde iş bitince toz ve çöp bırakmam.',
+          'Dükkanımız Yenikent Menderes Mahallesi Alparslan Caddesi No:24’te; Sincan merkeze, Pınarbaşı, Plevne ve Atatürk Mahallesi’ne 10-15 dakikada gelirim. Haftanın her günü 08:00-23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Fiyatı yerinde, avizeyi ve tavanı görünce net söylerim.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Sincan’da avize montajı aynı gün yapılır mı?',
+        a: 'Çoğu zaman evet. Avizenin ağırlığını ve tavanın tipini telefonda söylerseniz doğru malzemeyle gelir, aynı gün asıp teslim ederim.',
+      },
+      {
+        q: 'Ağır kristal avizeyi plastik dübelle asabilir miyim?',
+        a: 'Önermem. Sekiz on kiloyu geçen avizelerde plastik dübel zamanla yerinden oynar; çelik dübel ya da tavana sabitlenen kanca kullanmak gerekir.',
+      },
+      {
+        q: 'Tavanda toprak kablosu yok, avizeyi yine de takabilir miyim?',
+        a: 'Plastik gövdeli avizelerde sorun olmaz. Metal gövdeli avizede ise ya toprak hattı çekilmeli ya da panoda çalışan bir kaçak akım rölesi olduğundan emin olunmalı.',
+      },
+      {
+        q: 'Avizeyi söndürdüğüm halde ampul değiştirirken çarpıldım, neden?',
+        a: 'Büyük ihtimalle anahtar fazı değil nötrü kesiyor. Lamba söner ama duy gerilimli kalır. Montajda bunu ölçüp anahtar bağlantısını düzeltiyorum.',
+      },
+    ],
+    related: [
+      { label: 'Avize Montajı', href: '/hizmetler/avize-montaji' },
+      { label: 'Spot Montajı', href: '/hizmetler/spot-montaji' },
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
+      { label: 'Yenikent’te Salon İçin Avize mi LED Spot mu?', href: '/rehber/yenikent-salon-avize-mi-led-spot-mu' },
+    ],
+  },
+  {
+    slug: 'yenikent-pano-sigorta-tamiri',
+    title: 'Yenikent’te Pano ve Sigorta Tamiri: Isınan Sigorta, Gevşek Klemens ve Yanlış Amper',
+    description:
+      'Yenikent’te sigorta sürekli atıyor, sigortaya dokununca sıcak geliyor ya da panoda kararma varsa ne yapmalı? Usta ağzından pano ve sigorta tamiri. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Yenikent sigorta tamiri',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Sigorta atınca çoğu kişi sigortayı suçlar ve bir büyüğünü taktırır. Yenikent’te pano açtığım evlerde asıl sebebin çoğu zaman gevşek bir vida ya da yanlış amper olduğunu görüyorum. Sahadan anlattım.',
+    intro:
+      'Geçen hafta 29 Ekim Mahallesi’nden bir abla aradı: "Usta, mutfağın sigortası her akşam atıyor, komşu bir büyüğünü takalım dedi, takalım mı?" dedi. Hemen "takmayın" dedim ve yarım saat içinde kapısındaydım. Panoyu açınca sigortanın klemensi kararmış, kablonun ucu ısınmaktan sertleşmişti. Büyük amperli sigorta taksaydı sigorta artık atmayacaktı ama o kablo panonun içinde yanmaya devam edecekti. Otuz yılı aşkın süredir pano açıyorum; Yenikent’te sigorta ve pano tamirinde en sık gördüğüm üç sorunu bu yazıda anlatıyorum.',
+    sections: [
+      {
+        h: 'Sigorta atıyorsa önce sigortaya kızmayın',
+        p: [
+          'Kısa cevap: sigorta çoğu zaman arızanın kendisi değil, haber verenidir. Ya o hatta kablonun taşıyabileceğinden fazla yük vardır, ya bir yerde kısa devre vardır ya da sigortanın bağlantısı gevşemiş ısınıyordur. Sigortayı değiştirmeden önce hangisi olduğunu bulmak gerekir.',
+          'Ben gelince önce sigortanın hangi saatlerde, hangi cihaz açıkken attığını sorarım. Akşam fırınla su ısıtıcısı birlikte çalışınca atıyorsa yük meselesidir; hiçbir şey çalışmazken bile atıyorsa hatta bir kısa devre ya da kaçak aranır. Bu ayrımı yapmadan sigorta değiştirmek parayı boşa harcamaktır.',
+        ],
+      },
+      {
+        h: 'Sigortaya dokununca sıcak geliyorsa',
+        p: [
+          'Kısa cevap: normal çalışan bir sigorta ılık olabilir ama elinizi rahatsız edecek kadar sıcak olmamalıdır. Sıcaksa, üstünde kararma ya da plastikte erime varsa sebep neredeyse her zaman gevşek bir klemens vidasıdır. O sigortayı indirip bekletmeden bir elektrikçi çağırın.',
+          'Yenikent’teki kooperatif binalarının çoğu otuz yıla yakın yaşta; panolardaki vidalar yıllar içindeki ısınıp soğumayla gevşer. Gevşek bağlantı ısınır, ısınan bağlantı daha da gevşer. Bunu sadece vidayı sıkarak geçiştirmem; kararmış kablo ucunu keser, temiz bakır çıkana kadar açar, gerekirse sigortayı da yeniler ve sıkarım.',
+        ],
+      },
+      {
+        h: 'Büyük amperli sigorta takmak çözüm değil',
+        p: [
+          'Kısa cevap: sigorta kabloyu korumak için oradadır, kablonun kesitine göre seçilir. Priz hatlarında kullanılan 2,5 mm²’lik kablo için genelde 16 amper, aydınlatma hattındaki 1,5 mm²’lik kablo için 10 amper sigorta uygundur. 16 yerine 25 amper takarsanız sigorta artık atmaz ama kablo aşırı yükte ısınır ve duvarın içinde yanar.',
+          'Menderes’te açtığım bir panoda bütün sigortaların 25 amper olduğunu gördüm; önceki biri "atmasın" diye hepsini büyütmüştü. Bu tür panolarda her hattın kablosuna bakıp doğru sigortayı geri takıyorum. Gerçekten daha fazla güç gereken bir hat varsa, mesela mutfak, o zaman çözüm sigortayı büyütmek değil o hatta uygun kesitte yeni kablo çekmektir.',
+        ],
+      },
+      {
+        h: 'Etiketsiz pano, kapaksız pano',
+        p: [
+          'Kısa cevap: hangi sigortanın hangi odayı beslediğini bilmemek küçük bir dert gibi görünür ama arıza anında evin tamamını karanlıkta bırakmanıza sebep olur. Kapağı olmayan, bağlantıları açıkta duran bir pano ise çocuklu bir evde ciddi bir risktir.',
+          'Tamir için gittiğim her panoda hatları tek tek bulup sigortaların altına etiket yazarım: mutfak, banyo, salon prizleri, aydınlatma. Kapak kırıksa ya da hiç yoksa yerine takarım. Sonradan siz de bir sigorta attığında hangi odaya bakacağınızı bilirsiniz.',
+        ],
+      },
+      {
+        h: 'Yenikent’te pano tamirine nasıl geliyorum?',
+        p: [
+          'Telefonda hangi sigortanın ne zaman attığını, panoda kararma ya da koku olup olmadığını sorarım. Aracımda farklı amperlerde sigorta, kaçak akım rölesi ve klemens hep bulunur; çoğu tamiri ilk gelişte, parça beklemeden bitiririm. Pano gerçekten yenilenmesi gereken durumdaysa bunu da açıkça söyler, keşif sonrası net fiyatı veririm.',
+          'Dükkanım Yenikent Menderes Mahallesi Alparslan Caddesi No:24’te. Menderes, 29 Ekim, Fevzi Çakmak ve Ahi Evran mahallelerine genelde yarım saatten kısa sürede gelirim. Haftanın her günü 08:00-23:00 arası 0506 254 76 78’den ulaşabilirsiniz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yenikent’te sigorta değişimi ne kadar sürer?',
+        a: 'Tek bir sigortanın değişimi bağlantı kontrolüyle birlikte genelde yarım saati geçmez. Asıl zaman, sigortanın neden attığını bulmaya ayrılır.',
+      },
+      {
+        q: 'Sigortam sıcak ve üstü kararmış, ne yapmalıyım?',
+        a: 'O sigortayı hemen indirin ve o hattaki cihazları kullanmayın. Gevşek bağlantı ısınmaya devam eder; kablo ucu yenilenip bağlantı sıkılmadan tekrar açmayın.',
+      },
+      {
+        q: 'Sigorta atmasın diye bir büyüğünü taktırabilir miyim?',
+        a: 'Taktırmayın. Sigorta kablonun kesitine göre seçilir; büyütürseniz sigorta atmaz ama kablo aşırı yükte ısınıp duvarın içinde yanabilir.',
+      },
+      {
+        q: 'Panomun komple değişmesi mi gerekiyor?',
+        a: 'Her zaman değil. Çoğu panoda gevşek bağlantıyı ve tek tük arızalı sigortayı yenilemek yeterli olur. Pano çok eskiyse, kaçak akım rölesi yoksa ya da bara ve sigortalar yanmışsa yenilemeyi öneririm.',
+      },
+    ],
+    related: [
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+      { label: 'Sincan’da Sigorta Panosu Yenileme', href: '/rehber/sigorta-panosu-yenileme-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
