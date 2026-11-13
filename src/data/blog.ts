@@ -1091,6 +1091,91 @@ export const posts: BlogPost[] = [
       { label: 'Sincan’da Sigorta Panosu Yenileme', href: '/rehber/sigorta-panosu-yenileme-sincan' },
     ],
   },
+  {
+    slug: 'fevzi-cakmak-market-sogutucu-kacak-akim',
+    title: 'Fevzi Çakmak’ta Market ve Lokantada Soğutucu Sigortası Neden Sık Atar?',
+    description:
+      'Fevzi Çakmak’ta market ve lokanta soğutucularında sigorta ve kaçak akım rölesi neden sık atıyor? Kompresörün kalkış akımı, nem ve doğru hat çözümü. Demir Elektrik: 0506 254 76 78.',
+    keyword: 'Fevzi Çakmak elektrikçi',
+    date: '2026-11-13',
+    readingMin: 6,
+    excerpt:
+      'Fevzi Çakmak’taki market ve lokantalarda soğutucu dolap çalışırken sigorta ya da kaçak akım rölesi atıyorsa sebep genelde dolabın kendisi değil, beslendiği hattır. Sahadan nedenini ve çözümü anlattık.',
+    intro:
+      'Fevzi Çakmak Mahallesi’ndeki bir manavdan geçen hafta aldığımız çağrı hep aynı cümleyle başladı: “Usta, dondurucu çalışırken birden elektrik gitti, içindeki mal bozulacak diye korktuk.” Çarşıya bu kadar yakın bir mahallede esnafın soğutucu dolabı birkaç saat durduğunda kayıp küçük değil. Fevzi Çakmak elektrikçi olarak market, lokanta ve kasap soğutucularında sigorta ya da kaçak akım rölesi atması çağrılarına sık gidiyoruz; sebep neredeyse hiçbir zaman dolabın kendisi değil, dolabın bağlı olduğu hattır. Bu yazıda neden atıyor, ne zaman ciddiye almak gerekir, kalıcı çözüm nasıl kuruluyor anlatıyorum.',
+    sections: [
+      {
+        h: 'Soğutucu dolap çalışırken sigorta neden atıyor?',
+        p: [
+          'Doğrudan cevap: kompresörün ilk çalışmaya başladığı an çektiği akım, normal çalışma akımının birkaç katına çıkar; hat bu kısa ama yüksek akımı taşıyamayacak kadar dar kesitliyse ya da aynı hatta başka bir cihaz zaten çalışıyorsa sigorta o anda atar. Dolap sorunsuz çalışıp birden duruyorsa suçlu çoğu zaman dolap değil, o hattaki toplam yüktür.',
+          'Fevzi Çakmak’taki birçok dükkanda vitrin LED’i, kasa, klima ve soğutucu aynı eski hattan besleniyor. Soğutucunun kompresörü devreye girdiği anda klima ya da ısıtıcı da çalışıyorsa, hat anlık olarak sınırın üstüne çıkar ve sigorta devreyi keser.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi soğutucudan mı atıyor?',
+        p: [
+          'Doğrudan cevap: soğutucu dolapların arka tarafında defrost (buz çözme) suyu birikir; bu su zamanla kompresör gövdesine ya da fiş-priz bağlantısına sızarsa kaçak akım rölesi bunu algılayıp devreyi keser. Bu durumda röle görevini yapıyordur, arızalı olan dolabın kendisi ya da bağlantı noktasıdır.',
+          'Bir lokantada açtığımız dondurucunun arkasındaki priz, defrost suyunun aktığı tahliye borusunun hemen altındaymış; yıllar içinde nem klemense sızmış, kaçak akım orada oluşmuş. Rölenin kendisini değiştirmek bu durumda sorunu çözmez, nemin geldiği noktayı bulmak gerekir.',
+        ],
+      },
+      {
+        h: 'Sigortayı büyütmek neden çözüm değil?',
+        p: [
+          'Doğrudan cevap: sigorta hattaki kabloyu korumak için seçilir; soğutucu sık attığı için bir üst amperli sigorta takmak, sigortayı susturur ama kabloyu korumasız bırakır. Kablo o yükü taşıyamıyorsa artık sigorta atmadan ısınmaya başlar, bu da uzun saatler kapalı kalan bir dükkanda fark edilmeden büyüyen bir risktir.',
+          'Fevzi Çakmak’ta bir markette tam bunu gördük: soğutucu sigortası üç kez büyütülmüş, dördüncüsünde kablo ucu kararmıştı. Kabloyu temizden kesip doğru amperle geri bağladık; esnafa da artık o hattı tek başına soğutucuya ayırmasını önerdik.',
+        ],
+      },
+      {
+        h: 'Doğru çözüm: ayrı hat, doğru kesit, nem korumalı priz',
+        p: [
+          'Doğrudan cevap: soğutucu dolap, kasa ve aydınlatmadan ayrı kendi sigortasına ve kablo kesitine sahip bir hatta bağlanmalı; priz de nemli ortamda IP44 koruma sınıfında, kapaklı olmalı. Birden fazla soğutucu varsa, her birini aynı hatta üst üste bindirmek yerine mümkün olduğunca ayırıyoruz.',
+          'Kablo kesitini dolabın etiketindeki akım değerine göre seçiyoruz; çoğu konut tipi soğutucuda 2,5 mm² yeterli oluyor ama sanayi tipi dondurucularda daha kalın kesit gerekebiliyor. Priz, tahliye borusunun ya da su sıçrayabilecek bir noktanın altına değil, kuru ve ulaşılabilir bir yere alınmalı.',
+        ],
+      },
+      {
+        h: 'Evdeki buzdolabı da benzer bir sorun yaşar mı?',
+        p: [
+          'Doğrudan cevap: evet, mantık aynıdır. Fevzi Çakmak’taki apartmanlarda da mutfak buzdolabı prizi su alan bir bulaşık makinesi hattıyla paylaşılmışsa ya da priz evyenin hemen altındaysa, benzer kaçak akım atması yaşanabilir. Fark, evde kayıp genelde bir yemek, markette ise bütün bir vitrin dolu.',
+          'Bu yüzden eve gittiğimizde de buzdolabı prizinin ayrı sigortada olup olmadığına, nem alabilecek bir noktaya yakın durup durmadığına bakıyoruz; küçük bir önlem büyük bir kaybı önlüyor.',
+        ],
+      },
+      {
+        h: 'Fevzi Çakmak’ta bu işi nasıl çözüyoruz?',
+        p: [
+          'Çağrı geldiğinde önce hangi saatte, hangi cihaz çalışırken attığını soruyoruz; bu bize yük mü yoksa kaçak mı olduğu konusunda ilk ipucunu veriyor. Yerinde panoyu ve soğutucunun bağlı olduğu hattı ölçüyor, gerekiyorsa dolabın arkasını açıp nem izi arıyoruz. Sorunu bulduktan sonra keşif sonrası net fiyatı söylüyor, onayınızla aynı gün çözüyoruz.',
+          'Dükkanımız Fevzi Çakmak’a birkaç dakika mesafede olduğu için esnafın soğutucu arızasını uzun süre bekletmiyoruz. Haftanın her günü 08:00-23:00 arası 0506 254 76 78’den bize ulaşabilirsiniz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Fevzi Çakmak’ta en yakın elektrikçi kimdir, ne kadar sürede gelir?',
+        a: 'Dükkanımız Fevzi Çakmak Mahallesi’ne birkaç dakika mesafede; soğutucu ve pano arızalarına genellikle aynı gün, acil durumlarda bir saat içinde ulaşıyoruz.',
+      },
+      {
+        q: 'Soğutucu sigortası sık atıyor, bir büyüğünü taksak mı?',
+        a: 'Takmayın. Sigorta kablonun kesitine göre seçilir; büyütürseniz sigorta atmaz ama kablo aşırı yükte ısınıp zamanla ciddi bir arızaya dönüşebilir. Önce hattı ölçtürmek gerekir.',
+      },
+      {
+        q: 'Kaçak akım rölesi soğutucu çalışırken sürekli atıyor, sebebi ne olabilir?',
+        a: 'Çoğu zaman defrost suyunun priz ya da kompresör bağlantısına sızmasıdır. Dolabın arkasını açıp nemin geldiği noktayı bulmak, röleyi değiştirmekten daha kalıcı bir çözümdür.',
+      },
+      {
+        q: 'Market açılmadan önce soğutucu için elektrikçi çağırmak gerekir mi?',
+        a: 'Yeni bir soğutucu ya da dondurucu alacaksanız, hat kurulumunu cihaz gelmeden önce yaptırmak işi hızlandırır; dolap geldiğinde hat zaten test edilmiş oluyor.',
+      },
+      {
+        q: 'Evde de buzdolabı prizi aynı kaçak akım sorununu yaşayabilir mi?',
+        a: 'Yaşayabilir, özellikle priz nemli bir noktaya yakınsa ya da başka bir ıslak hatla paylaşılıyorsa. Buzdolabı prizini ayrı sigortada ve kuru bir noktada tutmak riski azaltır.',
+      },
+    ],
+    related: [
+      { label: 'Fevzi Çakmak Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/fevzi-cakmak-elektrikci' },
+      { label: 'Elektrik Arıza Tespiti ve Onarımı', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Mağaza Elektrik Tesisatı', href: '/hizmetler/magaza-elektrik-tesisati' },
+      { label: 'Fevzi Çakmak’ta Vitrin ve Apartmanda LED Aydınlatma', href: '/rehber/led-aydinlatma-vitrin-fevzi-cakmak' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
