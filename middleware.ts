@@ -803,9 +803,17 @@ setTimeout(function(){
 /* ----------------------------------------------------------------------------- ana akış */
 
 export default async function middleware(req: Request, ctx?: { waitUntil?: (p: Promise<unknown>) => void }): Promise<Response | undefined> {
+  const url = new URL(req.url);
+
+  // 0) Üretim sitesine *.vercel.app adresinden girilirse Cloudflare katmanı (IP listeleri, hız sınırı) atlanır.
+  //    Bu yüzden üretimde vercel.app adresini kalıcı olarak asıl alan adına yönlendir. Önizleme deploy'ları etkilenmez.
+  const host = url.hostname.toLowerCase();
+  if (host.endsWith('.vercel.app') && (host === 'demirelektrik.vercel.app' || env.VERCEL_ENV === 'production')) {
+    return Response.redirect(`https://www.demirelektrikankara.com.tr${url.pathname}${url.search}`, 308);
+  }
+
   if (!SECURITY_ON) return undefined;
 
-  const url = new URL(req.url);
   const path = url.pathname.toLowerCase();
   const ua = (req.headers.get('user-agent') ?? '').toLowerCase();
   const cf = viaCloudflare(req);
