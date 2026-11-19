@@ -8,6 +8,7 @@ const SECOND_LINE_FIRST = [
   /^\/hizmet-bolgeleri\/eryaman-elektrikci$/,
   /^\/eryaman-[a-z0-9-]+$/,
   /^\/hizmet-bolgeleri\/cankaya-elektrikci\/(cayyolu|umitkoy)-elektrikci$/,
+  /^\/rehber\/(eryaman|umitkoy|yasamkent|cayyolu)-[a-z0-9-]+$/,
 ];
 
 export function phonesFor(pathname: string) {

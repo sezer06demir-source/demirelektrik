@@ -18,7 +18,7 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const post = getPost(slug!)!;
-const others = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
+const others = posts.filter((p) => p.slug !== post.slug && (!post.hideBase || p.hideBase)).slice(0, 2);
 
 const fmtDate = (d: string) => {
   const [y, m, day] = d.split('-');
@@ -70,8 +70,9 @@ const articleSchema = {
   description={post.description}
   schema={[breadcrumbSchema(crumbs), articleSchema, faqSchema(post.faq)]}
   seoArea={bolgeAdi}
+  hideBase={post.hideBase}
 >
-  <PageHero eyebrow="Rehber" title={post.title} text={post.excerpt} breadcrumbs={crumbs} showCta={false} />
+  <PageHero eyebrow="Rehber" title={post.title} text={post.excerpt} breadcrumbs={crumbs} showCta />
 
   <section class="section">
     <div class="container article">
@@ -83,12 +84,23 @@ const articleSchema = {
         <p class="article__intro">{post.intro}</p>
 
         {
-          post.sections.map((s) => (
+          post.sections.map((s, i) => (
             <div class="article__section reveal">
               <h2>{s.h}</h2>
               {s.p.map((para) => (
                 <p>{para}</p>
               ))}
+              {i === 1 && post.inlineImage && (
+                <img
+                  class="article__inline"
+                  src={post.inlineImage.src}
+                  alt={post.inlineImage.alt}
+                  width={post.inlineImage.width}
+                  height={post.inlineImage.height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
             </div>
           ))
         }
@@ -104,7 +116,7 @@ const articleSchema = {
           <span class="callbox__eyebrow">
             <Icon name="zap" size={16} /> Yardım gerekirse
           </span>
-          <p class="callbox__text">Sincan ve Ankara genelinde elektrik arızanız mı var? Durumu telefonda anlatın; çoğu şeyi konuşarak netleştirir, gerekiyorsa aynı gün geliriz.</p>
+          <p class="callbox__text">{post.hideBase ? 'Çankaya ve Ankara genelinde' : 'Sincan ve Ankara genelinde'} elektrik arızanız mı var? Durumu telefonda anlatın; çoğu şeyi konuşarak netleştirir, gerekiyorsa aynı gün geliriz.</p>
           <PhoneButton block />
           <WhatsAppLink block />
         </div>
@@ -154,6 +166,14 @@ const articleSchema = {
 </BaseLayout>
 
 <style>
+  .article__inline {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.25rem auto 0;
+    border-radius: 12px;
+  }
   .article {
     display: grid;
     gap: 2.5rem;

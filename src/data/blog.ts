@@ -23,6 +23,10 @@ export interface BlogPost {
   sections: BlogSection[];
   faq: { q: string; a: string }[];
   related: { label: string; href: string }[];
+  /** true ise Sincan adresi/ifadesi gizlenir (Çankaya bölgesi yazıları) */
+  hideBase?: boolean;
+  /** Yazının ortasında gösterilecek ek görsel (örn. usta afişi) */
+  inlineImage?: { src: string; alt: string; width: number; height: number };
 }
 
 export const posts: BlogPost[] = [
@@ -1175,6 +1179,554 @@ export const posts: BlogPost[] = [
       { label: 'Mağaza Elektrik Tesisatı', href: '/hizmetler/magaza-elektrik-tesisati' },
       { label: 'Fevzi Çakmak’ta Vitrin ve Apartmanda LED Aydınlatma', href: '/rehber/led-aydinlatma-vitrin-fevzi-cakmak' },
     ],
+  },
+  {
+    slug: 'sincan-fatih-elektrikci-isitici-sigorta-atiyor',
+    title: 'Sincan Fatih Elektrikçi 0506 254 76 78 | Isıtıcıyı Açınca Atan Sigorta ve Kararan Priz',
+    description:
+      'Sincan Fatih’te kışın ısıtıcıyı açınca sigorta mı atıyor, prizin etrafı mı karardı? Fatih’e her gün çıkan usta anlatıyor: sebebi, yapılmayacaklar ve kalıcı çözüm. Sincan Fatih elektrikçi: 0506 254 76 78.',
+    keyword: 'Sincan Fatih elektrikçi',
+    date: '2026-11-19',
+    readingMin: 6,
+    image: '/images/rehber/sincan-fatih-elektrikci-isitici-sigorta-atiyor.webp',
+    imageAlt: 'Sincan Fatih elektrikçi: hatları ayrı sigortalara bölünmüş, yeni kurulmuş daire sigorta panosu',
+    inlineImage: { src: '/images/rehber/sincan-fatih-elektrikci-isitici-sigorta-atiyor-usta.webp', alt: 'Sincan Fatih sigorta ve pano yenileme – Demir Elektrik usta afişi, 0506 254 76 78', width: 1080, height: 1350 },
+    excerpt:
+      'Hava soğuyunca Fatih’ten gelen çağrıların yarısı aynı cümleyle başlıyor: “Usta, ısıtıcıyı açınca sigorta atıyor.” Sebebi çoğu zaman ısıtıcı değil, onu taşıyan priz ve hat. Sahadan anlattım.',
+    intro:
+      'Kasımın ilk soğuk akşamı Fatih Mahallesi’nde, toplu konut bloklarının birinden bir amca aradı: “Oğlum, yağlı radyatörü salona taktım, yarım saat sonra sigorta attı. Kaldırdım, bu sefer prizin kenarı kararmış.” Yarım saat içinde kapısındaydım. Prizi söktüğümde kablonun ucu ısınmaktan sertleşmiş, klemensin vidası gevşemişti. Radyatörün hiçbir suçu yoktu. Fatih’te kışın en çok gördüğüm bu arızayı, ben gelene kadar ne yapmanız gerektiğiyle birlikte anlatıyorum.',
+    sections: [
+      {
+        h: 'Isıtıcı açınca sigorta neden atar?',
+        p: [
+          'Kısa cevap: elektrikli ısıtıcılar evdeki en çok akım çeken cihazlardandır. 2000 vatlık bir ısıtıcı tek başına bir priz hattının taşıyabileceğinin önemli bir kısmını kullanır. Aynı hatta çay makinesi, ütü ya da televizyon da varsa sigorta görevini yapar ve atar.',
+          'Fatih’teki eski blokların çoğunda salonun, koridorun ve bazen bir yatak odasının prizleri tek sigortaya bağlıdır. Yıllar önce böyle döşenmiş, o gün için yetmiş. Bugün ise bir evde kışın iki ısıtıcı, bir kurutma makinesi ve bir su ısıtıcı birden çalışabiliyor. Ben gelince önce hangi prizlerin hangi sigortada olduğunu çıkarırım; çoğu zaman yükü iki hatta bölmek sorunu bitirir.',
+        ],
+      },
+      {
+        h: 'Prizin etrafı kararmışsa iş ciddidir',
+        p: [
+          'Kısa cevap: kararma, priz içindeki bağlantının ısındığını gösterir. O prizi kullanmayı hemen bırakın, sigortasını indirin. Kararmış priz bir sonraki kışa kalırsa duvarın içinde kablo eriyebilir.',
+          'Isınmanın sebebi neredeyse her zaman gevşek bir vida ya da yorulmuş bir priz yayıdır. Fiş prizde oynuyorsa, takınca çıtırtı geliyorsa yay gevşemiştir; temas az olur, az temas ısı yapar. Ben bu durumda prizi yenilerim, kararmış kablo ucunu temiz bakıra kadar keser, bağlantıyı yeniden yaparım. Sadece kapağı değiştirip gitmem.',
+          'Bir de çoklu priz meselesi var. Isıtıcıyı uzatma kablosuna, onu da başka bir çoklu prize takmak Fatih’te en sık gördüğüm hata. Isıtıcıyı mutlaka doğrudan duvar prizine takın.',
+        ],
+      },
+      {
+        h: 'Kışlık cihazlar için ayrı hat gerekir mi?',
+        p: [
+          'Kısa cevap: evde her kış iki ısıtıcı birden çalışıyorsa, ya da salonla yatak odası aynı sigortadaysa evet. Isıtıcının kullanılacağı odaya ayrı sigortalı tek bir priz hattı çekmek, her akşam atan sigortadan kurtulmanın en temiz yoludur.',
+          'Fatih’teki bloklarda bunu çoğu zaman duvar kırmadan yaparım: koridordaki eski borudan ya da süpürgelik hizasından ince bir kanalla yeni hattı geçiririm, panoya da o hat için ayrı bir sigorta eklerim. Bir öğleden sonralık iştir ve kış boyu rahat edersiniz.',
+        ],
+      },
+      {
+        h: 'Ben gelene kadar ne yapmalısınız?',
+        p: [
+          'Kısa cevap: ısıtıcının fişini çekin, atan sigortayı bir kez kaldırmayı deneyin. Tekrar atıyorsa ısrar etmeyin. Prizde kararma, yanık kokusu ya da erime varsa o sigortayı indirili bırakın.',
+          'Telefonda size hangi sigortanın attığını, hangi cihazların açık olduğunu ve prizde iz olup olmadığını sorarım. Bu üç cevap çoğu zaman arızanın yarısını çözer. Aracımda priz, sigorta, kablo ve klemens hep vardır; Fatih’te bu tür işleri genelde ilk gelişte, parça beklemeden bitiririm. İşe başlamadan fiyatı söylerim.',
+        ],
+      },
+      {
+        h: 'Fatih’e ne kadar sürede geliyorum?',
+        p: [
+          'Dükkanım Yenikent Menderes Mahallesi’nde, Fatih’e yolum kısa. Fatih, Mareşal Çakmak ve Pınarbaşı tarafına çoğu gün yarım saat içinde gelirim. Haftanın her günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz.',
+          'Arızanın yanında ev ve işyeri elektrik tesisatı da yapıyorum. Fatih’te dairesini baştan yeniletenlere, çarşıda dükkân açanlara pano, priz ve aydınlatma hattını sıfırdan kuruyorum; eski tesisatın hangi kısmının kalabileceğini de keşifte söylüyorum.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Sincan Fatih’te elektrikçi aynı gün geliyor mu?',
+        a: 'Evet. Fatih’e her gün çıkıyorum; arıza acilse sırayı ona göre ayarlıyorum. Prizde kararma, yanık kokusu ya da sürekli atan sigorta varsa aynı gün gelirim.',
+      },
+      {
+        q: 'Isıtıcıyı hangi prize takmalıyım?',
+        a: 'Doğrudan duvar prizine, tercihen başka büyük cihazın olmadığı bir hatta. Uzatma kablosu ya da çoklu priz kullanmayın; ısınma en çok bu bağlantılarda olur.',
+      },
+      {
+        q: 'Prizin kenarı kararmış ama hâlâ çalışıyor. Bekleyebilir miyim?',
+        a: 'Beklemeyin. Kararma bağlantının ısındığını gösterir ve çalışıyor olması tehlikeyi azaltmaz. O prizin sigortasını indirin ve prizi yeniletin.',
+      },
+      {
+        q: 'Isıtıcı için ayrı hat çekmek duvar kırmayı gerektirir mi?',
+        a: 'Çoğu zaman gerektirmez. Eski borulardan ya da süpürgelik hizasında ince bir kanaldan yeni hattı geçirip panoya ayrı bir sigorta eklerim.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Fatih Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/fatih-elektrikci' },
+      { label: 'Sincan Sigorta ve Ana Şalter', href: '/sincan-sigorta-ana-salter' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Priz Neden Isınır?', href: '/rehber/priz-neden-isinir-sincan' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+    ],
+  },
+  {
+    slug: 'sincan-yenikent-elektrikci-arayinca-ne-oluyor',
+    title: 'Sincan Yenikent Elektrikçi 0506 254 76 78 | Aradığınızda Ne Soruyorum, Gelince Ne Yapıyorum?',
+    description:
+      'Sincan Yenikent’te elektrikçi çağırmadan önce bilmeniz gerekenler: telefonda sorduğum sorular, kapıdan girince ilk baktığım yerler, fiyatın nasıl söylendiği. Dükkanı Yenikent’te olan usta anlatıyor: 0506 254 76 78.',
+    keyword: 'Sincan Yenikent elektrikçi',
+    date: '2026-11-19',
+    readingMin: 6,
+    image: '/images/rehber/sincan-yenikent-elektrikci-arayinca-ne-oluyor.webp',
+    imageAlt: 'Sincan Yenikent elektrikçi: işi biten dairede gizli lineer LED ve spot aydınlatma',
+    inlineImage: { src: '/images/rehber/sincan-yenikent-elektrikci-arayinca-ne-oluyor-usta.webp', alt: 'Yenikent elektrik tamircisi – Demir Elektrik usta afişi, 0506 254 76 78', width: 1080, height: 1350 },
+    excerpt:
+      'Elektrikçi çağırmak çoğu insanı tedirgin eder: Ne kadar tutar, gelince neyi söker, işi uzatır mı? Yenikent’te dükkanı olan bir usta olarak telefondan ilk sorudan iş bitene kadar ne yaptığımı anlattım.',
+    intro:
+      'Yenikent’te yıllardır aynı dükkandayım; Menderes Mahallesi Alparslan Caddesi’nden geçenler beni tanır. Yine de telefonu açan çoğu kişinin sesinde aynı tedirginlik oluyor: “Usta, gelince duvar kırılacak mı? Fiyatı önceden söyler misin?” Bu yazıda bir elektrik arızasında beni aradığınız andan iş bitene kadar neler olduğunu adım adım anlatıyorum. Böylece neyle karşılaşacağınızı önceden bilirsiniz.',
+    sections: [
+      {
+        h: 'Telefonda sorduğum dört soru',
+        p: [
+          'Kısa cevap: elektrik evin tamamında mı yoksa bir bölümünde mi yok, panoda hangi şalter düşmüş, kaldırınca tekrar atıyor mu ve kokuya, kıvılcıma ya da sese dair bir iz var mı? Bu dört sorunun cevabı arızanın nerede olduğunu çoğu zaman kendiliğinden söyler.',
+          'Bazen telefonda çözüyoruz. Geçen ay 29 Ekim Mahallesi’nden arayan bir hanımefendiye kaçak akım rölesinin hangi sigortayı indirince kalktığını telefonda birlikte denedik; balkondaki dış priz çıktı. O akşam o sigortayı kapalı bıraktı, ertesi sabah gidip prizi değiştirdim. Gerekmeyen yere yol masrafı çıkarmam.',
+        ],
+      },
+      {
+        h: 'Kapıdan girince ilk baktığım yer',
+        p: [
+          'Kısa cevap: pano. Arıza ister mutfakta ister banyoda olsun, ilk iş panoyu açarım. Hangi sigorta neyi besliyor, bağlantılarda ısınma var mı, kaçak akım rölesi takılı mı, takılıysa çalışıyor mu, hepsine bakarım.',
+          'Yenikent’teki kooperatif binalarının panoları yaşlı; bir arıza için gelip panoda başka bir tehlike gördüğüm çok oluyor. Bunu size gösterir, söylerim. Ama sizden habersiz iş büyütmem. Ne yapılması gerektiğini, hangisinin acil olduğunu ve hangisinin bekleyebileceğini ayrı ayrı anlatırım.',
+        ],
+      },
+      {
+        h: 'Arıza nasıl bulunur, duvar kırılır mı?',
+        p: [
+          'Kısa cevap: çoğu arızada duvar kırılmaz. Ölçü aleti ve sabırla, hattı tek tek ayırarak arızayı bulurum. Sorun genelde bir priz, bir buat ya da bir lamba bağlantısında çıkar.',
+          'Kablonun duvarın içinde yandığı ya da çivi, matkap gibi bir şeyle delindiği durumlar az da olsa olur. O zaman bile önce eski borudan yeni kablo çekmeyi denerim. Duvar açmak son çaredir ve açılacaksa bunu işe başlamadan önce söylerim.',
+        ],
+      },
+      {
+        h: 'Fiyat ne zaman söylenir?',
+        p: [
+          'Kısa cevap: arızayı gördükten sonra ve işe başlamadan önce. Telefonda arızayı görmeden net fiyat vermem; çünkü “sigorta atıyor” diye aranan iş bazen beş dakikalık bir vida sıkma, bazen yarım günlük hat yenilemedir.',
+          'Gelip baktığımda ne yapılacağını, hangi parçanın değişeceğini ve toplam ücreti söylerim. Siz onaylarsanız başlarım. İş bitince değiştirdiğim parçayı size gösteririm; eski sigortayı, yanmış prizi yanımda götürmem, isterseniz görürsünüz.',
+        ],
+      },
+      {
+        h: 'Yenikent’te hangi saatlerde çağırabilirsiniz?',
+        p: [
+          'Haftanın her günü 08:00–23:00 arası telefonum açık. Menderes, 29 Ekim, Fevzi Çakmak, Ahi Evran, Pınarbaşı ve Malazgirt’e genelde yarım saatten kısa sürede gelirim. Aklınıza takılan bir şey varsa çekinmeden arayın: 0506 254 76 78.',
+          'Sadece arızaya değil, elektrik tesisatı işine de aynı düzenle gelirim. Yenikent’te ev tadilatında hattı yenilemek, işyeri açarken pano ve priz düzenini kurmak gibi işlerde önce keşfe gelir, ne yapılacağını ve fiyatı yazılı olarak söylerim.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yenikent’te elektrikçi ne kadar sürede gelir?',
+        a: 'Dükkanım Yenikent’te olduğu için çoğu mahalleye yarım saat içinde gelirim. Acil arızalarda, mesela yanık kokusu ya da kıvılcım varsa, sırayı öne alırım.',
+      },
+      {
+        q: 'Telefonda fiyat söylüyor musunuz?',
+        a: 'Arızayı görmeden net fiyat söylemem, çünkü aynı şikâyetin arkasından çok farklı işler çıkabilir. Gelip baktıktan sonra, işe başlamadan fiyatı söylerim.',
+      },
+      {
+        q: 'Arıza bulunurken duvar kırılır mı?',
+        a: 'Çoğu arızada hayır. Arızalar genelde priz, buat ya da armatür bağlantısında çıkar. Duvarın açılması gerekirse bunu önceden söyler, onayınızı alırım.',
+      },
+      {
+        q: 'Akşam saatinde gelir misiniz?',
+        a: 'Evet, 23:00’e kadar çağrı alıyorum. Akşam gelen arızaların çoğunu o akşam bitiririm; parça gerekiyorsa evi güvenli hale getirip ertesi sabah tamamlarım.',
+      },
+    ],
+    related: [
+      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent-elektrikci' },
+      { label: 'Yenikent Elektrik Tamircisi', href: '/yenikent-elektrik-tamircisi' },
+      { label: 'Yenikent Kaçak Akım Rölesi', href: '/yenikent-kacak-akim-rolesi' },
+      { label: 'Yenikent’te Pano ve Sigorta Tamiri', href: '/rehber/yenikent-pano-sigorta-tamiri' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+    ],
+  },
+  {
+    slug: 'eryaman-elektrikci-sitede-elektrik-gitti',
+    title: 'Etimesgut Eryaman Elektrikçi 0506 092 58 16 | Sitede Elektrik Gitti: Yönetimi mi, Elektrikçiyi mi Aramalı?',
+    description:
+      'Etimesgut Eryaman’da sitede yaşıyorsunuz ve elektrik gitti. Sorun dairenizde mi, kat panosunda mı, sitenin trafosunda mı? Hangi durumda yönetimi, hangi durumda elektrikçiyi aramalı, usta anlatıyor: 0506 092 58 16.',
+    keyword: 'Etimesgut Eryaman elektrikçi',
+    date: '2026-11-19',
+    readingMin: 6,
+    image: '/images/rehber/eryaman-elektrikci-sitede-elektrik-gitti.webp',
+    imageAlt: 'Etimesgut Eryaman elektrikçi: sitede elektrik işleri tamamlanmış daire tavanı',
+    inlineImage: { src: '/images/rehber/eryaman-elektrikci-sitede-elektrik-gitti-usta.webp', alt: 'Eryaman elektrikçi – Demir Elektrik usta afişi', width: 1080, height: 1350 },
+    excerpt:
+      'Eryaman’da sitede elektrik gidince ilk soru şu oluyor: “Yönetimi mi arayayım, elektrikçiyi mi?” Cevap, arızanın sayaçtan önce mi sonra mı olduğuna bağlı. Üç dakikada nasıl anlaşılacağını anlattım.',
+    intro:
+      'Eryaman’daki büyük sitelerden çağrı geldiğinde telefonun öbür ucunda çoğu zaman şu cümleyi duyuyorum: “Usta, güvenliği aradım, ‘bizde sorun yok, dairenizin içi’ dediler. Ama ben de panoya baktım, her şey yukarıda.” Site yaşamında elektriğin sorumluluğu ikiye bölünür: sayaca kadar olan kısım sitenin, sayaçtan sonrası sizin. Arızanın hangi tarafta olduğunu bilmek hem zaman kazandırır hem de boşuna para ödemenizi önler.',
+    sections: [
+      {
+        h: 'Önce komşunuza bakın',
+        p: [
+          'Kısa cevap: aynı kattaki ya da aynı bloktaki komşuların elektriği de yoksa sorun sizde değildir; site yönetimini ya da güvenliği arayın. Sadece sizin dairenizde yoksa sorun büyük ihtimalle sayaçtan sonraki taraftadır.',
+          'Eryaman’daki yüksek bloklarda bir kat ya da yarım blok karanlıkta kalabiliyor. Bu kolon hattında ya da kat panosundaki bir sigortada olur ve sitenin teknik ekibinin işidir. Böyle bir durumda ben gelsem de o panoyu yönetimin onayı olmadan açmam; açmamam da gerekir.',
+        ],
+      },
+      {
+        h: 'Daire panonuzda her şey yukarıdaysa',
+        p: [
+          'Kısa cevap: daire içindeki sigortaların hiçbiri düşmemiş ama elektrik yoksa, besleme dairenize gelmiyor demektir. Bakılacak yer sayaç ve kat panosundaki daire sigortasıdır. Bu sigorta sayaç dolabındadır ve çoğu sitede kilitlidir.',
+          'Geçen kış Eryaman 4. Etap’ta bir dairede tam bu durum vardı. Güvenlik “sizin dairenin içi” demiş. Gidip ölçtüğümde sayaç çıkışındaki klemens gevşemiş, ısınıp teması kesmişti. Bu sayaç çıkışı sizin sorumluluğunuzdadır ama dolap sitenin. Yönetimle konuşup dolabı açtırdık, klemensi yeniledim, yarım saatte bitti.',
+        ],
+      },
+      {
+        h: 'Bir sigorta ya da kaçak akım rölesi düşmüşse',
+        p: [
+          'Kısa cevap: bu tamamen dairenizin içindeki bir arızadır ve site yönetiminin işi değildir. Bir kez kaldırmayı deneyin; tekrar atıyorsa elektrikçi çağırın.',
+          'Eryaman’daki yeni sitelerde en sık gördüğüm sebepler balkon prizine giren yağmur suyu, çamaşır makinesinin yorulmuş rezistansı ve banyoda nem almış aspiratör. Kaçak akım rölesini hangi sigortayı indirince kalktığına bakarak bulurum; arızalı hattı ayırıp evin geri kalanını çalışır hale getiririm, sonra arızayı gideririm.',
+        ],
+      },
+      {
+        h: 'Kimi aradığınızı karıştırmamak için kısa liste',
+        p: [
+          'Komşularda da yok: site yönetimi ya da güvenlik. Sadece sizde yok, panonuzda her şey yukarıda: önce yönetime sayaç dolabını sorun, sorun sayaç çıkışındaysa elektrikçi. Panonuzda sigorta ya da röle düşmüş: doğrudan elektrikçi. Işıklar kısılıp parlıyor, cihazlar garip davranıyor: ana şalteri indirin ve hemen elektrikçi çağırın, bu nötr kopmasının işareti olabilir.',
+          'Aradığınızda bu durumlardan hangisinde olduğunuzu söylerseniz telefonda yarı yarıya teşhis koymuş oluruz. Sorun sitenin tarafındaysa bunu size açıkça söylerim.',
+        ],
+      },
+      {
+        h: 'Eryaman’a ne zaman gelirim?',
+        p: [
+          'Eryaman’ın bütün etaplarına, Güzelkent’e, Tunahan’a ve Göksu tarafına her gün çıkıyorum. Haftanın her günü 08:00–23:00 arası 0506 092 58 16’dan ulaşabilirsiniz. İşe başlamadan önce fiyatı söylerim.',
+          'Eryaman’da daire içi elektrik tesisatı yenileme ve sitelerin altındaki dükkânlar, ofisler için işyeri tesisatı da yapıyorum. Taşınmadan önce hattı elden geçirmek ya da yeni açılan bir işyerine pano kurmak isterseniz keşfe gelirim.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Eryaman’da sitede elektrik gitti, ilk kimi aramalıyım?',
+        a: 'Komşularınızda da elektrik yoksa site yönetimini. Sadece sizde yoksa ve panonuzda bir sigorta ya da röle düşmüşse doğrudan elektrikçiyi arayın.',
+      },
+      {
+        q: 'Sayaç dolabını elektrikçi açabilir mi?',
+        a: 'Sayaç dolabı sitenin ortak alanıdır; yönetimin bilgisi ve izni olmadan açılmamalıdır. Ben de böyle bir durumda önce yönetimle konuşur, birlikte açarız.',
+      },
+      {
+        q: 'Sayaç çıkışındaki arıza kimin sorumluluğunda?',
+        a: 'Genel kural olarak sayaçtan sonraki hat daire sahibine aittir. Sitenizin yönetim planında farklı bir hüküm olabilir; emin değilseniz yönetime sorun.',
+      },
+      {
+        q: 'Işıklar kısılıp parlıyor, ne yapmalıyım?',
+        a: 'Ana şalteri hemen indirin ve elektrikçi çağırın. Bu nötr bağlantısındaki bir kopmanın belirtisi olabilir ve buzdolabı, televizyon gibi cihazlarınıza zarar verebilir.',
+      },
+    ],
+    related: [
+      { label: 'Eryaman Elektrikçi', href: '/hizmet-bolgeleri/eryaman-elektrikci' },
+      { label: 'Eryaman Sigorta ve Ana Şalter', href: '/eryaman-sigorta-ana-salter' },
+      { label: 'Eryaman Elektrik Tamircisi', href: '/eryaman-elektrik-tamircisi' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+    ],
+  },
+  {
+    slug: 'eryaman-elektrik-ustasi-secerken-nelere-bakmali',
+    title: 'Etimesgut Eryaman Elektrik Ustası 0506 092 58 16 | Usta Seçerken Nelere Bakmalı?',
+    description:
+      'Etimesgut Eryaman’da elektrik ustası ararken ucuz işin pahalıya patlamaması için nelere bakmalı? Belge, kaçak akım rölesi, bantlı ek yeri ve yazılı fiyat. Eryaman’a her gün çıkan usta anlatıyor: 0506 092 58 16.',
+    keyword: 'Etimesgut Eryaman elektrik ustası',
+    date: '2026-11-19',
+    readingMin: 6,
+    image: '/images/rehber/eryaman-elektrik-ustasi-secerken-nelere-bakmali.webp',
+    imageAlt: 'Etimesgut Eryaman elektrik ustası: işyerinde devam eden elektrik tesisatı ve aydınlatma montajı',
+    inlineImage: { src: '/images/rehber/eryaman-elektrik-ustasi-secerken-nelere-bakmali-usta.webp', alt: 'Eryaman kaçak akım rölesi montajı – Demir Elektrik usta afişi', width: 1080, height: 1350 },
+    excerpt:
+      'Eryaman’da başkasının yaptığı işi düzeltmeye gittiğim evler az değil. Ucuz diye seçilen ustanın bıraktığı izler hep aynı: bantlı ek yerleri, sökülmüş röle, büyütülmüş sigorta. Usta seçerken nelere bakacağınızı anlattım.',
+    intro:
+      'Geçen ay Eryaman’da yeni taşınılan bir daireye çağrıldım. Ev sahibi tadilat sırasında birine mutfak prizlerini taşıtmış; iki hafta sonra kaçak akım rölesi her akşam atmaya başlamış. Tezgah arkasındaki kapağı açtığımda üç kablo izole bantla birbirine sarılmış, sıva içine öyle gömülmüştü. İşi baştan yapmak, ilk ödenen paranın iki katına çıktı. Elektrik ustası seçmek sanıldığından önemli; bu yazıda neye bakmanız gerektiğini, kendi işimden örneklerle anlatıyorum.',
+    sections: [
+      {
+        h: 'Belgesi var mı, sorun',
+        p: [
+          'Kısa cevap: elektrik işi yapan kişinin ustalık belgesi ya da elektrik alanında yetki belgesi olmalı. Sormaktan çekinmeyin; işini bilen usta bu sorudan rahatsız olmaz.',
+          'Belge tek başına iyi iş garantisi değildir ama en azından kişinin bu işi öğrenerek yaptığını gösterir. Eryaman’da elektrik işine giren boyacı, tadilatçı, “eli yatkın” komşu çok. Priz takmak kolay görünür; zor olan, o prizin hangi kabloyla, hangi sigortaya bağlandığını doğru kurmaktır.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesini söken ustadan uzak durun',
+        p: [
+          'Kısa cevap: kaçak akım rölesi sürekli atıyorsa çözüm röleyi sökmek ya da köprülemek değildir. Röle sizi çarpılmaya karşı koruyan tek elemandır. “Bu röle bozuk, iptal edelim” diyen ustaya işi yaptırmayın.',
+          'Röle gerçekten arızalı olabilir, bu da olur; ama önce test düğmesiyle ve hat ayırarak sebebi aramak gerekir. Eryaman’da attığı için iptal edilmiş, panoda boşta duran röleler gördüm. Bunu gördüğüm evde, başka ne iş için gelmiş olursam olayım, önce röleyi devreye alırım.',
+        ],
+      },
+      {
+        h: 'Ek yeri bantla değil klemensle yapılır',
+        p: [
+          'Kısa cevap: iki kablonun birleştiği her yer bir buatın ya da kasanın içinde, klemens veya uygun bir bağlantı elemanıyla yapılmalıdır. Bantla sarılıp sıva altına gömülen ek yeri zamanla ısınır, bant kurur ve açılır.',
+          'İşi bitince ustanın açtığı kapaklara bir göz atın; içinde düzenli klemensler görüyorsanız iş temizdir. Sigortaların altına hangi hattın neye gittiğini yazdıysa daha da iyi. Ben her işten sonra panoyu etiketlerim; sonra bir arıza olduğunda hem sizin hem benim işim kolaylaşır.',
+        ],
+      },
+      {
+        h: 'Fiyatı işe başlamadan almak',
+        p: [
+          'Kısa cevap: iyi usta işi görmeden fiyat vermez ama işi gördükten sonra da başlamadan fiyatı net söyler. “Bir bakalım, sonra konuşuruz” deyip işi bitirdikten sonra rakam söyleyen ustayla anlaşmazlık çıkması kaçınılmazdır.',
+          'Ben gelince ne yapılacağını, hangi parçaların değişeceğini ve toplam ücreti söylerim. İş sırasında beklenmedik bir şey çıkarsa, mesela duvarın içinde yanmış bir kablo, durur ve size söylerim. Onayınız olmadan işi büyütmem.',
+        ],
+      },
+      {
+        h: 'Eryaman’da elektrik ustası olarak çalışma düzenim',
+        p: [
+          'Eryaman’ın bütün etaplarına, Güzelkent, Tunahan ve Göksu’ya her gün çıkıyorum. Arıza, priz ve sigorta tamiri, kaçak akım rölesi, avize ve LED montajı, daire tesisatı yeniliyorum. Haftanın her günü 08:00–23:00 arası 0506 092 58 16’dan ulaşabilirsiniz.',
+          'Ev ve işyeri elektrik tesisatında da burada saydığım kurallarla çalışırım: her hat ayrı sigortada, ek yerleri buatta, kaçak akım rölesi devrede, pano etiketli. Eryaman’da bir ofis ya da mağaza açıyorsanız tesisatı iş yerinin yüküne göre planlarım.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Eryaman’da elektrik ustası aynı gün gelir mi?',
+        a: 'Arıza acilse aynı gün gelirim. Montaj ve tadilat gibi planlı işlerde size uygun gün ve saati birlikte belirleriz.',
+      },
+      {
+        q: 'Kaçak akım rölesi sürekli atıyor, söktürsem olur mu?',
+        a: 'Olmaz. Röle çarpılmaya karşı sizi koruyan elemandır. Attıysa bir yerde kaçak var demektir; sebebi bulunup giderilmeli, röle devrede kalmalıdır.',
+      },
+      {
+        q: 'Ustanın işini doğru yapıp yapmadığını nasıl anlarım?',
+        a: 'Ek yerlerinin buat içinde klemensle yapıldığına, kaçak akım rölesinin devrede olduğuna, sigorta amperlerinin büyütülmediğine ve panonun etiketlendiğine bakın.',
+      },
+      {
+        q: 'Başkasının yaptığı işi düzeltir misiniz?',
+        a: 'Evet. Önce mevcut tesisatı kontrol eder, neyin tehlikeli neyin kabul edilebilir olduğunu anlatırım. Sadece gerçekten gereken kısmı yeniden yaparım.',
+      },
+    ],
+    related: [
+      { label: 'Eryaman Elektrikçi', href: '/hizmet-bolgeleri/eryaman-elektrikci' },
+      { label: 'Eryaman Kaçak Akım Rölesi', href: '/eryaman-kacak-akim-rolesi' },
+      { label: 'Eryaman Avize Montajı', href: '/eryaman-avize-montaji' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Mağaza Elektrik Tesisatı', href: '/hizmetler/magaza-elektrik-tesisati' },
+    ],
+  },
+  {
+    slug: 'umitkoy-elektrikci-eski-site-evi-tesisat',
+    title: 'Çankaya Ümitköy Elektrikçi 0506 092 58 16 | Eski Site Evlerinde Tesisat Yenilemeden Önce',
+    description:
+      'Çankaya Ümitköy’de eski site evi aldınız ya da tadilat yapacaksınız. Elektrik tesisatı tamamen mi yenilenmeli, yoksa yeterli mi? Topraklama, pano ve kablo kesiti için usta anlatıyor. Ümitköy elektrikçi: 0506 092 58 16.',
+    keyword: 'Çankaya Ümitköy elektrikçi',
+    date: '2026-11-19',
+    readingMin: 7,
+    image: '/images/rehber/umitkoy-elektrikci-eski-site-evi-tesisat.webp',
+    imageAlt: 'Çankaya Ümitköy elektrikçi: tesisatı yenilenen evde duvar aplikleri ve gizli LED',
+    excerpt:
+      'Ümitköy’ün ilk kurulan sitelerindeki evlerin tesisatı otuz yılı geçti. Tadilata girerken “elektrik tamamen yenilensin mi?” sorusunu herkes soruyor. Hangi işaretlere baktığımı ve neyin yeterli olduğunu anlattım.',
+    intro:
+      'Ümitköy’de bahçeli, iki katlı bir site evinde tadilat başlamıştı. Ev sahibi beni mutfak dolapları gelmeden önce çağırdı: “Usta, duvarlar zaten açılıyor, elektriği de baştan yapalım mı?” Panoyu açtım, birkaç prizi söktüm. Kabloların bir kısmı hâlâ iyi durumdaydı, ama topraklama hattı sadece mutfak ve banyoda vardı, salon prizleri topraksızdı. Tamamen yenilemek gerekmedi; doğru yerleri yeniledik. Ümitköy’deki eski site evlerinde bu kararı nasıl verdiğimi anlatıyorum.',
+    sections: [
+      {
+        h: 'İlk bakılacak üç şey',
+        p: [
+          'Kısa cevap: topraklama, panodaki koruma ve kabloların durumu. Bu üçü iyiyse tesisatın tamamını sökmeye gerek kalmayabilir. Biri bile eksikse, o kısım mutlaka ele alınmalıdır.',
+          'Topraklamaya prizlerin içinde sarı-yeşil kablo olup olmadığına bakarak başlarım, ama asıl ölçü aletle yapılır; kablo var diye bağlı olduğunu varsaymam. Panoda kaçak akım rölesi olup olmadığına, sigortaların kablolara uygun seçilip seçilmediğine bakarım. Kabloda ise kılıfın sertleşip çatlamasına, uçlarda kararma ve ısınma izine bakarım.',
+        ],
+      },
+      {
+        h: 'Topraksız priz, eski evlerin en yaygın sorunu',
+        p: [
+          'Kısa cevap: topraksız prize takılan çamaşır makinesi, bulaşık makinesi ya da metal kasalı bir cihaz, içinde bir kaçak olduğunda gövdesinden çarpabilir. Kaçak akım rölesi bu riski azaltır ama topraklamanın yerini tutmaz.',
+          'Ümitköy’ün eski sitelerinde topraklama genelde sonradan, kısmen yapılmış. Mutfak ve banyo topraklı, odalar değil. Tadilat sırasında duvarlar zaten açıksa eksik odalara toprak hattı çekmek hem kolay hem ucuzdur. Duvar açılmayacaksa çoğu zaman eski borulardan yeni kablo çekmek mümkündür.',
+        ],
+      },
+      {
+        h: 'Pano yenilenmeli mi?',
+        p: [
+          'Kısa cevap: panoda kaçak akım rölesi yoksa, sigortalar buşonlu ya da eskimişse, baralarda kararma varsa evet. Pano tesisatın beynidir; kabloları yenileyip panoyu eski bırakmak yarım iş olur.',
+          'Yeni panoda her hattı ayrı sigortaya alırım: mutfak, banyo, çamaşır makinesi, klima, aydınlatma ayrı ayrı. Bahçeli evlerde dış aydınlatma ve bahçe prizleri için ayrı bir kaçak akım rölesi öneririm. Yağmurda bahçedeki bir arıza evin tamamını karanlıkta bırakmasın diye.',
+        ],
+      },
+      {
+        h: 'Tadilatta elektrikçi ne zaman gelmeli?',
+        p: [
+          'Kısa cevap: duvarlar açıldıktan sonra, sıva ve alçı yapılmadan önce. Mutfak dolaplarının, tezgahın ve klimanın yeri belli olmalı ki priz ve hat ona göre çekilsin.',
+          'Ümitköy’de en çok yaşanan sıkıntı, elektrikçinin sıva bittikten sonra çağrılması. O zaman ya yeni boyanan duvar açılıyor ya da kablolar dışarıdan kanalla geçiyor. Tadilata başlamadan bir kez gelip keşif yapmamı isterseniz, hangi aşamada geleceğimi baştan planlarız.',
+        ],
+      },
+      {
+        h: 'Ümitköy’de nasıl çalışıyorum?',
+        p: [
+          'Ümitköy, Çayyolu, Yaşamkent ve Konutkent tarafındaki site evlerine, dairelere ve villalara her gün çıkıyorum. Keşfe gelip ne yapılması gerektiğini ve fiyatını işe başlamadan söylerim. Haftanın her günü 08:00–23:00 arası 0506 092 58 16’dan ulaşabilirsiniz.',
+          'Aynı titizlikle işyeri elektrik tesisatı da yapıyorum. Ümitköy’de bir ofisi, muayenehaneyi ya da dükkânı yeniden düzenliyorsanız bilgisayar, klima ve aydınlatma hatlarını ayrı ayrı planlar, panoyu işin yüküne göre kurarım.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Ümitköy’de eski bir evin tesisatını tamamen yenilemek şart mı?',
+        a: 'Her zaman değil. Topraklama, pano ve kabloların durumuna bakarım. Çoğu evde eksik topraklamayı tamamlamak, panoyu yenilemek ve yıpranmış hatları değiştirmek yeterli olur.',
+      },
+      {
+        q: 'Topraksız prize çamaşır makinesi takmak tehlikeli mi?',
+        a: 'Evet. Makinenin içinde bir kaçak olduğunda gövdesi elektriklenebilir. Topraklı priz ve devrede bir kaçak akım rölesi birlikte olmalıdır.',
+      },
+      {
+        q: 'Duvarları kırmadan kablo yenilenebilir mi?',
+        a: 'Çoğu zaman evet. Eski borular sağlamsa yeni kabloyu borunun içinden çekeriz. Boru ezilmiş ya da tıkanmışsa o noktada küçük bir açma gerekebilir.',
+      },
+      {
+        q: 'Keşif için gelir misiniz?',
+        a: 'Evet. Tadilattan önce gelip mevcut tesisatı kontrol eder, ne yapılacağını ve fiyatını işe başlamadan söylerim.',
+      },
+    ],
+    related: [
+      { label: 'Ümitköy Elektrikçi', href: '/hizmet-bolgeleri/cankaya-elektrikci/umitkoy-elektrikci' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Villa Elektrik Tesisatı', href: '/hizmetler/villa-elektrik-tesisati' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Mağaza Elektrik Tesisatı', href: '/hizmetler/magaza-elektrik-tesisati' },
+    ],
+    hideBase: true,
+  },
+  {
+    slug: 'yasamkent-elektrikci-yeni-daire-avize-spot-led',
+    title: 'Çankaya Yaşamkent Elektrikçi 0506 092 58 16 | Yeni Dairede Avize, Spot ve LED Montajı',
+    description:
+      'Çankaya Yaşamkent’te yeni daireye taşınıyorsunuz: avize nereye, spot kaç tane, şerit LED nasıl? Taşınmadan önce aydınlatmayı planlamak için usta anlatıyor. Yaşamkent elektrikçi: 0506 092 58 16.',
+    keyword: 'Çankaya Yaşamkent elektrikçi',
+    date: '2026-11-19',
+    readingMin: 6,
+    image: '/images/rehber/yasamkent-elektrikci-yeni-daire-avize-spot-led.webp',
+    imageAlt: 'Çankaya Yaşamkent elektrikçi: yeni dairede yemek masası üstüne asılan modern LED avize',
+    excerpt:
+      'Yaşamkent’teki yeni dairelerde müteahhit tavana çoğu zaman sadece birer kablo bırakıyor. Avize, spot ve LED işini eşyalar gelmeden planlarsanız hem tavanınız hem bütçeniz rahat eder. Sahadan anlattım.',
+    intro:
+      'Yaşamkent’te yeni teslim edilmiş bir dairede ev sahibiyle salonun ortasında duruyorduk. Tavandan tek bir kablo sarkıyordu, elinde de internetten beğendiği iki metrelik bir sarkıt avizenin fotoğrafı vardı. “Usta, bunu buraya asabilir miyiz?” Asabilirdik, ama yemek masası pencere önüne konacaktı; avize de oraya gelmeliydi. Tavanda yeni bir buat, kısa bir kablo uzatması ve sağlam bir dübelle işi yarım günde bitirdik. Yaşamkent’teki yeni dairelerde aydınlatma işini nasıl planladığımı anlatıyorum.',
+    sections: [
+      {
+        h: 'Önce mobilya, sonra avize yeri',
+        p: [
+          'Kısa cevap: avizenin yeri müteahhidin bıraktığı kabloya göre değil, yemek masasının ve oturma grubunun yerine göre belirlenir. Eşyaların yeri belli olunca ışık noktalarını ona göre taşırız.',
+          'Yaşamkent’teki yeni binaların çoğunda tavan betonarme; kablo taşımak için tavana küçük bir kanal açılır ya da asma tavan varsa üstünden geçilir. Taşındıktan sonra yapılırsa boya ve toz derdi çıkar. Taşınmadan önce yapılırsa bir öğleden sonralık iştir.',
+        ],
+      },
+      {
+        h: 'Ağır avize için tavan kontrolü',
+        p: [
+          'Kısa cevap: avizenin ağırlığı tavana takılan kancanın taşıyabileceğinden fazla olmamalıdır. Kristal ve metal gövdeli avizeler sanıldığından ağırdır; plastik dübel yetmez.',
+          'Betonarme tavanda çelik dübel kullanırım. Alçıpan asma tavanda ise avizeyi alçıpana değil, üstündeki betona sabitlerim; gerekirse araya bir taşıyıcı çubuk koyarım. Yaşamkent’te alçıpana asılmış, birkaç ay sonra tavanı çatlatan avizeler gördüm.',
+        ],
+      },
+      {
+        h: 'Spot sayısı ve yerleşimi',
+        p: [
+          'Kısa cevap: spotları her yere eşit aralıkla serpiştirmek yerine ihtiyaca göre yerleştirmek daha iyi sonuç verir. Mutfakta tezgahın üstüne, koridorda yürüme hattına, salonda duvarlara yakın.',
+          'Çok sayıda spot tavanı delik deşik gösterir ve gereğinden fazla ışık verir. Salonda tek bir hatta bütün spotları bağlamak yerine iki gruba ayırmayı öneririm: biri günlük, biri misafir için. Anahtarı da ona göre çift yaparız.',
+        ],
+      },
+      {
+        h: 'Şerit LED: gizli ışık güzel, ama adaptörü erişilebilir olmalı',
+        p: [
+          'Kısa cevap: asma tavan kenarında, TV ünitesinin arkasında ya da mutfak dolabının altında şerit LED güzel durur. Ama LED’in adaptörü (sürücüsü) ulaşılabilir bir yere konmalı; bozulduğunda tavanı sökmek gerekmesin.',
+          'Adaptörü LED’in gücüne göre seçerim, biraz pay bırakırım; tam sınırda çalışan adaptör ısınır ve erken bozulur. Uzun şeritlerde besleme iki uçtan yapılmazsa uçlara doğru ışık sararır. Bunları montajda hesaplarım.',
+        ],
+      },
+      {
+        h: 'Yaşamkent’te montaja nasıl geliyorum?',
+        p: [
+          'Yaşamkent, Çayyolu, Ümitköy ve Alacaatlı tarafındaki dairelere her gün çıkıyorum. Avize, spot ve LED montajını aynı gün içinde bitiririm; fiyatı işe başlamadan söylerim. Haftanın her günü 08:00–23:00 arası 0506 092 58 16’dan ulaşabilirsiniz.',
+          'Aydınlatmanın yanında ev ve işyeri elektrik tesisatı da yapıyorum. Yaşamkent’te yeni daireye ek priz ve hat, klima hattı ya da yeni açılan bir işyerinin pano ve aydınlatma tesisatı gerekiyorsa montajla aynı gün planlayabiliriz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yaşamkent’te avize montajı ne kadar sürer?',
+        a: 'Hazır bağlantı noktasına standart bir avize genelde bir saati geçmez. Avizenin yerini taşımak ya da ağır avize için tavan hazırlığı gerekiyorsa birkaç saat sürebilir.',
+      },
+      {
+        q: 'Alçıpan tavana ağır avize asılır mı?',
+        a: 'Doğrudan alçıpana asılmaz. Avize alçıpanın üstündeki betona çelik dübelle sabitlenir ya da araya taşıyıcı konur.',
+      },
+      {
+        q: 'Spotları iki ayrı anahtara bağlamak mümkün mü?',
+        a: 'Evet. Montaj sırasında spotları iki gruba ayırır, çift anahtarla bağlarım. Böylece istediğinizde sadece bir kısmını yakabilirsiniz.',
+      },
+      {
+        q: 'Şerit LED’in adaptörü nereye konmalı?',
+        a: 'Ulaşılabilir bir yere: dolap içine, servis kapağının arkasına ya da asma tavanda açılabilir bir noktaya. Adaptör bozulduğunda tavanı sökmek zorunda kalmamalısınız.',
+      },
+    ],
+    related: [
+      { label: 'Çayyolu ve Yaşamkent Elektrikçi', href: '/hizmet-bolgeleri/cankaya-elektrikci/cayyolu-elektrikci' },
+      { label: 'Avize Montajı', href: '/hizmetler/avize-montaji' },
+      { label: 'Spot Montajı', href: '/hizmetler/spot-montaji' },
+      { label: 'LED Aydınlatma', href: '/hizmetler/led-aydinlatma' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+    ],
+    hideBase: true,
+  },
+  {
+    slug: 'cayyolu-elektrikci-dubleks-villa-ana-salter-atiyor',
+    title: 'Çankaya Çayyolu Elektrikçi 0506 092 58 16 | Dubleks ve Villada Ana Şalter Atıyorsa',
+    description:
+      'Çankaya Çayyolu’nda dubleks ya da villada ana şalter atıyor, kat panosu mu ana pano mu karıştı? Sebepleri, ben gelene kadar yapılacakları ve kalıcı çözümü usta anlatıyor. Çayyolu elektrikçi: 0506 092 58 16.',
+    keyword: 'Çankaya Çayyolu elektrikçi',
+    date: '2026-11-19',
+    readingMin: 7,
+    image: '/images/rehber/cayyolu-elektrikci-dubleks-villa-ana-salter-atiyor.webp',
+    imageAlt: 'Çankaya Çayyolu elektrikçi: dubleks merdiven boşluğunda duvar aplikleri',
+    excerpt:
+      'Çayyolu’ndaki dubleks ve villalarda genelde birden fazla pano olur ve arıza olduğunda hangisine bakılacağı karışır. Ana şalterin neden attığını ve nasıl daralttığımı sahadan anlattım.',
+    intro:
+      'Çayyolu’nda üç katlı bir villadan aradılar. Akşam yemeği hazırlanırken ana şalter atmış, kaldırmışlar, on dakika sonra tekrar atmış. Ev sahibi “Usta, alt kattaki panoda her şey yukarıda, üsttekinde de; ama ana şalter duruyor” dedi. Gittiğimde sebep mutfaktaki ankastre fırınla bodrumdaki ısı pompasının aynı anda çalışmasıydı; ana şalter yükü kaldırmıyordu. Çayyolu’ndaki çok katlı evlerde bu tür arızaları nasıl çözdüğümü anlatıyorum.',
+    sections: [
+      {
+        h: 'Önce hangi pano neyi besliyor, onu bilin',
+        p: [
+          'Kısa cevap: dubleks ve villalarda genelde sayaç yanında ya da girişte bir ana pano, her katta da bir kat panosu bulunur. Ana şalter ana panodadır ve bütün evi besler. Kat panosundaki bir sigorta atarsa sadece o katın bir bölümü gider.',
+          'Arıza sırasında ilk iş, hangi panoda neyin düştüğüne bakmaktır. Evin tamamı karanlıksa ana panoya, sadece bir kat ya da bir oda karanlıksa o katın panosuna bakın. Panolarınızda etiket yoksa ilk gelişimde her hattı bulup yazarım.',
+        ],
+      },
+      {
+        h: 'Ana şalter neden atar?',
+        p: [
+          'Kısa cevap: ya evin toplam yükü ana şalterin değerini aşıyordur, ya ana hatta bir kısa devre vardır, ya da şalterin bağlantısı gevşeyip ısınıyordur. Üçüncüsü sıklıkla gözden kaçar.',
+          'Çayyolu’ndaki büyük evlerde ısı pompası, ankastre mutfak, birden fazla klima, havuz ya da sulama pompası aynı anda çalışabiliyor. Ev ilk yapıldığında bu cihazlar yoksa ana şalter bugünkü yükü taşımayabilir. Böyle bir durumda sadece şalteri büyütmem; önce sayaçtan gelen kablonun ve abonelik gücünün yeterli olup olmadığına bakarım.',
+          'Şalterin üstü ılıksa ya da kokusu varsa bağlantı ısınıyor demektir. Bu durumda yük az bile olsa şalter atabilir. Klemensleri söküp temizler, kararmış uçları yeniler ve doğru torkla sıkarım.',
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi mi, ana şalter mi?',
+        p: [
+          'Kısa cevap: panoda test düğmesi olan eleman kaçak akım rölesidir. Ana şalter attığında röle yukarıda kalır; röle attığında ana şalter yukarıda kalabilir. Hangisinin düştüğü sebebi tamamen değiştirir.',
+          'Villalarda kaçak akım rölesini en çok bahçe aydınlatması, dış prizler ve havuz ekipmanı attırır. Bu yüzden dış hatları ayrı bir röleye almayı öneririm. Bahçede bir sorun olduğunda evin içi karanlıkta kalmaz.',
+        ],
+      },
+      {
+        h: 'Ben gelene kadar ne yapmalısınız?',
+        p: [
+          'Kısa cevap: büyük cihazları kapatın (fırın, klima, ısı pompası, pompa), ana şalteri bir kez kaldırın. Atmıyorsa cihazları teker teker açın; hangisinde attığını not edin. Tekrar tekrar kaldırmayın.',
+          'Şalterden koku geliyorsa, panoda kararma ya da çıtırtı varsa hiç kaldırmayın ve beni arayın. Telefonda hangi panoda neyin düştüğünü ve hangi cihazın çalıştığını anlatmanız, gelmeden önce arızayı daraltmamı sağlar.',
+        ],
+      },
+      {
+        h: 'Çayyolu’nda nasıl çalışıyorum?',
+        p: [
+          'Çayyolu, Ümitköy, Yaşamkent, Alacaatlı ve Angora Evleri tarafındaki villa, dubleks ve dairelere her gün çıkıyorum. Aracımda farklı değerde şalter, röle ve sigorta bulunur; çoğu arızayı ilk gelişte bitiririm. Fiyatı işe başlamadan söylerim. Haftanın her günü 08:00–23:00 arası 0506 092 58 16’dan ulaşabilirsiniz.',
+          'Villa ve dubleks tesisatının yanında Çayyolu’ndaki ofis, mağaza ve işyerlerinin elektrik tesisatını da kuruyorum. Yeni hat, pano yenileme ya da yük artışı gerektiren bir tadilat varsa önce mevcut tesisatı ölçer, ne gerektiğini net söylerim.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Çayyolu’nda elektrikçi aynı gün geliyor mu?',
+        a: 'Evet. Ana şalter atması, koku ya da kıvılcım gibi acil arızalarda aynı gün gelirim. Planlı işler için size uygun saati birlikte belirleriz.',
+      },
+      {
+        q: 'Ana şalter atıyor, bir büyüğünü taksam olur mu?',
+        a: 'Önce sayaçtan gelen kablonun ve abonelik gücünün yeterli olup olmadığına bakılmalı. Kablo yetersizken şalteri büyütmek kabloyu korumasız bırakır.',
+      },
+      {
+        q: 'Villada bahçe aydınlatması yağmurda neden attırıyor?',
+        a: 'Dış armatürlere ve buatlara su girmesi en sık sebeptir. Uygun koruma sınıfında armatür, sızdırmaz buat ve dış hatlar için ayrı bir kaçak akım rölesi bu sorunu çözer.',
+      },
+      {
+        q: 'Panolarımda etiket yok, yapar mısınız?',
+        a: 'Evet. Her hattı tek tek bulup hangi sigortanın neyi beslediğini yazarım. Arıza anında hangi panoya bakacağınızı bilirsiniz.',
+      },
+    ],
+    related: [
+      { label: 'Çayyolu Elektrikçi', href: '/hizmet-bolgeleri/cankaya-elektrikci/cayyolu-elektrikci' },
+      { label: 'Villa Elektrik Tesisatı', href: '/hizmetler/villa-elektrik-tesisati' },
+      { label: 'Elektrik Pano Montajı', href: '/hizmetler/elektrik-pano-montaji' },
+      { label: 'Elektrik Arıza', href: '/hizmetler/elektrik-ariza' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+    ],
+    hideBase: true,
   },
 ];
 
