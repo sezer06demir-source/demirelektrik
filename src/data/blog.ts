@@ -1728,6 +1728,68 @@ export const posts: BlogPost[] = [
     ],
     hideBase: true,
   },
+  {
+    slug: '29-ekim-elektrikci-topraklama-yok',
+    title: 'Sincan 29 Ekim Elektrikçi 0506 254 76 78 | Eski Dairede Topraklama Yoksa Ne Olur?',
+    description:
+      "Sincan 29 Ekim Mahallesi'nde eski yapılan apartman dairelerinde topraklama hattının hiç çekilmediği çok görülür. Nasıl anlarsınız, hangi cihazlar risklidir, çözümü nedir? Demir Elektrik 0506 254 76 78.",
+    keyword: '29 Ekim elektrikçi',
+    date: '2026-11-20',
+    readingMin: 6,
+    excerpt:
+      "29 Ekim'de priz üç delikli ama üçüncü delik boşta duran dairelerle sık karşılaşıyoruz. Topraklama yoksa kaçak akım rölesi tek başına evi tam korumuyor, ikisi birlikte iş görür.",
+    intro:
+      "29 Ekim Mahallesi'ndeki eski blok dairelerin çoğunda priz üç delikli görünür ama o üçüncü delik hiçbir yere bağlı değildir; bu, topraklama hattının o dönem hiç çekilmediğinin işaretidir. Ev sahibi bunu yıllarca fark etmez çünkü ışık yanar, çamaşır makinesi döner, görünürde bir sorun yoktur. Eksiklik genelde ya bir cihaz arızalandığında ya da birinin eline hafif bir çarpma hissettiğinde ortaya çıkar; o ana kadar sessiz kalan bir risktir.",
+    sections: [
+      {
+        h: "29 Ekim'de topraklama neden bu kadar sık eksik?",
+        p: [
+          "Mahalledeki eski blokların büyük kısmı topraklamanın standart haline gelmesinden önce yapılmış. O dönem elektrik tesisatı sadece faz ve nötr üzerine kuruluydu, üçüncü bir koruma hattı projeye hiç girmemişti. Sonradan priz değiştirilirken üç delikli modeller takılmış ama arkasındaki toprak kablosu döşenmemiş, sadece görüntü değişmiş.",
+          "Bazı dairelerde pano tamamen yenilenmiş, yeni bir kaçak akım rölesi de takılmış; ama röle bir yere bağlı olmayan toprak hattına güvenemediği için koruması beklenenin altında kalıyor. Panonun yeni olması topraklamanın da yapıldığı anlamına gelmiyor, bunlar birbirinden bağımsız iki ayrı iştir.",
+        ],
+      },
+      {
+        h: 'Evimde topraklama var mı, nasıl anlarım?',
+        p: [
+          "En basit kontrol, üç ışıklı bir priz test cihazını prize takıp ışıkların hangi kombinasyonda yandığına bakmaktır; topraklama hattı yoksa cihaz bunu net gösterir. Biz yerinde ölçümde ayrıca toprak direncini de ölçüyoruz, çünkü kablo çekilmiş olması yetmez, değerin de uygun aralıkta olması gerekir.",
+          "Kendi başınıza fark edebileceğiniz bir işaret de şu: çamaşır makinesi, bulaşık makinesi gibi metal gövdeli cihazlara dokununca hafif bir karıncalanma hissetmeniz. Bu, kaçan akımın gövdeye yürüyüp bir çıkış yolu aradığının işaretidir; topraklama olsa bu akım sizi değil, toprağı bulurdu.",
+        ],
+      },
+      {
+        h: 'Topraklama olmadan hangi cihazlar risk taşır?',
+        p: [
+          "Metal gövdeli ve yüksek güç çeken her cihaz listenin başında gelir: çamaşır makinesi, bulaşık makinesi, elektrikli fırın, şofben. Bu cihazların içinde bir izolasyon zayıflaması olduğunda, kaçan akımın gideceği güvenli bir yol yoksa o akım gövde üzerinden dokunan kişiye geçebilir.",
+          "Geçen ay 29 Ekim'de baktığımız bir dairede şofbenin gövdesi hafif elektriklenmiş, aile bunu aylarca fark etmemiş. Ölçtüğümüzde toprak hattının hiç çekilmemiş olduğunu, kaçak akımın gövdede birikip ara sıra boşaldığını gördük; hattı çekip şofbeni ona bağlayınca sorun bitti.",
+        ],
+      },
+      {
+        h: 'Kaçak akım rölesi varsa topraklamaya hâlâ gerek var mı?',
+        p: [
+          "Kısa cevap evet. Röle, giden ve dönen akım arasındaki dengesizliği yakalayıp hattı kesen bir korumadır; topraklama olmasa da bir dereceye kadar çalışır ama asıl görevi kaçan akımı güvenli şekilde toprağa yönlendirmektir. Topraklama yoksa röle bazen gecikir, bazen de kaçağı tam yakalayamaz çünkü akımın gidebileceği düzgün bir yol tanımlı değildir.",
+          "İkisi birlikte çalıştığında koruma tam olur: topraklama kaçan akımı güvenli yola yönlendirir, röle de o kaçağı anında fark edip hattı keser. Birini yapıp diğerini atlamak, evde yarım bir güvenlik bırakmak demektir.",
+        ],
+      },
+      {
+        h: 'Topraklama hattı çekmek ne kadar iş, daire boşaltılır mı?',
+        p: [
+          "29 Ekim'deki bloklarda bina kolon hattında ortak topraklama varsa daireye o hattan bağlantı almak çoğu zaman yeterli oluyor, ayrıca elektrot çakmaya gerek kalmıyor. Ortak hat yoksa uygun bir noktadan toprak elektrotu çakıp ana panoya kadar yeşil-sarı kabloyla hat çekiyoruz.",
+          "Dairenin tamamen boşaltılması gerekmiyor; priz ve anahtar kapaklarını tek tek açıp hattı döşüyor, iş bitince yerine kapatıyoruz. Toz ve gürültü açısından kısa süren, günlük yaşamı çok bölmeyen bir çalışma; işin boyutuna göre net fiyatı yerinde bakınca söylüyoruz.",
+        ],
+      },
+    ],
+    faq: [
+      { q: "29 Ekim'de akşam saatinde elektrikçi bulunur mu?", a: '0506 254 76 78 numarasından 08:00–23:00 arası ulaşabilirsiniz. Arızayı kısaca anlatırsanız yanımıza doğru aleti alıp geliyoruz.' },
+      { q: "29 Ekim'de eski evlerin çoğunda topraklama yok mu?", a: "Mahalledeki eski blok yapı stokunda bu çok sık görülüyor; priz üç delikli olsa da arkasındaki toprak hattı çoğu zaman hiç çekilmemiş. Yerinde ölçüm yapmadan evinizde olup olmadığını kesin söylemek doğru olmaz." },
+      { q: 'Topraklama olmadan kaçak akım rölesi işe yaramaz mı?', a: 'Tamamen işe yaramaz demek doğru değil ama koruması eksik kalır. Röle kaçağı yakalar, topraklama ise o kaçan akımı güvenli şekilde yönlendirir; ikisi birlikte tam koruma sağlar.' },
+      { q: 'Apartman dairesinde topraklama çekmek büyük bir iş mi?', a: 'Bina kolon hattında ortak topraklama varsa daireye bağlantı almak genelde bir gün içinde biten, dairenin boşaltılmasını gerektirmeyen bir iştir.' },
+    ],
+    related: [
+      { label: '29 Ekim Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/29-ekim-elektrikci' },
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
+      { label: 'Ev Elektrik Tesisatı', href: '/hizmetler/ev-elektrik-tesisati' },
+      { label: 'Priz Neden Isınır?', href: '/rehber/priz-neden-isinir-sincan' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
