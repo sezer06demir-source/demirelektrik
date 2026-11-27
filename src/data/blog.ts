@@ -1790,6 +1790,68 @@ export const posts: BlogPost[] = [
       { label: 'Priz Neden Isınır?', href: '/rehber/priz-neden-isinir-sincan' },
     ],
   },
+  {
+    slug: 'torekent-elektrikci-kacak-akim-rolesi-atiyor',
+    title: 'Sincan Törekent Elektrikçi 0506 254 76 78 | Kaçak Akım Rölesi Sürekli Atıyorsa Ne Yapılır?',
+    description:
+      "Sincan Törekent'te yüksek blok dairelerde kaçak akım rölesi sürekli atıyorsa sebebi genelde nemli bir hat ya da arızalı bir cihazdır. Ustanın sırasıyla kontrol ettiği adımlar. Demir Elektrik: 0506 254 76 78.",
+    keyword: 'Törekent kaçak akım rölesi',
+    date: '2026-11-27',
+    readingMin: 6,
+    excerpt:
+      "Törekent'in on katlı bloklarında röle attığında çoğu kişi önce sigortaları kontrol ediyor ama asıl sebep çoğu zaman banyo, mutfak hattında ya da bir cihazda. Nasıl daraltılır, anlattık.",
+    intro:
+      "Törekent'teki yoğun bloklardan aldığımız çağrıların önemli bir kısmı aynı cümleyle başlıyor: \"Usta, kaçak akım rölesi durmadan atıyor, biz de karanlıkta kaldık.\" Röle boşuna atmaz; neredeyse her zaman bir şeyi anlatmaya çalışır. İş, onu doğru okuyup kaynağı bulmakta. Yıllardır Sincan tarafında bu çağrılara giden biri olarak, Törekent'te en sık hangi sebeplerle karşılaştığımızı ve röle attığında ilk ne yapılması gerektiğini anlatayım.",
+    sections: [
+      {
+        h: "Törekent'te kaçak akım rölesi neden bu kadar sık atıyor?",
+        p: [
+          'En sık sebep nemlenmiş bir hattır. Banyo, mutfak ya da balkon hattında suyun kabloya değdiği bir nokta varsa, oradan küçük bir kaçak başlar ve röle bunu hemen yakalar. Törekent bloklarında yağmurdan sonra ya da çamaşır yıkadıktan kısa süre sonra atan röleler genelde bu gruba giriyor.',
+          "İkinci sık sebep, arızalı bir cihazdır; çamaşır makinesi, bulaşık makinesi, şofben gibi su ile çalışan cihazların içindeki rezistans ya da motor zamanla kaçak yapmaya başlayabilir. Törekent'te yüksek bloklarda eş zamanlı birçok daire aynı kolon hattından besleniyor, bu yüzden bazen tek bir dairedeki cihaz sorunu yan dairenin rölesini de etkileyebiliyor.",
+        ],
+      },
+      {
+        h: 'Röle attığında ilk ne yapmalı?',
+        p: [
+          'Önce evdeki tüm sigortaları (linyeleri) indirin, sonra röleyi kaldırın. Röle bu durumda atmıyorsa sorun bir hatta veya cihazdadır; sigortaları tek tek kaldırarak hangi hatta kaçak olduğunu daraltabilirsiniz. Hangi sigortayı kaldırdığınızda röle atmayı kesiyorsa, kaçak o hattadır.',
+          'O hattı bulduktan sonra üstüne bağlı cihazları teker teker prizden çekerek daha da daraltabilirsiniz. Buraya kadarı ipucu toplamak için yeterli; kaçağın tam yerini ve büyüklüğünü ölçmek için ise pens ampermetre ve toprak direnci ölçümü gerekiyor, onu yerinde yapıyoruz.',
+        ],
+      },
+      {
+        h: 'Blok dairelerde en sık rastladığımız kaçak kaynakları',
+        p: [
+          "Törekent'in on katlı bloklarında sayaçlar genelde zemin katta toplu duruyor ve her dairenin kendi sigortası var; ama kaçak akım rölesi çoğunlukla daire içindeki panoda. Geçen kış bir blokta üç farklı daireden aynı hafta aynı şikâyetle arandık; üçünde de sebep banyodaki ıslak zemin üstünde kalan bir uzatma kablosuydu, cihaz değil kablo kaçak yapıyordu.",
+          "Bir başka sık gördüğümüz durum, balkonu kapalı balkona çevrilmiş dairelerde dışarıdan içeri alınan priz hattının nem alması. Bu tür tadilatlarda hat genelde ek yapılarak uzatılıyor, ek noktası zamanla nem çekip kaçağa dönüşüyor.",
+        ],
+      },
+      {
+        h: 'Röleyi iptal ettirmek ya da daha yüksek amperli röle takmak çözüm mü?',
+        p: [
+          'Hayır. Sürekli atan röleden bıkıp onu iptal etmek ya da daha geç atan bir röleyle değiştirmek, bir alarmı susturmaktan farksız; kaçağı ortadan kaldırmaz, sadece sizi korumasız bırakır. Ev tipi tesisatlarda 30 miliamperlik röle standarttır; bu değer insan için tehlikeli sınırın altında kalsın diye belirlenmiştir, daha yüksek bir değere çıkmak koruma kalitesini düşürür.',
+          'Doğru olan, röleyi attıran gerçek kaçağı bulup gidermektir. Kaçak giderildiğinde röle kendiliğinden atmayı bırakır; rölenin kendisi arızalıysa da bunu ölçümden sonra anlıyoruz ve uygun 30 mA\'lik tip A röleyle değiştiriyoruz.',
+        ],
+      },
+      {
+        h: "Törekent'e geldiğimizde nasıl çalışıyoruz?",
+        p: [
+          "Önce panoyu ve röleyi kontrol ediyor, sonra hattı bölerek kaçağın kaynağını ölçüyoruz. Sebep bir cihazsa söylüyoruz, bir hatsa onu onarıyoruz; blok yönetiminin bilgisi gereken ortak alan işlerinde yöneticiyle birlikte ilerliyoruz. Sincan Yenikent'teki dükkanımızdan Törekent'e kısa sürede ulaşıyoruz, 08:00-23:00 arası her gün 0506 254 76 78'den arayabilirsiniz.",
+          'Yerinde ölçüm yapmadan telefonda kesin sebep söylemiyoruz; çünkü aynı belirtinin arkasında tamamen farklı sebepler olabiliyor. Gelince ölçüp net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      { q: "Törekent'te kaçak akım rölesi yağmurdan sonra mı atıyor?", a: 'Genelde evet; dış cephedeki ya da kapalı balkona çevrilmiş priz hatlarında nem birikip küçük bir kaçak oluşturuyor. Bahçe, balkon ve dış priz hatları ilk bakılacak yerler.' },
+      { q: 'Röle her attığında yangın riski mi var?', a: 'Röle sizi tam olarak bu riske karşı koruyor; attığında bir kaçağı yakalayıp hattı milisaniyeler içinde kesiyor demektir. Tehlikeli olan, rölenin hiç olmaması ya da atmasına rağmen iptal edilmesidir.' },
+      { q: "Akşam saatlerinde Törekent'e elektrikçi gelir mi?", a: "Gelir; 08:00-23:00 arası her gün çağrı alıyoruz. 0506 254 76 78'den arayıp arızayı kısaca anlatırsanız yanımıza doğru aleti alıp geliyoruz." },
+      { q: 'Röleyi değiştirince sorun tamamen biter mi?', a: 'Sadece rölenin kendisi arızalıysa evet. Ama çoğu zaman sebep rölede değil hatta veya cihazdadır; o yüzden değiştirmeden önce ölçüm yapıp gerçek kaynağı bulmak gerekir.' },
+    ],
+    related: [
+      { label: 'Törekent Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci/torekent-elektrikci' },
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan-elektrikci' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza' },
+      { label: "29 Ekim'de Topraklama Yoksa Ne Olur?", href: '/rehber/29-ekim-elektrikci-topraklama-yok' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
