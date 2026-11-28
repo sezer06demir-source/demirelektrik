@@ -94,6 +94,7 @@ export function websiteSchema() {
     '@type': 'WebSite',
     '@id': `${absoluteUrl('/')}#website`,
     name: site.name,
+    alternateName: 'Demir Elektrik Ankara',
     url: absoluteUrl('/'),
     inLanguage: 'tr-TR',
     publisher: { '@id': `${absoluteUrl('/')}#business` },

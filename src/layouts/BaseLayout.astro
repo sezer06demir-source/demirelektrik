@@ -68,13 +68,16 @@ const jsonLd = [websiteSchema(), localBusinessSchema(), ...schema];
     <meta name="generator" content={Astro.generator} />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/icons/icon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="/icons/icon-192.png" sizes="192x192" type="image/png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
+    <meta name="application-name" content={site.name} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:title" content={fullTitle} />

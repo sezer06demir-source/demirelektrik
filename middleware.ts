@@ -616,6 +616,8 @@ const GOOD_BOTS = [
   'google-read-aloud',
   'google-site-verification',
   'googleother',
+  'google favicon', // arama sonucundaki logo bu araçla alınır; engellenirse dünya simgesi çıkar
+  'googleproducer',
   'storebot-google',
   'google-extended',
   'chrome-lighthouse',
